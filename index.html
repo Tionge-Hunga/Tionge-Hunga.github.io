@@ -255,6 +255,21 @@
             transform: translateY(-4px);
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
         }
+        .project-image {
+             width: 100%;
+             height: 220px;
+             overflow: hidden;
+             border-radius: 8px;
+             margin-bottom: 20px;
+             background: #f3f4f6;
+         }
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
 
         .project-image {
             width: 100%;
@@ -497,33 +512,30 @@
 
         <div class="buttons">
 
-            <a class="btn btn-primary"
-               href="#projects">
-                View My Projects
-            </a>
+    <a class="btn btn-primary"
+       href="#projects">
+        View My Projects
+    </a>
 
-            <!-- Replace YOUR-CV-FILE.pdf with your actual CV file name -->
-            <a class="btn btn-secondary"
-               href="YOUR-CV-FILE.pdf"
-               target="_blank">
-                Download CV
-            </a>
+    <a class="btn btn-secondary"
+       href="Tionge-Hunga-CV.pdf"
+       target="_blank">
+        Download CV
+    </a>
 
-            <a class="btn btn-secondary"
-               href="https://linkedin.com/in/tionge-hunga"
-               target="_blank">
-                LinkedIn
-            </a>
+    <a class="btn btn-secondary"
+       href="https://linkedin.com/in/tionge-hunga"
+       target="_blank">
+        LinkedIn
+    </a>
 
-            <a class="btn btn-secondary"
-               href="https://github.com/Tionge-Hunga"
-               target="_blank">
-                GitHub
-            </a>
+    <a class="btn btn-secondary"
+       href="https://github.com/Tionge-Hunga"
+       target="_blank">
+        GitHub
+    </a>
 
-        </div>
-
-    </div>
+</div>
 
 </header>
 
@@ -749,14 +761,16 @@
 
 <!-- PROJECTS -->
 
-<section id="projects">
+<!-- PROJECTS -->
+
+<section id="projects" class="projects">
 
     <div class="container">
 
-        <h2 class="section-title">Projects</h2>
+        <h2>Projects</h2>
 
-        <p class="section-subtitle">
-            A selection of professional and personal data analytics projects
+        <p class="section-intro">
+            A selection of professional and personal analytics projects
             demonstrating my experience in data analysis, data quality,
             dashboard development, and data-driven decision-making.
         </p>
@@ -764,9 +778,7 @@
 
         <!-- PROFESSIONAL PROJECTS -->
 
-        <h3 class="project-category">
-            Professional Projects
-        </h3>
+        <h3 class="project-category">Professional Projects</h3>
 
         <div class="project-grid">
 
@@ -774,12 +786,6 @@
             <!-- Pangolin Dashboard -->
 
             <div class="project-card">
-
-                <div class="project-image placeholder">
-                    Professional dashboard screenshot
-                    <br>
-                    <small>Add screenshot later</small>
-                </div>
 
                 <div class="project-content">
 
@@ -798,14 +804,13 @@
                     <p>
                         Developed an interactive dashboard to monitor
                         pangolin weight changes during rehabilitation,
-                        enabling the rehabilitation team to track weight
-                        progression over time.
+                        enabling the rehabilitation team to track
+                        weight progression over time.
                     </p>
 
-                    <!-- Add your dashboard/project link later -->
-                    <a href="#"
+                    <a href="#contact"
                        class="project-link">
-                        Project details →
+                        Professional Project
                     </a>
 
                 </div>
@@ -816,12 +821,6 @@
             <!-- Visitor Analytics -->
 
             <div class="project-card">
-
-                <div class="project-image placeholder">
-                    Professional dashboard screenshot
-                    <br>
-                    <small>Add screenshot later</small>
-                </div>
 
                 <div class="project-content">
 
@@ -838,16 +837,16 @@
                     </p>
 
                     <p>
-                        Analysed visitor patterns by day, time, and visitor
-                        group to identify peak periods and provide evidence
-                        to support management decisions around opening hours,
-                        staffing allocation, and visitor operations.
+                        Analysed visitor patterns by day, time, and
+                        visitor group to identify peak periods and
+                        provide evidence to support management decisions
+                        around opening hours, staffing allocation, and
+                        visitor operations.
                     </p>
 
-                    <!-- Add your dashboard/project link later -->
-                    <a href="#"
+                    <a href="#contact"
                        class="project-link">
-                        Project details →
+                        Professional Project
                     </a>
 
                 </div>
@@ -872,8 +871,7 @@
 
                 <div class="project-image">
 
-                    <!-- Replace with your actual screenshot -->
-                    <img src="YOUR-DIABETES-SCREENSHOT-URL"
+                    <img src="diabetes-dashboard.png"
                          alt="Diabetes Patient Analytics Dashboard">
 
                 </div>
@@ -895,8 +893,9 @@
                     <p>
                         Analysed 101,766 hospital encounters involving
                         71,518 unique patients to explore admissions,
-                        readmissions, medication usage, patient demographics,
-                        admission sources, and discharge outcomes.
+                        readmissions, medication usage, patient
+                        demographics, admission sources, and discharge
+                        outcomes.
                     </p>
 
                     <p>
@@ -922,8 +921,7 @@
 
                 <div class="project-image">
 
-                    <!-- Replace with your actual screenshot -->
-                    <img src="YOUR-SUPERSTORE-SCREENSHOT-URL"
+                    <img src="superstore-dashboard.png"
                          alt="Superstore Sales Performance Dashboard">
 
                 </div>
@@ -943,15 +941,16 @@
                     </p>
 
                     <p>
-                        Analysed sales performance across customer segments,
-                        categories, products, cities, regions, and time
-                        to identify sales patterns and business performance.
+                        Analysed sales performance across customer
+                        segments, categories, products, cities,
+                        regions, and time to identify sales patterns
+                        and business performance.
                     </p>
 
                     <p>
                         Identified the Consumer segment as the largest
-                        contributor to sales and Technology as a leading
-                        category.
+                        contributor to sales and Technology as a
+                        leading category.
                     </p>
 
                     <a href="https://github.com/Tionge-Hunga/Superstore-Sale-Performance-Dashboard-Microsoft-Excel"
@@ -964,12 +963,12 @@
 
             </div>
 
+
         </div>
 
     </div>
 
 </section>
-
 
 <!-- SKILLS -->
 
