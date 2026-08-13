@@ -196,7 +196,7 @@
 
         /* EXPERIENCE */
 
-        .experience-card {
+        .experience-item {
             background: white;
             padding: 30px;
             border-radius: 10px;
@@ -204,35 +204,50 @@
             margin-bottom: 20px;
         }
 
-        .experience-card h3 {
+        .experience-item h3 {
             color: #111827;
-            margin-bottom: 5px;
+            margin-bottom: 4px;
         }
 
-        .experience-card .role {
+        .experience-item h4 {
             color: #2563eb;
-            font-weight: 600;
+            margin-bottom: 3px;
+        }
+
+        .experience-item .date {
+            color: #6b7280;
             margin-bottom: 15px;
         }
 
-        .experience-card ul {
+        .experience-item ul {
             padding-left: 20px;
             color: #4b5563;
         }
 
+        .experience-item li {
+            margin-bottom: 10px;
+        }
+
         /* PROJECTS */
 
-        .projects-grid {
+        .project-category {
+            font-size: 1.5rem;
+            color: #111827;
+            margin: 35px 0 18px;
+        }
+
+        .project-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 25px;
+            margin-bottom: 20px;
         }
 
         .project-card {
             background: white;
             border: 1px solid #e5e7eb;
             border-radius: 10px;
-            padding: 28px;
+            overflow: hidden;
             transition: 0.2s;
         }
 
@@ -241,17 +256,45 @@
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
         }
 
+        .project-image {
+            width: 100%;
+            height: 220px;
+            background: #eff6ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .project-image.placeholder {
+            color: #6b7280;
+            font-size: 0.95rem;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .project-content {
+            padding: 25px;
+        }
+
         .project-card .project-type {
             color: #2563eb;
-            font-size: 0.85rem;
+            font-size: 0.82rem;
             font-weight: 700;
             text-transform: uppercase;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
+            display: block;
         }
 
         .project-card h3 {
             color: #111827;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }
 
         .project-card p {
@@ -259,15 +302,19 @@
             margin-bottom: 15px;
         }
 
-        .tools {
+        .project-tools {
             font-size: 0.9rem;
-            color: #4b5563;
-            margin-bottom: 20px;
+            color: #374151 !important;
+            font-weight: 600;
         }
 
         .project-link {
             color: #2563eb;
             font-weight: 600;
+        }
+
+        .project-link:hover {
+            color: #1d4ed8;
         }
 
         /* SKILLS */
@@ -300,6 +347,10 @@
         .learning-box ul {
             padding-left: 20px;
             color: #374151;
+        }
+
+        .learning-box li {
+            margin-bottom: 8px;
         }
 
         /* CERTIFICATIONS */
@@ -391,7 +442,7 @@
             }
 
             .about-grid,
-            .projects-grid,
+            .project-grid,
             .certifications {
                 grid-template-columns: 1fr;
             }
@@ -434,14 +485,14 @@
         <h1>Tionge Hunga</h1>
 
         <h2>
-            Data Analyst | Data Management Specialist |
-            Monitoring & Evaluation
+            Data Analyst | Data Management | Monitoring & Evaluation
         </h2>
 
         <p>
-          I am a data professional with experience in data management, monitoring and evaluation, data quality assurance, reporting, and analysis. 
-          I use tools such as Excel, Power Query, Power Pivot, DAX, and Google Data Studio to turn data into clear insights that support decision-making.
-          I am continuing to expand my skills in analytics, AI, SQL, Python, and business intelligence through hands-on projects and continuous learning.
+            I am a data professional with experience in data management,
+            monitoring and evaluation, data quality assurance, reporting,
+            and data analysis. I use data to support evidence-based
+            decision-making, reporting, and demonstration of programme impact.
         </p>
 
         <div class="buttons">
@@ -449,6 +500,13 @@
             <a class="btn btn-primary"
                href="#projects">
                 View My Projects
+            </a>
+
+            <!-- Replace YOUR-CV-FILE.pdf with your actual CV file name -->
+            <a class="btn btn-secondary"
+               href="YOUR-CV-FILE.pdf"
+               target="_blank">
+                Download CV
             </a>
 
             <a class="btn btn-secondary"
@@ -488,23 +546,37 @@
             <div class="about-text">
 
                 <p>
-            I am a data professional with experience in monitoring and evaluation, data management, data quality assurance, reporting, and data analysis.
-            My professional experience has involved reviewing and validating programme data, maintaining databases, monitoring data quality, preparing reports, and providing reliable data for donor and management decision-making.
+                    I am a data professional with experience in monitoring
+                    and evaluation, data management, data quality assurance,
+                    reporting, and data analysis. My professional experience
+                    involves reviewing and validating programme data,
+                    maintaining databases, monitoring data quality,
+                    preparing reports, and providing reliable data for
+                    donor and management decision-making.
                 </p>
 
                 <p>
-                   In my current work, I review data submitted by Court Monitors across different regions, maintain a specialised database containing more than 900 monitoring forms, conduct regular data-quality checks, and provide verified data for programme and donor reporting. 
-                    I also have experience working with departmental databases and Microsoft Access.
+                    In my current role, I analyse programme data for internal
+                    and external reporting, conduct data quality reviews,
+                    maintain programme databases, and support monitoring
+                    activities that assess project outcomes and impact.
                 </p>
 
                 <p>
-                    Alongside my professional experience, I am developing my data analytics and business intelligence skills through hands-on projects.
-                    I have built dashboards using Microsoft Excel, Power Query, Power Pivot, DAX, PivotTables, and Google Data Studio/Looker Studio, including projects in healthcare, sales, wildlife operations, and pangolin rehabilitation monitoring.
+                    Alongside my professional experience, I am developing my
+                    data analytics and business intelligence skills through
+                    hands-on projects. I have built dashboards using
+                    Microsoft Excel, Power Query, Power Pivot, DAX,
+                    PivotTables, and Google Data Studio/Looker Studio,
+                    including projects in healthcare, sales, wildlife
+                    operations, and pangolin rehabilitation monitoring.
                 </p>
 
                 <p>
-                    I am also expanding my capabilities in artificial intelligence, SQL, Python, and business intelligence. 
-                    My goal is to combine my experience in data management and monitoring and evaluation with stronger analytical and technical skills to solve real-world problems and support evidence-based decision-making.
+                    My goal is to combine my experience in data management
+                    and monitoring and evaluation with strong analytical
+                    and technical skills to solve real-world problems and
+                    support evidence-based decision-making.
                 </p>
 
             </div>
@@ -537,192 +609,300 @@
 <!-- EXPERIENCE -->
 
 <section id="experience">
+
     <div class="container">
-        <h2>Professional Experience</h2>
+
+        <h2 class="section-title">Professional Experience</h2>
 
         <div class="experience-item">
+
             <h3>Monitoring & Evaluation Assistant</h3>
-            <h4>Lilongwe Wildlife Trust | Lilongwe, Malawi</h4>
-            <p class="date">January 2025 – Present</p>
+
+            <h4>
+                Lilongwe Wildlife Trust | Lilongwe, Malawi
+            </h4>
+
+            <p class="date">
+                January 2025 – Present
+            </p>
 
             <ul>
+
                 <li>
-                    Review and validate data submitted by three Court Monitors
-                    across three regions, checking completeness, accuracy,
-                    consistency, required fields, and data formats.
+                    Prepare and analyse data for internal and external
+                    reports, supporting decision-making and demonstrating
+                    project impact.
                 </li>
 
                 <li>
-                    Maintain data quality in a specialised database containing
-                    more than 900 court-monitoring forms collected since 2017.
+                    Maintain and quality-assure a 900+ record
+                    court-monitoring database, reviewing 15–20 active
+                    records monthly across three regions for accuracy,
+                    completeness, and consistency. Identify approximately
+                    20% requiring corrections and 30–40% with missing
+                    information, coordinating with Court Monitors to
+                    resolve discrepancies before reporting.
                 </li>
 
                 <li>
-                    Conduct weekly data-quality reviews to identify missing,
-                    incomplete, or incorrectly entered information and coordinate
-                    follow-up before reporting.
+                    Conduct weekly data quality reviews to ensure monthly
+                    data is complete and updated, reducing the risk of
+                    inaccurate analysis, under-reporting, and over-reporting
+                    in internal and external donor reports.
                 </li>
 
                 <li>
-                    Provide verified data for internal reports
-                    and donor reporting, supporting reporting against programme
-                    and grant indicators.
+                    Maintain approximately three departmental Google Sheets
+                    databases, including a 190-record media monitoring
+                    database, a results framework covering three programme
+                    areas, and a 560-record pangolin monitoring database,
+                    ensuring data is accurate, consistent, and up to date
+                    for reporting and decision-making.
                 </li>
 
                 <li>
-                    Maintain approximately three departmental databases in
-                    Google Sheets, ensuring records remain accurate, complete,
-                    and ready for reporting.
+                    Conduct onsite monitoring to collect and analyse
+                    programme data, assessing changes and outcomes to
+                    support decision-making and evidence of project impact.
                 </li>
+
+                <li>
+                    Represent the organisation at national environmental
+                    events, including World Environment Day and the
+                    International Day for Biological Diversity, by engaging
+                    stakeholders and managing exhibition stands.
+                </li>
+
             </ul>
+
         </div>
 
 
         <div class="experience-item">
+
             <h3>Data Entry Clerk</h3>
-            <h4>Lilongwe Wildlife Trust | Lilongwe, Malawi</h4>
-            <p class="date">October 2021 – December 2024</p>
+
+            <h4>
+                Lilongwe Wildlife Trust | Lilongwe, Malawi
+            </h4>
+
+            <p class="date">
+                October 2021 – December 2024
+            </p>
 
             <ul>
+
                 <li>
-                    Supported data entry, data collection, monitoring, and
-                    reporting activities while maintaining accurate and complete
-                    programme records.
+                    Verified data before database entry by checking
+                    completeness, consistency, and accuracy of information
+                    recorded on data-collection forms; followed up with
+                    Court Monitors to clarify or correct discrepancies
+                    before accepting records.
                 </li>
 
                 <li>
-                    Worked with two specialised databases, including a
-                    Microsoft Access database, supporting accurate data
-                    management and record maintenance.
+                    Supported onsite Data Quality Assessments (DQA),
+                    reviewing data for accuracy, completeness, and
+                    consistency at source.
                 </li>
 
                 <li>
-                    Supported the M&E Officer in updating reports in a timely
-                    manner and according to required reporting formats.
+                    Supported the M&E Officer with data preparation for
+                    reporting, including basic data analysis and organisation
+                    of datasets used for donor reporting.
                 </li>
 
                 <li>
-                    Performed basic data analysis and supported data review
-                    activities for monitoring and reporting.
+                    Entered and maintained approximately 1,106+ records
+                    in a Microsoft Access database, providing structured
+                    programme data used by the M&E Officer for analysis
+                    and donor reporting.
                 </li>
+
+                <li>
+                    Entered and maintained approximately 828 records
+                    in a Microsoft Access database using structured
+                    data-collection forms, including continuous updates
+                    to active cases until conclusion.
+                </li>
+
+                <li>
+                    Entered and maintained 200+ forms in a specialised
+                    wildlife justice database, updating records continuously
+                    as active cases progressed until conclusion.
+                </li>
+
+                <li>
+                    Uploaded and organised supporting programme documents,
+                    including photographs, reports, and other case-related
+                    files.
+                </li>
+
             </ul>
+
         </div>
+
     </div>
+
 </section>
+
 
 <!-- PROJECTS -->
 
-<section id="projects" class="projects">
+<section id="projects">
+
     <div class="container">
-        <h2>Projects</h2>
-        <p class="section-intro">
+
+        <h2 class="section-title">Projects</h2>
+
+        <p class="section-subtitle">
             A selection of professional and personal data analytics projects
             demonstrating my experience in data analysis, data quality,
             dashboard development, and data-driven decision-making.
         </p>
 
-        <!-- Professional Projects -->
-        <h3 class="project-category">Professional Projects</h3>
+
+        <!-- PROFESSIONAL PROJECTS -->
+
+        <h3 class="project-category">
+            Professional Projects
+        </h3>
 
         <div class="project-grid">
 
+
             <!-- Pangolin Dashboard -->
+
             <div class="project-card">
-                <div class="project-image">
-                    <img src="YOUR-PANGOLIN-SCREENSHOT-URL"
-                         alt="Pangolin Monitoring Dashboard">
+
+                <div class="project-image placeholder">
+                    Professional dashboard screenshot
+                    <br>
+                    <small>Add screenshot later</small>
                 </div>
 
                 <div class="project-content">
-                    <span class="project-type">Professional Project</span>
 
-                    <h3>Pangolin Monitoring Dashboard</h3>
+                    <span class="project-type">
+                        Professional Project
+                    </span>
+
+                    <h3>
+                        Pangolin Monitoring Dashboard
+                    </h3>
 
                     <p class="project-tools">
                         Google Data Studio (Looker Studio)
                     </p>
 
                     <p>
-                        Developed an interactive dashboard to monitor pangolin
-                        weight changes during rehabilitation, enabling the
-                        rehabilitation team to track weight progression over time.
+                        Developed an interactive dashboard to monitor
+                        pangolin weight changes during rehabilitation,
+                        enabling the rehabilitation team to track weight
+                        progression over time.
                     </p>
 
-                    <a href="YOUR-PANGOLIN-PROJECT-LINK"
-                       target="_blank"
+                    <!-- Add your dashboard/project link later -->
+                    <a href="#"
                        class="project-link">
-                        View Project →
+                        Project details →
                     </a>
+
                 </div>
+
             </div>
 
 
             <!-- Visitor Analytics -->
+
             <div class="project-card">
-                <div class="project-image">
-                    <img src="YOUR-VISITOR-SCREENSHOT-URL"
-                         alt="Lilongwe Wildlife Centre Visitor Analytics Dashboard">
+
+                <div class="project-image placeholder">
+                    Professional dashboard screenshot
+                    <br>
+                    <small>Add screenshot later</small>
                 </div>
 
                 <div class="project-content">
-                    <span class="project-type">Professional Project</span>
 
-                    <h3>Lilongwe Wildlife Centre Visitor Analytics</h3>
+                    <span class="project-type">
+                        Professional Project
+                    </span>
+
+                    <h3>
+                        Lilongwe Wildlife Centre Visitor Analytics
+                    </h3>
 
                     <p class="project-tools">
                         Google Data Studio (Looker Studio)
                     </p>
 
                     <p>
-                        Analysed visitor patterns by day, time, and visitor group
-                        to identify peak periods and provide evidence to support
-                        management decisions around opening hours, staffing
-                        allocation, and visitor operations.
+                        Analysed visitor patterns by day, time, and visitor
+                        group to identify peak periods and provide evidence
+                        to support management decisions around opening hours,
+                        staffing allocation, and visitor operations.
                     </p>
 
-                    <a href="YOUR-VISITOR-PROJECT-LINK"
-                       target="_blank"
+                    <!-- Add your dashboard/project link later -->
+                    <a href="#"
                        class="project-link">
-                        View Project →
+                        Project details →
                     </a>
+
                 </div>
+
             </div>
 
         </div>
 
 
-        <!-- Personal Projects -->
-        <h3 class="project-category">Personal Analytics Projects</h3>
+        <!-- PERSONAL PROJECTS -->
+
+        <h3 class="project-category">
+            Personal Analytics Projects
+        </h3>
 
         <div class="project-grid">
 
+
             <!-- Diabetes Dashboard -->
+
             <div class="project-card">
+
                 <div class="project-image">
+
+                    <!-- Replace with your actual screenshot -->
                     <img src="YOUR-DIABETES-SCREENSHOT-URL"
                          alt="Diabetes Patient Analytics Dashboard">
+
                 </div>
 
                 <div class="project-content">
-                    <span class="project-type">Personal Project</span>
 
-                    <h3>Diabetes Patient Analytics Dashboard</h3>
+                    <span class="project-type">
+                        Personal Project
+                    </span>
+
+                    <h3>
+                        Diabetes Patient Analytics Dashboard
+                    </h3>
 
                     <p class="project-tools">
                         Microsoft Excel | Power Query | Power Pivot | DAX
                     </p>
 
                     <p>
-                        Analysed 101,766 hospital encounters involving 71,518
-                        unique patients to explore admissions, readmissions,
-                        medication usage, patient demographics, admission
-                        sources, and discharge outcomes.
+                        Analysed 101,766 hospital encounters involving
+                        71,518 unique patients to explore admissions,
+                        readmissions, medication usage, patient demographics,
+                        admission sources, and discharge outcomes.
                     </p>
 
                     <p>
-                        Identified a 46% readmission rate, with patients aged
-                        70–80 accounting for the highest number of admissions
-                        and readmissions.
+                        Identified a 46% readmission rate, with patients
+                        aged 70–80 accounting for the highest number of
+                        admissions and readmissions.
                     </p>
 
                     <a href="https://github.com/Tionge-Hunga/Diabetes-Analytics"
@@ -730,21 +910,33 @@
                        class="project-link">
                         View GitHub Project →
                     </a>
+
                 </div>
+
             </div>
 
 
             <!-- Superstore Dashboard -->
+
             <div class="project-card">
+
                 <div class="project-image">
+
+                    <!-- Replace with your actual screenshot -->
                     <img src="YOUR-SUPERSTORE-SCREENSHOT-URL"
                          alt="Superstore Sales Performance Dashboard">
+
                 </div>
 
                 <div class="project-content">
-                    <span class="project-type">Personal Project</span>
 
-                    <h3>Superstore Sales Performance Dashboard</h3>
+                    <span class="project-type">
+                        Personal Project
+                    </span>
+
+                    <h3>
+                        Superstore Sales Performance Dashboard
+                    </h3>
 
                     <p class="project-tools">
                         Microsoft Excel
@@ -752,13 +944,14 @@
 
                     <p>
                         Analysed sales performance across customer segments,
-                        categories, products, cities, regions, and time to
-                        identify sales patterns and business performance.
+                        categories, products, cities, regions, and time
+                        to identify sales patterns and business performance.
                     </p>
 
                     <p>
                         Identified the Consumer segment as the largest
-                        contributor to sales and Technology as a leading category.
+                        contributor to sales and Technology as a leading
+                        category.
                     </p>
 
                     <a href="https://github.com/Tionge-Hunga/Superstore-Sale-Performance-Dashboard-Microsoft-Excel"
@@ -766,11 +959,100 @@
                        class="project-link">
                         View GitHub Project →
                     </a>
+
                 </div>
+
             </div>
 
         </div>
+
     </div>
+
+</section>
+
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Skills & Tools
+        </h2>
+
+        <p class="section-subtitle">
+            Technical and professional capabilities developed through
+            professional experience, structured learning, and practical
+            analytics projects.
+        </p>
+
+        <div class="skills-grid">
+
+            <div class="skill">
+                Data Analysis
+            </div>
+
+            <div class="skill">
+                Data Cleaning
+            </div>
+
+            <div class="skill">
+                Data Validation
+            </div>
+
+            <div class="skill">
+                Data Quality Assurance
+            </div>
+
+            <div class="skill">
+                Data Visualization
+            </div>
+
+            <div class="skill">
+                Dashboard Development
+            </div>
+
+            <div class="skill">
+                Monitoring & Evaluation
+            </div>
+
+            <div class="skill">
+                KPI Reporting
+            </div>
+
+            <div class="skill">
+                Microsoft Excel
+            </div>
+
+            <div class="skill">
+                Google Sheets
+            </div>
+
+            <div class="skill">
+                Looker Studio
+            </div>
+
+            <div class="skill">
+                Analytical Thinking
+            </div>
+
+            <div class="skill">
+                Communication
+            </div>
+
+            <div class="skill">
+                Problem Solving
+            </div>
+
+            <div class="skill">
+                Attention to Detail
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
 
 
@@ -780,11 +1062,13 @@
 
     <div class="container">
 
-        <h2 class="section-title">Currently Learning</h2>
+        <h2 class="section-title">
+            Currently Learning
+        </h2>
 
         <p class="section-subtitle">
             Continuing to expand my technical capabilities and prepare
-            for more advanced analytics roles.
+            for more advanced analytics and business intelligence roles.
         </p>
 
         <div class="learning-box">
@@ -801,10 +1085,6 @@
 
                 <li>
                     Power BI and business intelligence
-                </li>
-
-                <li>
-                    AI applications for data and analytics
                 </li>
 
                 <li>
@@ -826,7 +1106,9 @@
 
     <div class="container">
 
-        <h2 class="section-title">Certifications & Professional Development</h2>
+        <h2 class="section-title">
+            Certifications & Professional Development
+        </h2>
 
         <p class="section-subtitle">
             Continuous learning through structured courses,
@@ -839,7 +1121,7 @@
             <div class="certification">
 
                 <h3>
-                    AI Fundamentals Skill Track
+                    Data Analyst in Power BI
                 </h3>
 
                 <p>
@@ -852,7 +1134,7 @@
             <div class="certification">
 
                 <h3>
-                    Excel Fundamentals Skill Track
+                    Excel Fundamentals
                 </h3>
 
                 <p>
@@ -878,12 +1160,50 @@
             <div class="certification">
 
                 <h3>
-                    Monitoring & Evaluation Training
+                    Data Literacy Professional
                 </h3>
 
                 <p>
-                    Professional development in monitoring,
-                    evaluation, data collection, and data use.
+                    DataCamp — 2026
+                </p>
+
+            </div>
+
+
+            <div class="certification">
+
+                <h3>
+                    AI Fundamentals
+                </h3>
+
+                <p>
+                    DataCamp — 2026
+                </p>
+
+            </div>
+
+
+            <div class="certification">
+
+                <h3>
+                    From Data Collection to Data Use
+                </h3>
+
+                <p>
+                    Philanthropy University / FHI360 — 2025
+                </p>
+
+            </div>
+
+
+            <div class="certification">
+
+                <h3>
+                    Planning for Monitoring & Evaluation
+                </h3>
+
+                <p>
+                    Philanthropy University / FHI360 — 2024
                 </p>
 
             </div>
@@ -907,7 +1227,8 @@
 
         <p>
             I am interested in opportunities in data analytics,
-            data management, reporting, business intelligence, and related data roles.
+            data management, monitoring and evaluation, reporting,
+            business intelligence, and related data roles.
         </p>
 
         <div class="contact-links">
@@ -945,6 +1266,7 @@
     </p>
 
 </footer>
+
 
 </body>
 </html>
