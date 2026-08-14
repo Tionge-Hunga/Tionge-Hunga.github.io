@@ -10,6 +10,7 @@
           content="Portfolio of Tionge Hunga — Data Analyst, Data Management and Monitoring & Evaluation.">
 
     <style>
+
         * {
             margin: 0;
             padding: 0;
@@ -39,7 +40,9 @@
         }
 
 
-        /* NAVIGATION */
+        /* =========================
+           NAVIGATION
+        ========================= */
 
         nav {
             background: #ffffff;
@@ -82,7 +85,9 @@
         }
 
 
-        /* HERO */
+        /* =========================
+           HERO
+        ========================= */
 
         .hero {
             background: linear-gradient(135deg, #eff6ff, #ffffff);
@@ -148,7 +153,9 @@
         }
 
 
-        /* SECTIONS */
+        /* =========================
+           SECTIONS
+        ========================= */
 
         section {
             padding: 80px 0;
@@ -167,7 +174,9 @@
         }
 
 
-        /* ABOUT */
+        /* =========================
+           ABOUT
+        ========================= */
 
         .about-grid {
             display: grid;
@@ -199,7 +208,9 @@
         }
 
 
-        /* EXPERIENCE */
+        /* =========================
+           EXPERIENCE
+        ========================= */
 
         .experience-item {
             background: white;
@@ -234,7 +245,9 @@
         }
 
 
-        /* PROJECTS */
+        /* =========================
+           PROJECTS
+        ========================= */
 
         .project-category {
             font-size: 1.5rem;
@@ -263,25 +276,36 @@
         }
 
 
-        /* PROJECT IMAGES */
+        /* =========================
+           PROJECT IMAGES
+           
+           IMPORTANT:
+           No fixed height is used here.
+           The image keeps its original
+           aspect ratio so the entire
+           dashboard screenshot is visible.
+        ========================= */
 
         .project-image {
             width: 100%;
-            height: 300px;
+            height: auto;
             background: #f3f4f6;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             overflow: hidden;
-        }
-
-        .project-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
+            margin: 0;
+            padding: 0;
             display: block;
         }
 
+        .project-image img {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            object-fit: contain;
+            object-position: center;
+            margin: 0;
+            padding: 0;
+        }
 
         .project-image.placeholder {
             color: #6b7280;
@@ -289,6 +313,11 @@
             text-align: center;
             padding: 20px;
         }
+
+
+        /* =========================
+           PROJECT CONTENT
+        ========================= */
 
         .project-content {
             padding: 25px;
@@ -329,7 +358,9 @@
         }
 
 
-        /* SKILLS */
+        /* =========================
+           SKILLS
+        ========================= */
 
         .skills-grid {
             display: grid;
@@ -348,7 +379,9 @@
         }
 
 
-        /* LEARNING */
+        /* =========================
+           LEARNING
+        ========================= */
 
         .learning-box {
             background: #eff6ff;
@@ -367,7 +400,9 @@
         }
 
 
-        /* CERTIFICATIONS */
+        /* =========================
+           CERTIFICATIONS
+        ========================= */
 
         .certifications {
             display: grid;
@@ -392,7 +427,9 @@
         }
 
 
-        /* CONTACT */
+        /* =========================
+           CONTACT
+        ========================= */
 
         .contact {
             background: #111827;
@@ -424,7 +461,9 @@
         }
 
 
-        /* FOOTER */
+        /* =========================
+           FOOTER
+        ========================= */
 
         footer {
             background: #0f172a;
@@ -435,7 +474,9 @@
         }
 
 
-        /* MOBILE */
+        /* =========================
+           MOBILE
+        ========================= */
 
         @media (max-width: 768px) {
 
@@ -468,17 +509,21 @@
                 grid-template-columns: repeat(2, 1fr);
             }
 
+            /* Keep the full dashboard visible on mobile too */
             .project-image {
+                width: 100%;
                 height: auto;
-                min-height: 220px;
+                min-height: 0;
             }
 
             .project-image img {
                 width: 100%;
                 height: auto;
+                max-width: 100%;
                 object-fit: contain;
             }
         }
+
     </style>
 </head>
 
