@@ -38,6 +38,7 @@
             margin: auto;
         }
 
+
         /* NAVIGATION */
 
         nav {
@@ -79,6 +80,7 @@
         .nav-links a:hover {
             color: #2563eb;
         }
+
 
         /* HERO */
 
@@ -145,6 +147,7 @@
             background: #f3f4f6;
         }
 
+
         /* SECTIONS */
 
         section {
@@ -162,6 +165,7 @@
             margin-bottom: 35px;
             max-width: 750px;
         }
+
 
         /* ABOUT */
 
@@ -193,6 +197,7 @@
             padding-left: 20px;
             color: #4b5563;
         }
+
 
         /* EXPERIENCE */
 
@@ -228,6 +233,7 @@
             margin-bottom: 10px;
         }
 
+
         /* PROJECTS */
 
         .project-category {
@@ -255,26 +261,14 @@
             transform: translateY(-4px);
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
         }
-.project-image {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    background: #f3f4f6;
-}
 
-.project-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: contain;
-    border-radius: 8px;
-}
+
+        /* PROJECT IMAGES */
+
         .project-image {
             width: 100%;
-            height: 220px;
-            background: #eff6ff;
+            height: 300px;
+            background: #f3f4f6;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -284,8 +278,10 @@
         .project-image img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
+            display: block;
         }
+
 
         .project-image.placeholder {
             color: #6b7280;
@@ -332,6 +328,7 @@
             color: #1d4ed8;
         }
 
+
         /* SKILLS */
 
         .skills-grid {
@@ -350,6 +347,7 @@
             text-align: center;
         }
 
+
         /* LEARNING */
 
         .learning-box {
@@ -367,6 +365,7 @@
         .learning-box li {
             margin-bottom: 8px;
         }
+
 
         /* CERTIFICATIONS */
 
@@ -391,6 +390,7 @@
         .certification p {
             color: #6b7280;
         }
+
 
         /* CONTACT */
 
@@ -423,6 +423,7 @@
             font-weight: 600;
         }
 
+
         /* FOOTER */
 
         footer {
@@ -432,6 +433,7 @@
             padding: 25px;
             font-size: 0.9rem;
         }
+
 
         /* MOBILE */
 
@@ -465,29 +467,65 @@
             .skills-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
+
+            .project-image {
+                height: auto;
+                min-height: 220px;
+            }
+
+            .project-image img {
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+            }
         }
     </style>
 </head>
 
+
 <body>
+
 
 <!-- NAVIGATION -->
 
 <nav>
+
     <div class="nav-container">
 
-        <div class="logo">Tionge Hunga</div>
+        <div class="logo">
+            Tionge Hunga
+        </div>
 
         <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#contact">Contact</a></li>
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+
+            <li>
+                <a href="#certifications">Certifications</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
         </ul>
 
     </div>
+
 </nav>
 
 
@@ -497,7 +535,9 @@
 
     <div class="container hero-content">
 
-        <h1>Tionge Hunga</h1>
+        <h1>
+            Tionge Hunga
+        </h1>
 
         <h2>
             Data Analyst | Data Management | Monitoring & Evaluation
@@ -512,30 +552,32 @@
 
         <div class="buttons">
 
-    <a class="btn btn-primary"
-       href="#projects">
-        View My Projects
-    </a>
+            <a class="btn btn-primary"
+               href="#projects">
+                View My Projects
+            </a>
 
-    <a class="btn btn-secondary"
-       href="Tionge-Hunga-CV.pdf"
-       target="_blank">
-        Download CV
-    </a>
+            <a class="btn btn-secondary"
+               href="Tionge-Hunga-CV.pdf"
+               target="_blank">
+                Download CV
+            </a>
 
-    <a class="btn btn-secondary"
-       href="https://linkedin.com/in/tionge-hunga"
-       target="_blank">
-        LinkedIn
-    </a>
+            <a class="btn btn-secondary"
+               href="https://linkedin.com/in/tionge-hunga"
+               target="_blank">
+                LinkedIn
+            </a>
 
-    <a class="btn btn-secondary"
-       href="https://github.com/Tionge-Hunga"
-       target="_blank">
-        GitHub
-    </a>
+            <a class="btn btn-secondary"
+               href="https://github.com/Tionge-Hunga"
+               target="_blank">
+                GitHub
+            </a>
 
-</div>
+        </div>
+
+    </div>
 
 </header>
 
@@ -546,7 +588,9 @@
 
     <div class="container">
 
-        <h2 class="section-title">About Me</h2>
+        <h2 class="section-title">
+            About Me
+        </h2>
 
         <p class="section-subtitle">
             A data professional combining monitoring and evaluation,
@@ -596,9 +640,12 @@
 
             <div class="career-focus">
 
-                <h3>Professional Focus</h3>
+                <h3>
+                    Professional Focus
+                </h3>
 
                 <ul>
+
                     <li>Data Analytics</li>
                     <li>Data Management</li>
                     <li>Monitoring & Evaluation</li>
@@ -607,6 +654,7 @@
                     <li>Business Intelligence</li>
                     <li>Data Visualization</li>
                     <li>Reporting & KPI Analysis</li>
+
                 </ul>
 
             </div>
@@ -624,11 +672,16 @@
 
     <div class="container">
 
-        <h2 class="section-title">Professional Experience</h2>
+        <h2 class="section-title">
+            Professional Experience
+        </h2>
+
 
         <div class="experience-item">
 
-            <h3>Monitoring & Evaluation Assistant</h3>
+            <h3>
+                Monitoring & Evaluation Assistant
+            </h3>
 
             <h4>
                 Lilongwe Wildlife Trust | Lilongwe, Malawi
@@ -692,7 +745,9 @@
 
         <div class="experience-item">
 
-            <h3>Data Entry Clerk</h3>
+            <h3>
+                Data Entry Clerk
+            </h3>
 
             <h4>
                 Lilongwe Wildlife Trust | Lilongwe, Malawi
@@ -761,13 +816,13 @@
 
 <!-- PROJECTS -->
 
-<!-- PROJECTS -->
-
 <section id="projects" class="projects">
 
     <div class="container">
 
-        <h2>Projects</h2>
+        <h2>
+            Projects
+        </h2>
 
         <p class="section-intro">
             A selection of professional and personal analytics projects
@@ -778,7 +833,9 @@
 
         <!-- PROFESSIONAL PROJECTS -->
 
-        <h3 class="project-category">Professional Projects</h3>
+        <h3 class="project-category">
+            Professional Projects
+        </h3>
 
         <div class="project-grid">
 
@@ -969,6 +1026,7 @@
     </div>
 
 </section>
+
 
 <!-- SKILLS -->
 
@@ -1206,6 +1264,7 @@
                 </p>
 
             </div>
+
 
         </div>
 
