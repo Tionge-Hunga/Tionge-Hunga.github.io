@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Tionge Hunga | Data Analyst & Data Management Specialist</title>
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Tionge Hunga | Data Analyst & Data Management Specialist
+    </title>
 
     <meta name="description"
-          content="Portfolio of Tionge Hunga — Data Analyst, Data Management and Monitoring & Evaluation.">
+          content="Portfolio of Tionge Hunga — Data Analyst, Data Management and Monitoring & Evaluation professional.">
 
     <style>
+
+        /* =========================
+           GLOBAL
+        ========================= */
 
         * {
             margin: 0;
@@ -78,6 +88,7 @@
             color: #4b5563;
             font-size: 0.95rem;
             font-weight: 500;
+            transition: 0.2s;
         }
 
         .nav-links a:hover {
@@ -90,47 +101,93 @@
         ========================= */
 
         .hero {
-            background: linear-gradient(135deg, #eff6ff, #ffffff);
-            padding: 100px 0;
+            background:
+                linear-gradient(
+                    135deg,
+                    #eff6ff 0%,
+                    #ffffff 55%,
+                    #f8fafc 100%
+                );
+
+            padding: 110px 0 100px;
         }
 
         .hero-content {
-            max-width: 850px;
+            max-width: 900px;
+        }
+
+        .hero-label {
+            display: inline-block;
+            color: #2563eb;
+            background: #dbeafe;
+            border: 1px solid #bfdbfe;
+            padding: 7px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 22px;
+            letter-spacing: 0.2px;
         }
 
         .hero h1 {
-            font-size: 3.5rem;
-            line-height: 1.1;
+            font-size: 3.8rem;
+            line-height: 1.08;
             color: #111827;
-            margin-bottom: 20px;
+            margin-bottom: 18px;
+            max-width: 850px;
+        }
+
+        .hero h1 span {
+            color: #2563eb;
         }
 
         .hero h2 {
-            font-size: 1.4rem;
-            font-weight: 500;
-            color: #2563eb;
-            margin-bottom: 20px;
+            font-size: 1.45rem;
+            line-height: 1.4;
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 22px;
+            max-width: 800px;
         }
 
         .hero p {
-            font-size: 1.15rem;
+            font-size: 1.08rem;
+            line-height: 1.8;
             color: #4b5563;
-            max-width: 750px;
+            max-width: 780px;
             margin-bottom: 30px;
+        }
+
+        .hero-highlights {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 32px;
+        }
+
+        .hero-highlight {
+            background: #ffffff;
+            border: 1px solid #dbeafe;
+            color: #374151;
+            padding: 8px 13px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 600;
         }
 
         .buttons {
             display: flex;
-            gap: 15px;
+            gap: 14px;
             flex-wrap: wrap;
         }
 
         .btn {
             display: inline-block;
-            padding: 12px 22px;
+            padding: 13px 22px;
             border-radius: 7px;
             font-weight: 600;
             transition: 0.2s;
+            border: 1px solid transparent;
         }
 
         .btn-primary {
@@ -140,6 +197,7 @@
 
         .btn-primary:hover {
             background: #1d4ed8;
+            transform: translateY(-1px);
         }
 
         .btn-secondary {
@@ -150,6 +208,7 @@
 
         .btn-secondary:hover {
             background: #f3f4f6;
+            transform: translateY(-1px);
         }
 
 
@@ -278,12 +337,6 @@
 
         /* =========================
            PROJECT IMAGES
-           
-           IMPORTANT:
-           No fixed height is used here.
-           The image keeps its original
-           aspect ratio so the entire
-           dashboard screenshot is visible.
         ========================= */
 
         .project-image {
@@ -319,26 +372,44 @@
            PROJECT CONTENT
         ========================= */
 
-       .project-content {
-    padding: 25px;
-}
+        .project-content {
+            padding: 25px;
+        }
 
-.project-content strong {
-    color: #111827;
-}
+        .project-card .project-type {
+            color: #2563eb;
+            font-size: 0.82rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            display: block;
+        }
 
-.project-content p {
-    line-height: 1.6;
-}
+        .project-card h3 {
+            color: #111827;
+            margin-bottom: 10px;
+        }
 
-.project-content .project-tools {
-    margin-bottom: 18px;
-}
+        .project-card p {
+            color: #6b7280;
+            margin-bottom: 15px;
+        }
 
-.project-content .project-link {
-    display: inline-block;
-    margin-top: 5px;
-}
+        .project-tools {
+            font-size: 0.9rem;
+            color: #374151 !important;
+            font-weight: 600;
+        }
+
+        .project-link {
+            color: #2563eb;
+            font-weight: 600;
+        }
+
+        .project-link:hover {
+            color: #1d4ed8;
+        }
+
 
         /* =========================
            SKILLS
@@ -474,11 +545,27 @@
             }
 
             .hero {
-                padding: 70px 0;
+                padding: 75px 0 70px;
             }
 
             .hero h1 {
-                font-size: 2.5rem;
+                font-size: 2.6rem;
+            }
+
+            .hero h2 {
+                font-size: 1.2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .hero-highlights {
+                gap: 8px;
+            }
+
+            .hero-highlight {
+                font-size: 0.82rem;
             }
 
             .about-grid,
@@ -491,7 +578,6 @@
                 grid-template-columns: repeat(2, 1fr);
             }
 
-            /* Keep the full dashboard visible on mobile too */
             .project-image {
                 width: 100%;
                 height: auto;
@@ -504,16 +590,29 @@
                 max-width: 100%;
                 object-fit: contain;
             }
+
+            .buttons {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
         }
 
     </style>
+
 </head>
 
 
 <body>
 
 
-<!-- NAVIGATION -->
+<!-- =========================
+     NAVIGATION
+========================= -->
 
 <nav>
 
@@ -556,14 +655,22 @@
 </nav>
 
 
-<!-- HERO -->
+<!-- =========================
+     HERO
+========================= -->
 
 <header class="hero">
 
     <div class="container hero-content">
 
+        <div class="hero-label">
+            DATA ANALYST • DATA MANAGEMENT • M&E
+        </div>
+
         <h1>
-            Tionge Hunga
+            Turning data into
+            <span>clear insights</span>
+            for better decisions.
         </h1>
 
         <h2>
@@ -573,9 +680,35 @@
         <p>
             I am a data professional with experience in data management,
             monitoring and evaluation, data quality assurance, reporting,
-            and data analysis. I use data to support evidence-based
-            decision-making, reporting, and demonstration of programme impact.
+            and data analysis. I combine practical programme experience
+            with growing expertise in analytics and business intelligence
+            to turn data into reliable insights that support
+            evidence-based decision-making.
         </p>
+
+        <div class="hero-highlights">
+
+            <div class="hero-highlight">
+                Data Analysis
+            </div>
+
+            <div class="hero-highlight">
+                Data Quality
+            </div>
+
+            <div class="hero-highlight">
+                Dashboard Development
+            </div>
+
+            <div class="hero-highlight">
+                Monitoring & Evaluation
+            </div>
+
+            <div class="hero-highlight">
+                Business Intelligence
+            </div>
+
+        </div>
 
         <div class="buttons">
 
@@ -591,14 +724,16 @@
             </a>
 
             <a class="btn btn-secondary"
-               href="https://linkedin.com/in/tionge-hunga"
-               target="_blank">
+               href="https://www.linkedin.com/in/tionge-hunga"
+               target="_blank"
+               rel="noopener noreferrer">
                 LinkedIn
             </a>
 
             <a class="btn btn-secondary"
                href="https://github.com/Tionge-Hunga"
-               target="_blank">
+               target="_blank"
+               rel="noopener noreferrer">
                 GitHub
             </a>
 
@@ -609,7 +744,9 @@
 </header>
 
 
-<!-- ABOUT -->
+<!-- =========================
+     ABOUT
+========================= -->
 
 <section id="about">
 
@@ -693,7 +830,9 @@
 </section>
 
 
-<!-- EXPERIENCE -->
+<!-- =========================
+     EXPERIENCE
+========================= -->
 
 <section id="experience">
 
@@ -841,17 +980,19 @@
 </section>
 
 
-<!-- PROJECTS -->
+<!-- =========================
+     PROJECTS
+========================= -->
 
 <section id="projects" class="projects">
 
     <div class="container">
 
-        <h2>
+        <h2 class="section-title">
             Projects
         </h2>
 
-        <p class="section-intro">
+        <p class="section-subtitle">
             A selection of professional and personal analytics projects
             demonstrating my experience in data analysis, data quality,
             dashboard development, and data-driven decision-making.
@@ -960,56 +1101,58 @@
 
                 </div>
 
-<div class="project-content">
+                <div class="project-content">
 
-    <span class="project-type">
-        Personal Analytics Project
-    </span>
+                    <span class="project-type">
+                        Personal Analytics Project
+                    </span>
 
-    <h3>
-        Diabetes Patient Analytics Dashboard
-    </h3>
+                    <h3>
+                        Diabetes Patient Analytics Dashboard
+                    </h3>
 
-    <p class="project-tools">
-        Microsoft Excel | Power Query | Power Pivot | DAX
-    </p>
+                    <p class="project-tools">
+                        Microsoft Excel | Power Query | Power Pivot | DAX
+                    </p>
 
-    <p>
-        <strong>Objective:</strong>
-        Analyse hospital encounter data to understand patterns in
-        patient admissions, readmissions, medication usage,
-        demographics, admission sources, and discharge outcomes.
-    </p>
+                    <p>
+                        <strong>Objective:</strong>
+                        Analyse hospital encounter data to understand
+                        patterns in patient admissions, readmissions,
+                        medication usage, demographics, admission sources,
+                        and discharge outcomes.
+                    </p>
 
-    <p>
-        <strong>What I did:</strong>
-        Cleaned and transformed the dataset using Power Query,
-        connected related datasets using Power Pivot, created
-        analytical measures using DAX, and developed an interactive
-        dashboard to explore patient and admission patterns.
-    </p>
+                    <p>
+                        <strong>What I did:</strong>
+                        Cleaned and transformed the dataset using Power Query,
+                        connected related datasets using Power Pivot, created
+                        analytical measures using DAX, and developed an
+                        interactive dashboard.
+                    </p>
 
-    <p>
-        <strong>Key findings:</strong>
-        The analysis covered 101,766 hospital encounters involving
-        71,518 unique patients and identified a 46% readmission rate.
-        Patients aged 70–80 accounted for the highest number of
-        admissions and readmissions.
-    </p>
+                    <p>
+                        <strong>Key findings:</strong>
+                        The analysis covered 101,766 hospital encounters
+                        involving 71,518 unique patients and identified a
+                        46% readmission rate. Patients aged 70–80 accounted
+                        for the highest number of admissions and readmissions.
+                    </p>
 
-    <p>
-        <strong>Skills demonstrated:</strong>
-        Data cleaning, data modelling, DAX, dashboard development,
-        data analysis, and data visualization.
-    </p>
+                    <p>
+                        <strong>Skills demonstrated:</strong>
+                        Data cleaning, data modelling, DAX, dashboard
+                        development, data analysis, and data visualization.
+                    </p>
 
-    <a href="https://github.com/Tionge-Hunga/Diabetes-Analytics"
-       target="_blank"
-       class="project-link">
-        View GitHub Project →
-    </a>
+                    <a href="https://github.com/Tionge-Hunga/Diabetes-Analytics"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="project-link">
+                        View GitHub Project →
+                    </a>
 
-</div>
+                </div>
 
             </div>
 
@@ -1025,57 +1168,59 @@
 
                 </div>
 
-              <div class="project-content">
+                <div class="project-content">
 
-    <span class="project-type">
-        Personal Analytics Project
-    </span>
+                    <span class="project-type">
+                        Personal Analytics Project
+                    </span>
 
-    <h3>
-        Superstore Sales Performance Dashboard
-    </h3>
+                    <h3>
+                        Superstore Sales Performance Dashboard
+                    </h3>
 
-    <p class="project-tools">
-        Microsoft Excel
-    </p>
+                    <p class="project-tools">
+                        Microsoft Excel
+                    </p>
 
-    <p>
-        <strong>Objective:</strong>
-        Analyse sales performance across customer segments,
-        product categories, products, cities, regions, and time
-        to identify business performance patterns.
-    </p>
+                    <p>
+                        <strong>Objective:</strong>
+                        Analyse sales performance across customer segments,
+                        product categories, products, cities, regions,
+                        and time to identify business performance patterns.
+                    </p>
 
-    <p>
-        <strong>What I did:</strong>
-        Cleaned and analysed the sales dataset, created an
-        interactive Excel dashboard, and developed visualisations
-        to compare sales performance across customer segments,
-        categories, products, locations, and time periods.
-    </p>
+                    <p>
+                        <strong>What I did:</strong>
+                        Cleaned and analysed the sales dataset, created an
+                        interactive Excel dashboard, and developed
+                        visualisations to compare sales performance.
+                    </p>
 
-    <p>
-        <strong>Key findings:</strong>
-        The Consumer segment was the largest contributor to sales,
-        while Technology was a leading category. The analysis also
-        highlighted differences in sales performance across products,
-        cities, regions, and time.
-    </p>
+                    <p>
+                        <strong>Key findings:</strong>
+                        The Consumer segment was the largest contributor
+                        to sales, while Technology was a leading category.
+                        The analysis also highlighted differences in sales
+                        performance across products, cities, regions,
+                        and time.
+                    </p>
 
-    <p>
-        <strong>Skills demonstrated:</strong>
-        Excel analysis, dashboard development, KPI analysis,
-        data visualization, trend analysis, and business insight
-        generation.
-    </p>
+                    <p>
+                        <strong>Skills demonstrated:</strong>
+                        Excel analysis, dashboard development, KPI analysis,
+                        data visualization, trend analysis, and business
+                        insight generation.
+                    </p>
 
-    <a href="https://github.com/Tionge-Hunga/Superstore-Sale-Performance-Dashboard-Microsoft-Excel"
-       target="_blank"
-       class="project-link">
-        View GitHub Project →
-    </a>
+                    <a href="https://github.com/Tionge-Hunga/Superstore-Sale-Performance-Dashboard-Microsoft-Excel"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="project-link">
+                        View GitHub Project →
+                    </a>
 
-</div>
+                </div>
+
             </div>
 
 
@@ -1086,7 +1231,9 @@
 </section>
 
 
-<!-- SKILLS -->
+<!-- =========================
+     SKILLS
+========================= -->
 
 <section id="skills">
 
@@ -1171,7 +1318,9 @@
 </section>
 
 
-<!-- CURRENT LEARNING -->
+<!-- =========================
+     CURRENT LEARNING
+========================= -->
 
 <section>
 
@@ -1215,7 +1364,9 @@
 </section>
 
 
-<!-- CERTIFICATIONS -->
+<!-- =========================
+     CERTIFICATIONS
+========================= -->
 
 <section id="certifications">
 
@@ -1331,7 +1482,9 @@
 </section>
 
 
-<!-- CONTACT -->
+<!-- =========================
+     CONTACT
+========================= -->
 
 <section id="contact" class="contact">
 
@@ -1350,14 +1503,16 @@
         <div class="contact-links">
 
             <a class="contact-link"
-               href="https://linkedin.com/in/tionge-hunga"
-               target="_blank">
+               href="https://www.linkedin.com/in/tionge-hunga"
+               target="_blank"
+               rel="noopener noreferrer">
                 LinkedIn
             </a>
 
             <a class="contact-link"
                href="https://github.com/Tionge-Hunga"
-               target="_blank">
+               target="_blank"
+               rel="noopener noreferrer">
                 GitHub
             </a>
 
@@ -1373,7 +1528,9 @@
 </section>
 
 
-<!-- FOOTER -->
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
@@ -1385,4 +1542,5 @@
 
 
 </body>
+
 </html>
