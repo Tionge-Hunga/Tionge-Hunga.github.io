@@ -1,1037 +1,1033 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-<meta charset="UTF-8">
-
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
-
-<title>
-    Tionge Hunga | Data Analyst & Data Management Specialist
-</title>
-
-<meta name="description"
-      content="Portfolio of Tionge Hunga — Data Analyst, Data Management and Monitoring & Evaluation professional.">
-
-<style>
-
-/* =========================================================
-   GLOBAL
-========================================================= */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    color: #1f2937;
-    background: #f8fafc;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: auto;
-}
-
-
-/* =========================================================
-   NAVIGATION
-========================================================= */
-
-nav {
-    background: #ffffff;
-    border-bottom: 1px solid #e5e7eb;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.nav-container {
-    max-width: 1100px;
-    width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 18px 0;
-}
-
-.logo {
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: #111827;
-}
-
-.nav-links {
-    display: flex;
-    gap: 25px;
-    list-style: none;
-}
-
-.nav-links a {
-    color: #4b5563;
-    font-size: 0.95rem;
-    font-weight: 500;
-    transition: 0.2s ease;
-}
-
-.nav-links a:hover {
-    color: #2563eb;
-}
-
-
-/* =========================================================
-   HERO
-========================================================= */
-
-.hero {
-    background:
-        linear-gradient(
-            135deg,
-            #eff6ff 0%,
-            #ffffff 55%,
-            #f8fafc 100%
-        );
-
-    padding: 110px 0 100px;
-}
-
-.hero-content {
-    max-width: 900px;
-}
-
-.hero-label {
-    display: inline-block;
-    color: #2563eb;
-    background: #dbeafe;
-    border: 1px solid #bfdbfe;
-    padding: 7px 14px;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    font-weight: 700;
-    margin-bottom: 22px;
-    letter-spacing: 0.2px;
-}
-
-.hero h1 {
-    font-size: 3.5rem;
-    line-height: 1.15;
-    color: #111827;
-    margin-bottom: 20px;
-}
-
-.hero h1 span {
-    color: #2563eb;
-}
-
-.hero h2 {
-    font-size: 1.45rem;
-    line-height: 1.4;
-    font-weight: 600;
-    color: #374151;
-    margin-bottom: 22px;
-    max-width: 800px;
-}
-
-.hero p {
-    font-size: 1.08rem;
-    line-height: 1.8;
-    color: #4b5563;
-    max-width: 780px;
-    margin-bottom: 30px;
-}
-
-.hero-highlights {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 32px;
-}
-
-.hero-highlight {
-    background: #ffffff;
-    border: 1px solid #dbeafe;
-    color: #374151;
-    padding: 8px 13px;
-    border-radius: 6px;
-    font-size: 0.9rem;
-    font-weight: 600;
-}
-
-.buttons {
-    display: flex;
-    gap: 14px;
-    flex-wrap: wrap;
-}
-
-.btn {
-    display: inline-block;
-    padding: 13px 22px;
-    border-radius: 7px;
-    font-weight: 600;
-    transition: 0.2s ease;
-    border: 1px solid transparent;
-}
-
-.btn-primary {
-    background: #2563eb;
-    color: white;
-}
-
-.btn-primary:hover {
-    background: #1d4ed8;
-    transform: translateY(-1px);
-}
-
-.btn-secondary {
-    border: 1px solid #d1d5db;
-    background: white;
-    color: #374151;
-}
-
-.btn-secondary:hover {
-    background: #f3f4f6;
-    transform: translateY(-1px);
-}
-
-
-/* =========================================================
-   SECTIONS
-========================================================= */
-
-section {
-    padding: 80px 0;
-}
-
-.section-title {
-    font-size: 2rem;
-    color: #111827;
-    margin-bottom: 12px;
-}
-
-.section-subtitle {
-    color: #6b7280;
-    margin-bottom: 35px;
-    max-width: 750px;
-}
-
-
-/* =========================================================
-   ABOUT
-========================================================= */
-
-.about-section {
-    background: #ffffff;
-}
-
-.about-intro {
-    max-width: 850px;
-    margin-bottom: 45px;
-}
-
-.about-intro p {
-    font-size: 1.08rem;
-    line-height: 1.8;
-    color: #4b5563;
-    margin-bottom: 18px;
-}
-
-.about-intro strong {
-    color: #111827;
-}
-
-.about-focus-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
-    margin-bottom: 40px;
-}
-
-.about-focus-card {
-    background: #f8fafc;
-    border: 1px solid #e5e7eb;
-    border-radius: 12px;
-    padding: 28px;
-    transition: 0.2s ease;
-}
-
-.about-focus-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-}
-
-.about-focus-icon {
-    width: 42px;
-    height: 42px;
-    background: #eff6ff;
-    color: #2563eb;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    margin-bottom: 18px;
-}
-
-.about-focus-card h3 {
-    color: #111827;
-    font-size: 1.15rem;
-    margin-bottom: 10px;
-}
-
-.about-focus-card p {
-    color: #6b7280;
-    font-size: 0.95rem;
-    line-height: 1.7;
-}
-
-.about-approach {
-    background: #eff6ff;
-    border: 1px solid #dbeafe;
-    border-radius: 12px;
-    padding: 30px;
-    max-width: 100%;
-}
-
-.about-approach h3 {
-    color: #111827;
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-}
-
-.about-approach p {
-    color: #4b5563;
-    line-height: 1.75;
-    max-width: 850px;
-}
-
-
-/* =========================================================
-   EXPERIENCE
-========================================================= */
-
-.experience-section {
-    background: #f8fafc;
-}
-
-.experience-item {
-    background: #ffffff;
-    border: 1px solid #e5e7eb;
-    border-radius: 12px;
-    padding: 32px;
-    margin-bottom: 24px;
-    position: relative;
-    transition: 0.2s ease;
-}
-
-.experience-item:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.05);
-}
-
-.experience-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
-    margin-bottom: 22px;
-}
-
-.experience-title h3 {
-    color: #111827;
-    font-size: 1.35rem;
-    margin-bottom: 5px;
-}
-
-.experience-title h4 {
-    color: #2563eb;
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 5px;
-}
-
-.experience-date {
-    color: #6b7280;
-    font-size: 0.9rem;
-    white-space: nowrap;
-    background: #f3f4f6;
-    padding: 6px 12px;
-    border-radius: 20px;
-}
-
-.experience-summary {
-    color: #4b5563;
-    line-height: 1.7;
-    margin-bottom: 22px;
-    max-width: 850px;
-}
-
-.experience-item h5 {
-    color: #111827;
-    font-size: 0.95rem;
-    margin-bottom: 12px;
-}
-
-.experience-item ul {
-    padding-left: 20px;
-    color: #4b5563;
-    margin-bottom: 22px;
-}
-
-.experience-item li {
-    margin-bottom: 11px;
-    line-height: 1.65;
-}
-
-.experience-item li strong {
-    color: #111827;
-}
-
-.experience-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    padding-top: 18px;
-    border-top: 1px solid #e5e7eb;
-}
-
-.experience-tag {
-    background: #eff6ff;
-    border: 1px solid #dbeafe;
-    color: #1d4ed8;
-    padding: 6px 11px;
-    border-radius: 6px;
-    font-size: 0.82rem;
-    font-weight: 600;
-}
-
-
-/* =========================================================
-   PROJECTS
-========================================================= */
-
-.projects {
-    background: #ffffff;
-}
-
-.projects .section-intro {
-    color: #6b7280;
-    max-width: 800px;
-    margin-bottom: 40px;
-    line-height: 1.7;
-}
-
-.project-category {
-    font-size: 1.45rem;
-    color: #111827;
-    margin: 45px 0 20px;
-}
-
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-    margin-bottom: 25px;
-}
-
-
-/* =========================================================
-   PROJECT CARD
-========================================================= */
-
-.project-card {
-    background: #ffffff;
-    border: 1px solid #e5e7eb;
-    border-radius: 14px;
-    overflow: hidden;
-    transition: all 0.25s ease;
-    display: flex;
-    flex-direction: column;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
-    border-color: #dbeafe;
-}
-
-
-/* =========================================================
-   PROJECT IMAGE
-========================================================= */
-
-.project-image {
-    width: 100%;
-    background: #f3f4f6;
-    overflow: hidden;
-    border-bottom: 1px solid #e5e7eb;
-}
-
-.project-image img {
-    display: block;
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    object-fit: contain;
-    transition: transform 0.3s ease;
-}
-
-.project-card:hover .project-image img {
-    transform: scale(1.015);
-}
-
-
-/* =========================================================
-   PROJECT CONTENT
-========================================================= */
-
-.project-content {
-    padding: 28px;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
-
-.project-card .project-type {
-    display: inline-block;
-    width: fit-content;
-    color: #2563eb;
-    background: #eff6ff;
-    border: 1px solid #dbeafe;
-    padding: 5px 9px;
-    border-radius: 5px;
-    font-size: 0.75rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 12px;
-}
-
-.project-card h3 {
-    color: #111827;
-    font-size: 1.3rem;
-    line-height: 1.35;
-    margin-bottom: 8px;
-}
-
-.project-tools {
-    font-size: 0.88rem;
-    color: #374151 !important;
-    font-weight: 700;
-    margin-bottom: 18px !important;
-}
-
-.project-card p {
-    color: #6b7280;
-    line-height: 1.7;
-    margin-bottom: 15px;
-}
-
-.project-card p strong {
-    color: #111827;
-}
-
-
-/* =========================================================
-   PROJECT METRICS
-========================================================= */
-
-.project-metrics {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    margin: 20px 0;
-}
-
-.project-metric {
-    background: #f8fafc;
-    border: 1px solid #e5e7eb;
-    border-radius: 9px;
-    padding: 14px 10px;
-    text-align: center;
-}
-
-.project-metric-value {
-    display: block;
-    color: #2563eb;
-    font-size: 1.25rem;
-    font-weight: 800;
-    line-height: 1.2;
-    margin-bottom: 5px;
-}
-
-.project-metric-label {
-    display: block;
-    color: #6b7280;
-    font-size: 0.72rem;
-    line-height: 1.3;
-    font-weight: 600;
-}
-
-
-/* =========================================================
-   PROJECT TAGS
-========================================================= */
-
-.project-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 7px;
-    margin: 20px 0;
-    padding-top: 18px;
-    border-top: 1px solid #e5e7eb;
-}
-
-.project-tag {
-    background: #f8fafc;
-    border: 1px solid #e5e7eb;
-    color: #374151;
-    padding: 5px 9px;
-    border-radius: 5px;
-    font-size: 0.78rem;
-    font-weight: 600;
-}
-
-
-/* =========================================================
-   PROJECT ACTIONS
-========================================================= */
-
-.project-actions {
-    margin-top: auto;
-    padding-top: 10px;
-}
-
-.project-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 7px;
-    color: #2563eb;
-    background: #eff6ff;
-    border: 1px solid #dbeafe;
-    padding: 10px 14px;
-    border-radius: 7px;
-    font-weight: 700;
-    font-size: 0.88rem;
-    transition: all 0.2s ease;
-}
-
-.project-link:hover {
-    background: #dbeafe;
-    color: #1d4ed8;
-    transform: translateX(2px);
-}
-
-
-/* =========================================================
-   PROFESSIONAL PROJECTS
-========================================================= */
-
-.professional-project {
-    padding: 28px;
-}
-
-.professional-project .project-type {
-    margin-bottom: 12px;
-}
-
-.professional-project h3 {
-    margin-bottom: 10px;
-}
-
-.professional-project p {
-    line-height: 1.7;
-}
-
-
-/* =========================================================
-   SKILLS
-========================================================= */
-
-.skills-section {
-    background: #f8fafc;
-}
-
-.skills-intro {
-    max-width: 800px;
-    color: #6b7280;
-    line-height: 1.7;
-    margin-bottom: 40px;
-}
-
-.skills-category-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 22px;
-}
-
-.skills-category {
-    background: #ffffff;
-    border: 1px solid #e5e7eb;
-    border-radius: 12px;
-    padding: 28px;
-    transition: 0.2s ease;
-}
-
-.skills-category:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-}
-
-.skills-category h3 {
-    color: #111827;
-    font-size: 1.15rem;
-    margin-bottom: 18px;
-}
-
-.skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 9px;
-    list-style: none;
-    padding: 0;
-}
-
-.skills-list li {
-    background: #f8fafc;
-    border: 1px solid #e5e7eb;
-    color: #374151;
-    padding: 7px 11px;
-    border-radius: 6px;
-    font-size: 0.86rem;
-    font-weight: 600;
-}
-
-.skills-category.primary {
-    border-top: 3px solid #2563eb;
-}
-
-
-/* =========================================================
-   LEARNING
-========================================================= */
-
-.learning-box {
-    background: #eff6ff;
-    padding: 30px;
-    border-radius: 10px;
-    border: 1px solid #dbeafe;
-}
-
-.learning-box ul {
-    padding-left: 20px;
-    color: #374151;
-}
-
-.learning-box li {
-    margin-bottom: 8px;
-}
-
-
-/* =========================================================
-   CERTIFICATIONS
-========================================================= */
-
-.certifications-section {
-    background: #ffffff;
-}
-
-.certifications-intro {
-    max-width: 800px;
-    color: #6b7280;
-    line-height: 1.7;
-    margin-bottom: 35px;
-}
-
-.certifications {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
-.certification {
-    background: #ffffff;
-    padding: 24px;
-    border: 1px solid #e5e7eb;
-    border-radius: 10px;
-    transition: 0.2s ease;
-}
-
-.certification:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-}
-
-.certification-label {
-    display: inline-block;
-    background: #eff6ff;
-    color: #2563eb;
-    border: 1px solid #dbeafe;
-    padding: 5px 9px;
-    border-radius: 5px;
-    font-size: 0.75rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 12px;
-}
-
-.certification h3 {
-    color: #111827;
-    font-size: 1.08rem;
-    margin-bottom: 6px;
-}
-
-.certification p {
-    color: #6b7280;
-    font-size: 0.92rem;
-    margin: 0;
-}
-
-.learning-status {
-    margin-top: 45px;
-}
-
-.learning-status h3 {
-    color: #111827;
-    font-size: 1.35rem;
-    margin-bottom: 18px;
-}
-
-.learning-status-box {
-    background: #eff6ff;
-    border: 1px solid #dbeafe;
-    border-radius: 10px;
-    padding: 25px;
-}
-
-.learning-status-box ul {
-    padding-left: 20px;
-    color: #374151;
-}
-
-.learning-status-box li {
-    margin-bottom: 9px;
-}
-
-
-/* =========================================================
-   CONTACT
-========================================================= */
-
-.contact {
-    background: #111827;
-    color: white;
-}
-
-.contact .section-title {
-    color: white;
-}
-
-.contact p {
-    color: #d1d5db;
-    max-width: 700px;
-    margin-bottom: 25px;
-}
-
-.contact-links {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.contact-link {
-    background: white;
-    color: #111827;
-    padding: 11px 18px;
-    border-radius: 6px;
-    font-weight: 600;
-    transition: 0.2s ease;
-}
-
-.contact-link:hover {
-    transform: translateY(-2px);
-    background: #f3f4f6;
-}
-
-
-/* =========================================================
-   FOOTER
-========================================================= */
-
-footer {
-    background: #0f172a;
-    color: #9ca3af;
-    text-align: center;
-    padding: 25px;
-    font-size: 0.9rem;
-}
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media (max-width: 768px) {
-
-    .nav-container {
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .nav-links {
-        gap: 12px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .hero {
-        padding: 75px 0 70px;
-    }
-
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero h2 {
-        font-size: 1.2rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
-
-    .hero-highlights {
-        gap: 8px;
-    }
-
-    .hero-highlight {
-        font-size: 0.82rem;
-    }
-
-    .about-focus-grid,
-    .project-grid,
-    .certifications,
-    .skills-category-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .project-image {
-        width: 100%;
-        height: auto;
-        min-height: 0;
-    }
-
-    .project-image img {
-        width: 100%;
-        height: auto;
-        max-width: 100%;
-        object-fit: contain;
-    }
-
-    .project-content {
-        padding: 22px;
-    }
-
-    .professional-project {
-        padding: 22px;
-    }
-
-    .project-metrics {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 7px;
-    }
-
-    .project-metric {
-        padding: 12px 6px;
-    }
-
-    .project-metric-value {
-        font-size: 1.05rem;
-    }
-
-    .project-metric-label {
-        font-size: 0.68rem;
-    }
-
-    .buttons {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .btn {
-        width: 100%;
-        text-align: center;
-    }
-
-    .experience-header {
-        flex-direction: column;
-    }
-
-    .experience-date {
-        white-space: normal;
-        width: fit-content;
-    }
-}
-
-
-/* =========================================================
-   SMALL MOBILE
-========================================================= */
-
-@media (max-width: 480px) {
-
-    .container {
-        width: 92%;
-    }
-
-    .hero h1 {
-        font-size: 2.15rem;
-    }
-
-    .section-title {
-        font-size: 1.7rem;
-    }
-
-    .project-metrics {
-        grid-template-columns: 1fr;
-    }
-
-    .project-metric {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        text-align: left;
-        padding: 11px 13px;
-    }
-
-    .project-metric-value {
-        margin-bottom: 0;
-    }
-
-    .project-metric-label {
-        max-width: 60%;
-        text-align: right;
-    }
-
-}
-
-</style>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Tionge Hunga | Data Analyst & Data Management Specialist
+    </title>
+
+    <meta name="description"
+          content="Portfolio of Tionge Hunga — Data Analyst, Data Management and Monitoring & Evaluation professional with experience in data quality, reporting, dashboards and analytics.">
+
+    <meta name="keywords"
+          content="Tionge Hunga, Data Analyst, Data Management, Monitoring and Evaluation, M&E, Excel, Power Query, Power Pivot, DAX, Power BI, Looker Studio, Data Quality">
+
+    <meta name="author"
+          content="Tionge Hunga">
+
+    <style>
+
+        /* =========================================================
+           GLOBAL
+        ========================================================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+            background: #f8fafc;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+
+        /* =========================================================
+           NAVIGATION
+        ========================================================= */
+
+        nav {
+            background: rgba(255, 255, 255, 0.97);
+            border-bottom: 1px solid #e5e7eb;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 17px 0;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: #111827;
+        }
+
+        .logo span {
+            color: #2563eb;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 24px;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: #4b5563;
+            font-size: 0.92rem;
+            font-weight: 600;
+            transition: 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            color: #2563eb;
+        }
+
+        .nav-cv {
+            background: #2563eb;
+            color: white !important;
+            padding: 8px 13px;
+            border-radius: 6px;
+        }
+
+        .nav-cv:hover {
+            background: #1d4ed8;
+        }
+
+
+        /* =========================================================
+           HERO
+        ========================================================= */
+
+        .hero {
+            background:
+                radial-gradient(
+                    circle at top right,
+                    rgba(37, 99, 235, 0.08),
+                    transparent 35%
+                ),
+                linear-gradient(
+                    135deg,
+                    #eff6ff 0%,
+                    #ffffff 55%,
+                    #f8fafc 100%
+                );
+
+            padding: 105px 0 95px;
+        }
+
+        .hero-content {
+            max-width: 900px;
+        }
+
+        .hero-label {
+            display: inline-block;
+            color: #2563eb;
+            background: #dbeafe;
+            border: 1px solid #bfdbfe;
+            padding: 7px 14px;
+            border-radius: 20px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            margin-bottom: 22px;
+            letter-spacing: 0.3px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            line-height: 1.15;
+            color: #111827;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+
+        .hero h1 span {
+            color: #2563eb;
+        }
+
+        .hero h2 {
+            font-size: 1.4rem;
+            line-height: 1.4;
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 22px;
+            max-width: 800px;
+        }
+
+        .hero p {
+            font-size: 1.06rem;
+            line-height: 1.8;
+            color: #4b5563;
+            max-width: 780px;
+            margin-bottom: 30px;
+        }
+
+        .hero-highlights {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 32px;
+        }
+
+        .hero-highlight {
+            background: #ffffff;
+            border: 1px solid #dbeafe;
+            color: #374151;
+            padding: 8px 13px;
+            border-radius: 6px;
+            font-size: 0.88rem;
+            font-weight: 600;
+            transition: 0.2s ease;
+        }
+
+        .hero-highlight:hover {
+            border-color: #93c5fd;
+            transform: translateY(-2px);
+        }
+
+        .buttons {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            border-radius: 7px;
+            font-weight: 600;
+            transition: 0.2s ease;
+            border: 1px solid transparent;
+        }
+
+        .btn-primary {
+            background: #2563eb;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            border: 1px solid #d1d5db;
+            background: white;
+            color: #374151;
+        }
+
+        .btn-secondary:hover {
+            background: #f3f4f6;
+            transform: translateY(-2px);
+        }
+
+
+        /* =========================================================
+           GENERAL SECTIONS
+        ========================================================= */
+
+        section {
+            padding: 80px 0;
+            scroll-margin-top: 75px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: #111827;
+            margin-bottom: 12px;
+            letter-spacing: -0.3px;
+        }
+
+        .section-subtitle {
+            color: #6b7280;
+            margin-bottom: 35px;
+            max-width: 750px;
+        }
+
+
+        /* =========================================================
+           ABOUT
+        ========================================================= */
+
+        .about-section {
+            background: #ffffff;
+        }
+
+        .about-intro {
+            max-width: 850px;
+            margin-bottom: 45px;
+        }
+
+        .about-intro p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #4b5563;
+            margin-bottom: 18px;
+        }
+
+        .about-intro strong {
+            color: #111827;
+        }
+
+        .about-focus-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+            margin-bottom: 40px;
+        }
+
+        .about-focus-card {
+            background: #f8fafc;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 28px;
+            transition: 0.2s ease;
+        }
+
+        .about-focus-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+        }
+
+        .about-focus-icon {
+            width: 42px;
+            height: 42px;
+            background: #eff6ff;
+            color: #2563eb;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            margin-bottom: 18px;
+            font-size: 0.82rem;
+        }
+
+        .about-focus-card h3 {
+            color: #111827;
+            font-size: 1.15rem;
+            margin-bottom: 10px;
+        }
+
+        .about-focus-card p {
+            color: #6b7280;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        .about-approach {
+            background: #eff6ff;
+            border: 1px solid #dbeafe;
+            border-radius: 12px;
+            padding: 30px;
+            max-width: 100%;
+        }
+
+        .about-approach h3 {
+            color: #111827;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .about-approach p {
+            color: #4b5563;
+            line-height: 1.75;
+            max-width: 850px;
+        }
+
+
+        /* =========================================================
+           EXPERIENCE
+        ========================================================= */
+
+        .experience-section {
+            background: #f8fafc;
+        }
+
+        .experience-item {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 32px;
+            margin-bottom: 24px;
+            position: relative;
+            transition: 0.2s ease;
+        }
+
+        .experience-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 22px;
+        }
+
+        .experience-title h3 {
+            color: #111827;
+            font-size: 1.35rem;
+            margin-bottom: 5px;
+        }
+
+        .experience-title h4 {
+            color: #2563eb;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .experience-date {
+            color: #6b7280;
+            font-size: 0.88rem;
+            white-space: nowrap;
+            background: #f3f4f6;
+            padding: 6px 12px;
+            border-radius: 20px;
+        }
+
+        .experience-summary {
+            color: #4b5563;
+            line-height: 1.7;
+            margin-bottom: 22px;
+            max-width: 850px;
+        }
+
+        .experience-item h5 {
+            color: #111827;
+            font-size: 0.95rem;
+            margin-bottom: 12px;
+        }
+
+        .experience-item ul {
+            padding-left: 20px;
+            color: #4b5563;
+            margin-bottom: 22px;
+        }
+
+        .experience-item li {
+            margin-bottom: 11px;
+            line-height: 1.65;
+        }
+
+        .experience-item li strong {
+            color: #111827;
+        }
+
+        .experience-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            padding-top: 18px;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        .experience-tag {
+            background: #eff6ff;
+            border: 1px solid #dbeafe;
+            color: #1d4ed8;
+            padding: 6px 11px;
+            border-radius: 6px;
+            font-size: 0.82rem;
+            font-weight: 600;
+        }
+
+
+        /* =========================================================
+           PROJECTS
+        ========================================================= */
+
+        .projects {
+            background: #ffffff;
+        }
+
+        .projects .section-intro {
+            color: #6b7280;
+            max-width: 800px;
+            margin-bottom: 40px;
+            line-height: 1.7;
+        }
+
+        .project-category {
+            font-size: 1.45rem;
+            color: #111827;
+            margin: 45px 0 20px;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-bottom: 25px;
+        }
+
+        .project-card {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: 0.2s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.07);
+        }
+
+        .project-image {
+            width: 100%;
+            background: #f3f4f6;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        .project-image img {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            object-fit: contain;
+        }
+
+        .project-content {
+            padding: 28px;
+        }
+
+        .project-card .project-type {
+            display: inline-block;
+            color: #2563eb;
+            background: #eff6ff;
+            border: 1px solid #dbeafe;
+            padding: 5px 9px;
+            border-radius: 5px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .project-card h3 {
+            color: #111827;
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+        }
+
+        .project-tools {
+            font-size: 0.88rem;
+            color: #374151 !important;
+            font-weight: 700;
+            margin-bottom: 18px !important;
+        }
+
+        .project-card p {
+            color: #6b7280;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        .project-card p strong {
+            color: #111827;
+        }
+
+        .project-link {
+            display: inline-block;
+            color: #2563eb;
+            font-weight: 700;
+            margin-top: 5px;
+            transition: 0.2s ease;
+        }
+
+        .project-link:hover {
+            color: #1d4ed8;
+            transform: translateX(2px);
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 7px;
+            margin: 20px 0;
+            padding-top: 18px;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        .project-tag {
+            background: #f8fafc;
+            border: 1px solid #e5e7eb;
+            color: #374151;
+            padding: 5px 9px;
+            border-radius: 5px;
+            font-size: 0.78rem;
+            font-weight: 600;
+        }
+
+        .professional-project {
+            padding: 28px;
+        }
+
+        .professional-project h3 {
+            margin-bottom: 10px;
+        }
+
+        .professional-project p {
+            line-height: 1.7;
+        }
+
+        .project-actions {
+            margin-top: 20px;
+        }
+
+
+        /* =========================================================
+           SKILLS
+        ========================================================= */
+
+        .skills-section {
+            background: #f8fafc;
+        }
+
+        .skills-intro {
+            max-width: 800px;
+            color: #6b7280;
+            line-height: 1.7;
+            margin-bottom: 40px;
+        }
+
+        .skills-category-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 22px;
+        }
+
+        .skills-category {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 28px;
+            transition: 0.2s ease;
+        }
+
+        .skills-category:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        }
+
+        .skills-category h3 {
+            color: #111827;
+            font-size: 1.15rem;
+            margin-bottom: 18px;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 9px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills-list li {
+            background: #f8fafc;
+            border: 1px solid #e5e7eb;
+            color: #374151;
+            padding: 7px 11px;
+            border-radius: 6px;
+            font-size: 0.86rem;
+            font-weight: 600;
+        }
+
+        .skills-category.primary {
+            border-top: 3px solid #2563eb;
+        }
+
+        .skills-category.learning {
+            border-top: 3px solid #7c3aed;
+        }
+
+        .learning-label {
+            color: #7c3aed;
+            font-size: 0.78rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+        }
+
+
+        /* =========================================================
+           EDUCATION
+        ========================================================= */
+
+        .education-section {
+            background: #ffffff;
+        }
+
+        .education-card {
+            background: #f8fafc;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 30px;
+            max-width: 850px;
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            align-items: flex-start;
+            transition: 0.2s ease;
+        }
+
+        .education-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        }
+
+        .education-degree {
+            color: #111827;
+            font-size: 1.25rem;
+            margin-bottom: 8px;
+        }
+
+        .education-institution {
+            color: #2563eb;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .education-description {
+            color: #6b7280;
+            line-height: 1.7;
+            max-width: 650px;
+        }
+
+        .education-date {
+            color: #6b7280;
+            font-size: 0.9rem;
+            white-space: nowrap;
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            padding: 7px 12px;
+            border-radius: 20px;
+        }
+
+
+        /* =========================================================
+           CERTIFICATIONS
+        ========================================================= */
+
+        .certifications-section {
+            background: #f8fafc;
+        }
+
+        .certifications-intro {
+            max-width: 800px;
+            color: #6b7280;
+            line-height: 1.7;
+            margin-bottom: 35px;
+        }
+
+        .certifications {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .certification {
+            background: #ffffff;
+            padding: 24px;
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+            transition: 0.2s ease;
+        }
+
+        .certification:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .certification-label {
+            display: inline-block;
+            background: #eff6ff;
+            color: #2563eb;
+            border: 1px solid #dbeafe;
+            padding: 5px 9px;
+            border-radius: 5px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .certification h3 {
+            color: #111827;
+            font-size: 1.08rem;
+            margin-bottom: 6px;
+        }
+
+        .certification p {
+            color: #6b7280;
+            font-size: 0.92rem;
+            margin: 0;
+        }
+
+        .learning-status {
+            margin-top: 45px;
+        }
+
+        .learning-status h3 {
+            color: #111827;
+            font-size: 1.35rem;
+            margin-bottom: 18px;
+        }
+
+        .learning-status-box {
+            background: #eff6ff;
+            border: 1px solid #dbeafe;
+            border-radius: 10px;
+            padding: 25px;
+        }
+
+        .learning-status-box p {
+            color: #4b5563;
+            margin-bottom: 15px;
+        }
+
+        .learning-status-box ul {
+            padding-left: 20px;
+            color: #374151;
+        }
+
+        .learning-status-box li {
+            margin-bottom: 9px;
+        }
+
+
+        /* =========================================================
+           CONTACT
+        ========================================================= */
+
+        .contact {
+            background: #111827;
+            color: white;
+        }
+
+        .contact .section-title {
+            color: white;
+        }
+
+        .contact p {
+            color: #d1d5db;
+            max-width: 700px;
+            margin-bottom: 25px;
+        }
+
+        .contact-links {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .contact-link {
+            background: white;
+            color: #111827;
+            padding: 11px 18px;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: 0.2s ease;
+        }
+
+        .contact-link:hover {
+            background: #dbeafe;
+            color: #1d4ed8;
+            transform: translateY(-2px);
+        }
+
+
+        /* =========================================================
+           FOOTER
+        ========================================================= */
+
+        footer {
+            background: #0f172a;
+            color: #9ca3af;
+            text-align: center;
+            padding: 25px;
+            font-size: 0.9rem;
+        }
+
+
+        /* =========================================================
+           MOBILE
+        ========================================================= */
+
+        @media (max-width: 768px) {
+
+            .nav-container {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .nav-links {
+                gap: 10px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .nav-links a {
+                font-size: 0.84rem;
+            }
+
+            .nav-cv {
+                padding: 6px 10px;
+            }
+
+            .hero {
+                padding: 75px 0 70px;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero h2 {
+                font-size: 1.15rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .hero-highlights {
+                gap: 8px;
+            }
+
+            .hero-highlight {
+                font-size: 0.82rem;
+            }
+
+            .about-focus-grid,
+            .project-grid,
+            .skills-category-grid,
+            .certifications {
+                grid-template-columns: 1fr;
+            }
+
+            .education-card {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .experience-header {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .experience-date {
+                white-space: normal;
+            }
+
+            .project-image {
+                width: 100%;
+                height: auto;
+                min-height: 0;
+            }
+
+            .project-image img {
+                width: 100%;
+                height: auto;
+                max-width: 100%;
+                object-fit: contain;
+            }
+
+            .buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+
+            .about-focus-card,
+            .skills-category,
+            .certification,
+            .professional-project {
+                padding: 22px;
+            }
+        }
+
+
+        /* =========================================================
+           SMALL MOBILE
+        ========================================================= */
+
+        @media (max-width: 480px) {
+
+            .container {
+                width: 92%;
+            }
+
+            section {
+                padding: 65px 0;
+            }
+
+            .hero h1 {
+                font-size: 2.1rem;
+            }
+
+            .hero h2 {
+                font-size: 1.05rem;
+            }
+
+            .section-title {
+                font-size: 1.7rem;
+            }
+
+            .project-card h3 {
+                font-size: 1.15rem;
+            }
+
+            .experience-title h3 {
+                font-size: 1.18rem;
+            }
+
+            .logo {
+                font-size: 1.1rem;
+            }
+
+        }
+
+    </style>
 
 </head>
+
 
 <body>
 
@@ -1042,41 +1038,53 @@ footer {
 
 <nav>
 
-<div class="nav-container">
+    <div class="nav-container">
 
-    <div class="logo">
-        Tionge Hunga
+        <div class="logo">
+            Tionge <span>Hunga</span>
+        </div>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+
+            <li>
+                <a href="#education">Education</a>
+            </li>
+
+            <li>
+                <a href="#certifications">Certifications</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
+            <li>
+                <a class="nav-cv"
+                   href="Tionge-Hunga-CV.pdf"
+                   target="_blank">
+                    CV
+                </a>
+            </li>
+
+        </ul>
+
     </div>
-
-    <ul class="nav-links">
-
-        <li>
-            <a href="#about">About</a>
-        </li>
-
-        <li>
-            <a href="#experience">Experience</a>
-        </li>
-
-        <li>
-            <a href="#projects">Projects</a>
-        </li>
-
-        <li>
-            <a href="#skills">Skills</a>
-        </li>
-
-        <li>
-            <a href="#certifications">Certifications</a>
-        </li>
-
-        <li>
-            <a href="#contact">Contact</a>
-        </li>
-
-    </ul>
-
-</div>
 
 </nav>
 
@@ -1087,85 +1095,85 @@ footer {
 
 <header class="hero">
 
-<div class="container hero-content">
+    <div class="container hero-content">
 
-    <div class="hero-label">
-        DATA ANALYST • DATA MANAGEMENT • M&E
+        <div class="hero-label">
+            DATA ANALYST • DATA MANAGEMENT • M&E
+        </div>
+
+        <h1>
+            Turning data into
+            <span>clear insights</span>
+            for better decisions.
+        </h1>
+
+        <h2>
+            Data Analyst | Data Management | Monitoring & Evaluation
+        </h2>
+
+        <p>
+            I am a data professional with experience in data management,
+            monitoring and evaluation, data quality assurance, reporting,
+            and data analysis. I combine practical programme experience
+            with growing expertise in analytics and business intelligence
+            to turn data into reliable insights that support
+            evidence-based decision-making.
+        </p>
+
+        <div class="hero-highlights">
+
+            <div class="hero-highlight">
+                Data Analysis
+            </div>
+
+            <div class="hero-highlight">
+                Data Quality
+            </div>
+
+            <div class="hero-highlight">
+                Dashboard Development
+            </div>
+
+            <div class="hero-highlight">
+                Monitoring & Evaluation
+            </div>
+
+            <div class="hero-highlight">
+                Business Intelligence
+            </div>
+
+        </div>
+
+        <div class="buttons">
+
+            <a class="btn btn-primary"
+               href="#projects">
+                View My Projects
+            </a>
+
+            <a class="btn btn-secondary"
+               href="Tionge-Hunga-CV.pdf"
+               target="_blank">
+                Download CV
+            </a>
+
+            <a class="btn btn-secondary"
+               href="https://www.linkedin.com/in/tionge-hunga"
+               target="_blank"
+               rel="noopener noreferrer">
+                LinkedIn
+            </a>
+
+            <a class="btn btn-secondary"
+               href="https://github.com/Tionge-Hunga"
+               target="_blank"
+               rel="noopener noreferrer">
+                GitHub
+            </a>
+
+        </div>
+
     </div>
-
-    <h1>
-        Turning data into
-        <span>clear insights</span>
-        for better decisions.
-    </h1>
-
-    <h2>
-        Data Analyst | Data Management | Monitoring & Evaluation
-    </h2>
-
-    <p>
-        I am a data professional with experience in data management,
-        monitoring and evaluation, data quality assurance, reporting,
-        and data analysis. I combine practical programme experience
-        with growing expertise in analytics and business intelligence
-        to turn data into reliable insights that support
-        evidence-based decision-making.
-    </p>
-
-    <div class="hero-highlights">
-
-        <div class="hero-highlight">
-            Data Analysis
-        </div>
-
-        <div class="hero-highlight">
-            Data Quality
-        </div>
-
-        <div class="hero-highlight">
-            Dashboard Development
-        </div>
-
-        <div class="hero-highlight">
-            Monitoring & Evaluation
-        </div>
-
-        <div class="hero-highlight">
-            Business Intelligence
-        </div>
-
-    </div>
-
-    <div class="buttons">
-
-        <a class="btn btn-primary"
-           href="#projects">
-            View My Projects
-        </a>
-
-        <a class="btn btn-secondary"
-           href="Tionge-Hunga-CV.pdf"
-           target="_blank">
-            Download CV
-        </a>
-
-        <a class="btn btn-secondary"
-           href="https://www.linkedin.com/in/tionge-hunga"
-           target="_blank"
-           rel="noopener noreferrer">
-            LinkedIn
-        </a>
-
-        <a class="btn btn-secondary"
-           href="https://github.com/Tionge-Hunga"
-           target="_blank"
-           rel="noopener noreferrer">
-            GitHub
-        </a>
-
-    </div>
-
-</div>
 
 </header>
 
@@ -1176,122 +1184,129 @@ footer {
 
 <section id="about" class="about-section">
 
-<div class="container">
+    <div class="container">
 
-    <h2 class="section-title">
-        About Me
-    </h2>
+        <h2 class="section-title">
+            About Me
+        </h2>
 
-    <p class="section-subtitle">
-        Data professional combining data management, monitoring and
-        evaluation, data quality, and analytics.
-    </p>
-
-    <div class="about-intro">
-
-        <p>
-            I am a <strong>data professional</strong> with experience
-            in data management, monitoring and evaluation, data quality
-            assurance, reporting, and data analysis.
+        <p class="section-subtitle">
+            Data professional combining data management,
+            monitoring and evaluation, data quality,
+            and analytics.
         </p>
 
-        <p>
-            In my professional experience, I work with programme data
-            to support reporting, data quality, monitoring activities,
-            and evidence-based decision-making. This includes reviewing
-            and validating data, maintaining databases, identifying
-            data gaps, and preparing reliable information for management
-            and donor reporting.
-        </p>
 
-        <p>
-            Alongside my professional experience, I am building my
-            technical capabilities in data analytics and business
-            intelligence through hands-on projects using tools such as
-            Microsoft Excel, Power Query, Power Pivot, DAX, and
-            Looker Studio.
-        </p>
-
-    </div>
-
-    <div class="about-focus-grid">
-
-        <div class="about-focus-card">
-
-            <div class="about-focus-icon">
-                DA
-            </div>
-
-            <h3>
-                Data & Analytics
-            </h3>
+        <div class="about-intro">
 
             <p>
-                Developing practical skills in data analysis,
-                visualization, dashboard development, KPI analysis,
-                and business intelligence to turn datasets into
-                useful insights.
+                I am a <strong>data professional</strong> with experience
+                in data management, monitoring and evaluation, data quality
+                assurance, reporting, and data analysis.
+            </p>
+
+            <p>
+                In my professional experience, I work with programme data
+                to support reporting, data quality, monitoring activities,
+                and evidence-based decision-making. This includes reviewing
+                and validating data, maintaining databases, identifying
+                data gaps, and preparing reliable information for management
+                and donor reporting.
+            </p>
+
+            <p>
+                Alongside my professional experience, I am building my
+                technical capabilities in data analytics and business
+                intelligence through hands-on projects using tools such as
+                Microsoft Excel, Power Query, Power Pivot, DAX, Power BI,
+                and Looker Studio.
             </p>
 
         </div>
 
-        <div class="about-focus-card">
 
-            <div class="about-focus-icon">
-                M&E
+        <div class="about-focus-grid">
+
+            <div class="about-focus-card">
+
+                <div class="about-focus-icon">
+                    DA
+                </div>
+
+                <h3>
+                    Data & Analytics
+                </h3>
+
+                <p>
+                    Developing practical skills in data analysis,
+                    visualization, dashboard development, KPI analysis,
+                    and business intelligence to turn datasets into
+                    useful insights.
+                </p>
+
             </div>
 
-            <h3>
-                Monitoring & Evaluation
-            </h3>
 
-            <p>
-                Experience supporting programme monitoring, reporting,
-                results measurement, data collection, and the use of
-                evidence to understand programme performance and impact.
-            </p>
+            <div class="about-focus-card">
+
+                <div class="about-focus-icon">
+                    M&E
+                </div>
+
+                <h3>
+                    Monitoring & Evaluation
+                </h3>
+
+                <p>
+                    Experience supporting programme monitoring, reporting,
+                    results measurement, data collection, and the use of
+                    evidence to understand programme performance and impact.
+                </p>
+
+            </div>
+
+
+            <div class="about-focus-card">
+
+                <div class="about-focus-icon">
+                    DQ
+                </div>
+
+                <h3>
+                    Data Quality & Management
+                </h3>
+
+                <p>
+                    Experienced in data validation, database maintenance,
+                    data quality assurance, identifying missing or
+                    inconsistent information, and preparing reliable data
+                    for analysis and reporting.
+                </p>
+
+            </div>
 
         </div>
 
-        <div class="about-focus-card">
 
-            <div class="about-focus-icon">
-                DQ
-            </div>
+        <div class="about-approach">
 
             <h3>
-                Data Quality & Management
+                My Approach
             </h3>
 
             <p>
-                Experienced in data validation, database maintenance,
-                data quality assurance, identifying missing or
-                inconsistent information, and preparing reliable data
-                for analysis and reporting.
+                I combine my experience in programme data and monitoring
+                and evaluation with growing analytical and technical skills.
+                My goal is to bridge the gap between
+                <strong>data collection, data quality, analysis,
+                and decision-making</strong> — helping organisations
+                transform reliable data into clear information that can
+                support better decisions.
             </p>
 
         </div>
 
     </div>
-
-    <div class="about-approach">
-
-        <h3>
-            My Approach
-        </h3>
-
-        <p>
-            I combine my experience in programme data and monitoring
-            and evaluation with growing analytical and technical skills.
-            My goal is to bridge the gap between <strong>data collection,
-            data quality, analysis, and decision-making</strong> — helping
-            organisations transform reliable data into clear information
-            that can support better decisions.
-        </p>
-
-    </div>
-
-</div>
 
 </section>
 
@@ -1302,244 +1317,232 @@ footer {
 
 <section id="experience" class="experience-section">
 
-<div class="container">
+    <div class="container">
 
-    <h2 class="section-title">
-        Professional Experience
-    </h2>
+        <h2 class="section-title">
+            Professional Experience
+        </h2>
 
-    <p class="section-subtitle">
-        Experience in monitoring and evaluation, data management,
-        data quality assurance, reporting, and programme data analysis.
-    </p>
+        <p class="section-subtitle">
+            Experience in monitoring and evaluation, data management,
+            data quality assurance, reporting, and programme data analysis.
+        </p>
 
 
-    <div class="experience-item">
+        <div class="experience-item">
 
-        <div class="experience-header">
+            <div class="experience-header">
 
-            <div class="experience-title">
+                <div class="experience-title">
 
-                <h3>
-                    Monitoring & Evaluation Assistant
-                </h3>
+                    <h3>
+                        Monitoring & Evaluation Assistant
+                    </h3>
 
-                <h4>
-                    Lilongwe Wildlife Trust | Lilongwe, Malawi
-                </h4>
+                    <h4>
+                        Lilongwe Wildlife Trust | Lilongwe, Malawi
+                    </h4>
+
+                </div>
+
+                <span class="experience-date">
+                    Jan 2025 – Present
+                </span>
 
             </div>
 
-            <span class="experience-date">
-                Jan 2025 – Present
-            </span>
+            <p class="experience-summary">
+                Support programme monitoring, data quality assurance,
+                reporting, database management, and analysis to provide
+                reliable evidence for management and donor decision-making.
+            </p>
+
+            <h5>
+                Key Responsibilities & Impact
+            </h5>
+
+            <ul>
+
+                <li>
+                    <strong>Data analysis & reporting:</strong>
+                    Prepare and analyse programme data for internal and
+                    external reports, supporting decision-making and
+                    demonstrating project impact.
+                </li>
+
+                <li>
+                    <strong>Data quality assurance:</strong>
+                    Maintain and quality-assure a 900+ record court-monitoring
+                    database, reviewing active records across three regions
+                    for accuracy, completeness, and consistency.
+                </li>
+
+                <li>
+                    <strong>Data validation:</strong>
+                    Identify missing, incomplete, or inconsistent information
+                    and coordinate follow-up with Court Monitors to resolve
+                    discrepancies before reporting.
+                </li>
+
+                <li>
+                    <strong>Database management:</strong>
+                    Maintain departmental databases using Google Sheets,
+                    supporting reliable programme reporting and analysis.
+                </li>
+
+                <li>
+                    <strong>Monitoring:</strong>
+                    Conduct onsite monitoring to collect and analyse
+                    programme data, assessing changes and outcomes to
+                    support evidence of project impact.
+                </li>
+
+                <li>
+                    <strong>Stakeholder engagement:</strong>
+                    Represent the organisation at national environmental
+                    events, engaging stakeholders and supporting exhibition
+                    activities.
+                </li>
+
+            </ul>
+
+            <div class="experience-tags">
+
+                <span class="experience-tag">
+                    Data Analysis
+                </span>
+
+                <span class="experience-tag">
+                    Data Quality
+                </span>
+
+                <span class="experience-tag">
+                    Database Management
+                </span>
+
+                <span class="experience-tag">
+                    Monitoring & Evaluation
+                </span>
+
+                <span class="experience-tag">
+                    Reporting
+                </span>
+
+                <span class="experience-tag">
+                    Google Sheets
+                </span>
+
+            </div>
 
         </div>
 
-        <p class="experience-summary">
-            Support programme monitoring, data quality assurance,
-            reporting, database management, and analysis to provide
-            reliable evidence for management and donor decision-making.
-        </p>
 
-        <h5>
-            Key Responsibilities & Impact
-        </h5>
+        <div class="experience-item">
 
-        <ul>
+            <div class="experience-header">
 
-            <li>
-                <strong>Data analysis & reporting:</strong>
-                Prepare and analyse programme data for internal and
-                external reports, supporting decision-making and
-                demonstrating project impact.
-            </li>
+                <div class="experience-title">
 
-            <li>
-                <strong>Data quality assurance:</strong>
-                Maintain and quality-assure a 900+ record court-monitoring
-                database, reviewing 15–20 active records monthly across
-                three regions for accuracy, completeness, and consistency.
-            </li>
+                    <h3>
+                        Data Entry Clerk / Monitoring & Evaluation Assistant
+                    </h3>
 
-            <li>
-                <strong>Data validation:</strong>
-                Identify approximately 20% of reviewed records requiring
-                corrections and 30–40% containing missing information,
-                coordinating with Court Monitors to resolve discrepancies
-                before reporting.
-            </li>
+                    <h4>
+                        Lilongwe Wildlife Trust | Lilongwe, Malawi
+                    </h4>
 
-            <li>
-                <strong>Database management:</strong>
-                Maintain approximately three departmental Google Sheets
-                databases, including a 190-record media monitoring
-                database, a results framework covering three programme
-                areas, and a 560-record pangolin monitoring database.
-            </li>
+                </div>
 
-            <li>
-                <strong>Monitoring:</strong>
-                Conduct onsite monitoring to collect and analyse
-                programme data, assessing changes and outcomes to support
-                evidence of project impact.
-            </li>
+                <span class="experience-date">
+                    Oct 2021 – Dec 2024
+                </span>
 
-            <li>
-                <strong>Stakeholder engagement:</strong>
-                Represent the organisation at national environmental
-                events, engaging stakeholders and supporting exhibition
-                activities.
-            </li>
+            </div>
 
-        </ul>
+            <p class="experience-summary">
+                Supported programme data collection, data entry, data
+                verification, database maintenance, reporting, and
+                monitoring and evaluation activities.
+            </p>
 
-        <div class="experience-tags">
+            <h5>
+                Key Responsibilities & Impact
+            </h5>
 
-            <span class="experience-tag">
-                Data Analysis
-            </span>
+            <ul>
 
-            <span class="experience-tag">
-                Data Quality
-            </span>
+                <li>
+                    <strong>Data verification:</strong>
+                    Verified data before database entry by checking
+                    completeness, consistency, and accuracy and following
+                    up to resolve discrepancies.
+                </li>
 
-            <span class="experience-tag">
-                Database Management
-            </span>
+                <li>
+                    <strong>Data quality assessments:</strong>
+                    Supported onsite Data Quality Assessments (DQA),
+                    reviewing data for accuracy, completeness, and
+                    consistency at source.
+                </li>
 
-            <span class="experience-tag">
-                Monitoring & Evaluation
-            </span>
+                <li>
+                    <strong>Reporting support:</strong>
+                    Supported the M&E Officer with data preparation for
+                    reporting, including basic analysis and organisation
+                    of datasets used for donor reporting.
+                </li>
 
-            <span class="experience-tag">
-                Reporting
-            </span>
+                <li>
+                    <strong>Database management:</strong>
+                    Entered and maintained programme records in specialised
+                    databases, including Microsoft Access.
+                </li>
 
-            <span class="experience-tag">
-                Google Sheets
-            </span>
+                <li>
+                    <strong>Case data management:</strong>
+                    Maintained structured programme records and continuously
+                    updated active cases until conclusion.
+                </li>
+
+                <li>
+                    <strong>Document management:</strong>
+                    Uploaded and organised supporting programme documents,
+                    including photographs, reports, and case-related files.
+                </li>
+
+            </ul>
+
+            <div class="experience-tags">
+
+                <span class="experience-tag">
+                    Data Entry
+                </span>
+
+                <span class="experience-tag">
+                    Data Validation
+                </span>
+
+                <span class="experience-tag">
+                    Data Quality
+                </span>
+
+                <span class="experience-tag">
+                    Microsoft Access
+                </span>
+
+                <span class="experience-tag">
+                    Database Management
+                </span>
+
+                <span class="experience-tag">
+                    Data Collection
+                </span>
+
+            </div>
 
         </div>
 
     </div>
-
-
-    <div class="experience-item">
-
-        <div class="experience-header">
-
-            <div class="experience-title">
-
-                <h3>
-                    Data Entry Clerk
-                </h3>
-
-                <h4>
-                    Lilongwe Wildlife Trust | Lilongwe, Malawi
-                </h4>
-
-            </div>
-
-            <span class="experience-date">
-                Oct 2021 – Dec 2024
-            </span>
-
-        </div>
-
-        <p class="experience-summary">
-            Supported programme data collection, data entry, data
-            verification, database maintenance, and data quality
-            assessments for wildlife justice and monitoring programmes.
-        </p>
-
-        <h5>
-            Key Responsibilities & Impact
-        </h5>
-
-        <ul>
-
-            <li>
-                <strong>Data verification:</strong>
-                Verified data before database entry by checking
-                completeness, consistency, and accuracy and following
-                up with Court Monitors to resolve discrepancies.
-            </li>
-
-            <li>
-                <strong>Data quality assessments:</strong>
-                Supported onsite Data Quality Assessments (DQA),
-                reviewing data for accuracy, completeness, and
-                consistency at source.
-            </li>
-
-            <li>
-                <strong>Reporting support:</strong>
-                Supported the M&E Officer with data preparation for
-                reporting, including basic analysis and organisation
-                of datasets used for donor reporting.
-            </li>
-
-            <li>
-                <strong>Database management:</strong>
-                Entered and maintained approximately 1,106+ records
-                in a Microsoft Access database, providing structured
-                programme data for analysis and donor reporting.
-            </li>
-
-            <li>
-                <strong>Case data management:</strong>
-                Entered and maintained approximately 828 records
-                using structured data-collection forms, including
-                continuous updates to active cases until conclusion.
-            </li>
-
-            <li>
-                <strong>Wildlife justice data:</strong>
-                Entered and maintained 200+ forms in a specialised
-                wildlife justice database, updating records as active
-                cases progressed.
-            </li>
-
-            <li>
-                <strong>Document management:</strong>
-                Uploaded and organised supporting programme documents,
-                including photographs, reports, and case-related files.
-            </li>
-
-        </ul>
-
-        <div class="experience-tags">
-
-            <span class="experience-tag">
-                Data Entry
-            </span>
-
-            <span class="experience-tag">
-                Data Validation
-            </span>
-
-            <span class="experience-tag">
-                Data Quality
-            </span>
-
-            <span class="experience-tag">
-                Microsoft Access
-            </span>
-
-            <span class="experience-tag">
-                Database Management
-            </span>
-
-            <span class="experience-tag">
-                Data Collection
-            </span>
-
-        </div>
-
-    </div>
-
-</div>
 
 </section>
 
@@ -1550,413 +1553,104 @@ footer {
 
 <section id="projects" class="projects">
 
-<div class="container">
+    <div class="container">
 
-    <h2 class="section-title">
-        Projects
-    </h2>
+        <h2 class="section-title">
+            Projects
+        </h2>
 
-    <p class="section-intro">
-        A selection of professional and personal analytics projects
-        demonstrating my experience in data analysis, data quality,
-        dashboard development, and data-driven decision-making.
-    </p>
-
-
-    <!-- =====================================================
-         PROFESSIONAL PROJECTS
-    ====================================================== -->
-
-    <h3 class="project-category">
-        Professional Projects
-    </h3>
-
-    <div class="project-grid">
+        <p class="section-intro">
+            A selection of professional and personal analytics projects
+            demonstrating my experience in data analysis, data quality,
+            dashboard development, and data-driven decision-making.
+        </p>
 
 
-        <!-- PANGOLIN -->
+        <h3 class="project-category">
+            Professional Projects
+        </h3>
 
-        <div class="project-card professional-project">
-
-            <span class="project-type">
-                Professional Project
-            </span>
-
-            <h3>
-                Pangolin Monitoring Dashboard
-            </h3>
-
-            <p class="project-tools">
-                Google Data Studio (Looker Studio)
-            </p>
-
-            <p>
-                Developed an interactive dashboard to monitor pangolin
-                weight changes during rehabilitation, enabling the
-                rehabilitation team to track weight progression over
-                time and support monitoring of animal recovery.
-            </p>
-
-            <div class="project-tags">
-
-                <span class="project-tag">
-                    Data Visualization
-                </span>
-
-                <span class="project-tag">
-                    Dashboard Development
-                </span>
-
-                <span class="project-tag">
-                    Wildlife Monitoring
-                </span>
-
-                <span class="project-tag">
-                    Looker Studio
-                </span>
-
-            </div>
-
-            <div class="project-actions">
-
-                <a href="#contact"
-                   class="project-link">
-                    Professional Project →
-                </a>
-
-            </div>
-
-        </div>
+        <div class="project-grid">
 
 
-        <!-- VISITOR ANALYTICS -->
-
-        <div class="project-card professional-project">
-
-            <span class="project-type">
-                Professional Project
-            </span>
-
-            <h3>
-                Lilongwe Wildlife Centre Visitor Analytics
-            </h3>
-
-            <p class="project-tools">
-                Google Data Studio (Looker Studio)
-            </p>
-
-            <p>
-                Analysed visitor patterns by day, time, and visitor
-                group to identify peak periods and provide evidence
-                to support management decisions around opening hours,
-                staffing allocation, and visitor operations.
-            </p>
-
-            <div class="project-tags">
-
-                <span class="project-tag">
-                    Data Analysis
-                </span>
-
-                <span class="project-tag">
-                    Data Visualization
-                </span>
-
-                <span class="project-tag">
-                    Visitor Analytics
-                </span>
-
-                <span class="project-tag">
-                    Looker Studio
-                </span>
-
-            </div>
-
-            <div class="project-actions">
-
-                <a href="#contact"
-                   class="project-link">
-                    Professional Project →
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <!-- =====================================================
-         PERSONAL PROJECTS
-    ====================================================== -->
-
-    <h3 class="project-category">
-        Personal Analytics Projects
-    </h3>
-
-    <div class="project-grid">
-
-
-        <!-- =================================================
-             DIABETES
-        ================================================== -->
-
-        <div class="project-card">
-
-            <div class="project-image">
-
-                <img src="diabetes-dashboard.png"
-                     alt="Diabetes Patient Analytics Dashboard">
-
-            </div>
-
-            <div class="project-content">
+            <div class="project-card professional-project">
 
                 <span class="project-type">
-                    Personal Analytics Project
+                    Professional Project
                 </span>
 
                 <h3>
-                    Diabetes Patient Analytics Dashboard
+                    Pangolin Monitoring Dashboard
                 </h3>
 
                 <p class="project-tools">
-                    Microsoft Excel | Power Query | Power Pivot | DAX
+                    Google Data Studio (Looker Studio)
                 </p>
 
                 <p>
-                    <strong>Objective:</strong>
-                    Analyse hospital encounter data to understand
-                    patterns in patient admissions, readmissions,
-                    medication usage, demographics, admission sources,
-                    and discharge outcomes.
+                    Developed an interactive dashboard to monitor pangolin
+                    weight changes during rehabilitation, enabling the
+                    rehabilitation team to track weight progression over
+                    time and support monitoring of animal recovery.
                 </p>
-
-                <p>
-                    <strong>What I did:</strong>
-                    Cleaned and transformed the dataset using Power
-                    Query, connected related datasets using Power Pivot,
-                    created analytical measures using DAX, and developed
-                    an interactive dashboard to explore patient and
-                    admission patterns.
-                </p>
-
-
-                <!-- KEY METRICS -->
-
-                <div class="project-metrics">
-
-                    <div class="project-metric">
-
-                        <span class="project-metric-value">
-                            101,766
-                        </span>
-
-                        <span class="project-metric-label">
-                            Hospital Encounters
-                        </span>
-
-                    </div>
-
-                    <div class="project-metric">
-
-                        <span class="project-metric-value">
-                            71,518
-                        </span>
-
-                        <span class="project-metric-label">
-                            Unique Patients
-                        </span>
-
-                    </div>
-
-                    <div class="project-metric">
-
-                        <span class="project-metric-value">
-                            46%
-                        </span>
-
-                        <span class="project-metric-label">
-                            Readmission Rate
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-                <p>
-                    <strong>Key findings:</strong>
-                    Patients aged 70–80 accounted for the highest
-                    number of admissions and readmissions.
-                </p>
-
 
                 <div class="project-tags">
 
                     <span class="project-tag">
-                        Excel
-                    </span>
-
-                    <span class="project-tag">
-                        Power Query
-                    </span>
-
-                    <span class="project-tag">
-                        Power Pivot
-                    </span>
-
-                    <span class="project-tag">
-                        DAX
-                    </span>
-
-                    <span class="project-tag">
-                        Data Cleaning
-                    </span>
-
-                    <span class="project-tag">
-                        Data Modelling
+                        Data Visualization
                     </span>
 
                     <span class="project-tag">
                         Dashboard Development
                     </span>
 
-                </div>
+                    <span class="project-tag">
+                        Wildlife Monitoring
+                    </span>
 
+                    <span class="project-tag">
+                        Looker Studio
+                    </span>
+
+                </div>
 
                 <div class="project-actions">
 
-                    <a href="https://github.com/Tionge-Hunga/Diabetes-Analytics"
-                       target="_blank"
-                       rel="noopener noreferrer"
+                    <a href="#contact"
                        class="project-link">
-
-                        View GitHub Project →
-
+                        Professional Project →
                     </a>
 
                 </div>
 
             </div>
 
-        </div>
 
-
-        <!-- =================================================
-             SUPERSTORE
-        ================================================== -->
-
-        <div class="project-card">
-
-            <div class="project-image">
-
-                <img src="superstore-dashboard.png"
-                     alt="Superstore Sales Performance Dashboard">
-
-            </div>
-
-            <div class="project-content">
+            <div class="project-card professional-project">
 
                 <span class="project-type">
-                    Personal Analytics Project
+                    Professional Project
                 </span>
 
                 <h3>
-                    Superstore Sales Performance Dashboard
+                    Lilongwe Wildlife Centre Visitor Analytics
                 </h3>
 
                 <p class="project-tools">
-                    Microsoft Excel
+                    Google Data Studio (Looker Studio)
                 </p>
 
                 <p>
-                    <strong>Objective:</strong>
-                    Analyse sales performance across customer
-                    segments, product categories, products, cities,
-                    regions, and time to identify business performance
-                    patterns.
+                    Analysed visitor patterns by day, time, and visitor
+                    group to identify peak periods and provide evidence
+                    to support management decisions around opening hours,
+                    staffing allocation, and visitor operations.
                 </p>
-
-                <p>
-                    <strong>What I did:</strong>
-                    Cleaned and analysed the sales dataset, created
-                    an interactive Excel dashboard, and developed
-                    visualisations to compare sales performance across
-                    customer segments, categories, products, locations,
-                    and time periods.
-                </p>
-
-
-                <!-- KEY METRICS -->
-
-                <div class="project-metrics">
-
-                    <div class="project-metric">
-
-                        <span class="project-metric-value">
-                            51%
-                        </span>
-
-                        <span class="project-metric-label">
-                            Consumer Sales
-                        </span>
-
-                    </div>
-
-                    <div class="project-metric">
-
-                        <span class="project-metric-value">
-                            36%
-                        </span>
-
-                        <span class="project-metric-label">
-                            Technology Sales
-                        </span>
-
-                    </div>
-
-                    <div class="project-metric">
-
-                        <span class="project-metric-value">
-                            $329K+
-                        </span>
-
-                        <span class="project-metric-label">
-                            Top Product Sales
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-                <p>
-                    <strong>Key findings:</strong>
-                    The Consumer segment was the largest contributor
-                    to sales, while Technology was a leading category.
-                    The analysis also highlighted differences in sales
-                    performance across products, cities, regions,
-                    and time.
-                </p>
-
 
                 <div class="project-tags">
 
                     <span class="project-tag">
-                        Excel
-                    </span>
-
-                    <span class="project-tag">
                         Data Analysis
-                    </span>
-
-                    <span class="project-tag">
-                        Dashboard Development
-                    </span>
-
-                    <span class="project-tag">
-                        KPI Analysis
                     </span>
 
                     <span class="project-tag">
@@ -1964,21 +1658,20 @@ footer {
                     </span>
 
                     <span class="project-tag">
-                        Trend Analysis
+                        Visitor Analytics
+                    </span>
+
+                    <span class="project-tag">
+                        Looker Studio
                     </span>
 
                 </div>
 
-
                 <div class="project-actions">
 
-                    <a href="https://github.com/Tionge-Hunga/Superstore-Sale-Performance-Dashboard-Microsoft-Excel"
-                       target="_blank"
-                       rel="noopener noreferrer"
+                    <a href="#contact"
                        class="project-link">
-
-                        View GitHub Project →
-
+                        Professional Project →
                     </a>
 
                 </div>
@@ -1988,9 +1681,206 @@ footer {
         </div>
 
 
-    </div>
+        <h3 class="project-category">
+            Personal Analytics Projects
+        </h3>
 
-</div>
+        <div class="project-grid">
+
+
+            <!-- DIABETES -->
+
+            <div class="project-card">
+
+                <div class="project-image">
+
+                    <img src="diabetes-dashboard.png"
+                         alt="Diabetes Patient Analytics Dashboard">
+
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-type">
+                        Personal Analytics Project
+                    </span>
+
+                    <h3>
+                        Diabetes Patient Analytics Dashboard
+                    </h3>
+
+                    <p class="project-tools">
+                        Microsoft Excel | Power Query | Power Pivot | DAX
+                    </p>
+
+                    <p>
+                        <strong>Objective:</strong>
+                        Analyse hospital encounter data to understand
+                        patterns in patient admissions, readmissions,
+                        medication usage, demographics, admission sources,
+                        and discharge outcomes.
+                    </p>
+
+                    <p>
+                        <strong>What I did:</strong>
+                        Cleaned and transformed the dataset using Power
+                        Query, connected related datasets using Power Pivot,
+                        created analytical measures using DAX, and developed
+                        an interactive dashboard.
+                    </p>
+
+                    <p>
+                        <strong>Key findings:</strong>
+                        The analysis covered 101,766 hospital encounters
+                        involving 71,518 unique patients and examined
+                        readmissions and demographic patterns.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span class="project-tag">
+                            Excel
+                        </span>
+
+                        <span class="project-tag">
+                            Power Query
+                        </span>
+
+                        <span class="project-tag">
+                            Power Pivot
+                        </span>
+
+                        <span class="project-tag">
+                            DAX
+                        </span>
+
+                        <span class="project-tag">
+                            Data Cleaning
+                        </span>
+
+                        <span class="project-tag">
+                            Data Modelling
+                        </span>
+
+                        <span class="project-tag">
+                            Dashboard Development
+                        </span>
+
+                    </div>
+
+                    <div class="project-actions">
+
+                        <a href="https://github.com/Tionge-Hunga/Diabetes-Analytics"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="project-link">
+                            View GitHub Project →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SUPERSTORE -->
+
+            <div class="project-card">
+
+                <div class="project-image">
+
+                    <img src="superstore-dashboard.png"
+                         alt="Superstore Sales Performance Dashboard">
+
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-type">
+                        Personal Analytics Project
+                    </span>
+
+                    <h3>
+                        Superstore Sales Performance Dashboard
+                    </h3>
+
+                    <p class="project-tools">
+                        Microsoft Excel
+                    </p>
+
+                    <p>
+                        <strong>Objective:</strong>
+                        Analyse sales performance across customer
+                        segments, product categories, products, cities,
+                        regions, and time to identify business performance
+                        patterns.
+                    </p>
+
+                    <p>
+                        <strong>What I did:</strong>
+                        Cleaned and analysed the sales dataset, created
+                        an interactive Excel dashboard, and developed
+                        visualisations to compare sales performance across
+                        customer segments, categories, products, locations,
+                        and time periods.
+                    </p>
+
+                    <p>
+                        <strong>Key findings:</strong>
+                        The Consumer segment was the largest contributor
+                        to sales, while Technology was a leading category.
+                        The analysis also highlighted differences in sales
+                        performance across products, cities, regions,
+                        and time.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span class="project-tag">
+                            Excel
+                        </span>
+
+                        <span class="project-tag">
+                            Data Analysis
+                        </span>
+
+                        <span class="project-tag">
+                            Dashboard Development
+                        </span>
+
+                        <span class="project-tag">
+                            KPI Analysis
+                        </span>
+
+                        <span class="project-tag">
+                            Data Visualization
+                        </span>
+
+                        <span class="project-tag">
+                            Trend Analysis
+                        </span>
+
+                    </div>
+
+                    <div class="project-actions">
+
+                        <a href="https://github.com/Tionge-Hunga/Superstore-Sale-Performance-Dashboard-Microsoft-Excel"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="project-link">
+                            View GitHub Project →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
@@ -2001,109 +1891,216 @@ footer {
 
 <section id="skills" class="skills-section">
 
-<div class="container">
+    <div class="container">
 
-    <h2 class="section-title">
-        Skills & Tools
-    </h2>
+        <h2 class="section-title">
+            Skills & Tools
+        </h2>
 
-    <p class="skills-intro">
-        A combination of practical data management and monitoring
-        experience with developing data analytics and business
-        intelligence capabilities.
-    </p>
-
-    <div class="skills-category-grid">
+        <p class="skills-intro">
+            A combination of practical data management and monitoring
+            experience with developing data analytics, business
+            intelligence, and AI capabilities.
+        </p>
 
 
-        <div class="skills-category primary">
-
-            <h3>
-                Data Analytics & Business Intelligence
-            </h3>
-
-            <ul class="skills-list">
-
-                <li>Data Analysis</li>
-                <li>Data Cleaning</li>
-                <li>Data Visualization</li>
-                <li>Dashboard Development</li>
-                <li>KPI Analysis</li>
-                <li>Trend Analysis</li>
-                <li>Data Interpretation</li>
-                <li>Business Intelligence</li>
-
-            </ul>
-
-        </div>
+        <div class="skills-category-grid">
 
 
-        <div class="skills-category">
+            <!-- ANALYTICS -->
 
-            <h3>
-                Data Management & M&E
-            </h3>
+            <div class="skills-category primary">
 
-            <ul class="skills-list">
+                <h3>
+                    Data Analytics & Business Intelligence
+                </h3>
 
-                <li>Data Management</li>
-                <li>Data Validation</li>
-                <li>Data Quality Assurance</li>
-                <li>Database Management</li>
-                <li>Data Collection</li>
-                <li>Monitoring & Evaluation</li>
-                <li>Results Monitoring</li>
-                <li>Reporting</li>
+                <ul class="skills-list">
 
-            </ul>
+                    <li>Data Analysis</li>
+                    <li>Data Cleaning</li>
+                    <li>Data Visualization</li>
+                    <li>Dashboard Development</li>
+                    <li>KPI Analysis</li>
+                    <li>Trend Analysis</li>
+                    <li>Data Interpretation</li>
+                    <li>Business Intelligence</li>
 
-        </div>
+                </ul>
 
-
-        <div class="skills-category">
-
-            <h3>
-                Tools & Technologies
-            </h3>
-
-            <ul class="skills-list">
-
-                <li>Microsoft Excel</li>
-                <li>Power Query</li>
-                <li>Power Pivot</li>
-                <li>DAX</li>
-                <li>Google Sheets</li>
-                <li>Looker Studio</li>
-                <li>Microsoft Access</li>
-
-            </ul>
-
-        </div>
+            </div>
 
 
-        <div class="skills-category">
+            <!-- DATA MANAGEMENT -->
 
-            <h3>
-                Professional Skills
-            </h3>
+            <div class="skills-category">
 
-            <ul class="skills-list">
+                <h3>
+                    Data Management & M&E
+                </h3>
 
-                <li>Analytical Thinking</li>
-                <li>Problem Solving</li>
-                <li>Attention to Detail</li>
-                <li>Communication</li>
-                <li>Reporting</li>
-                <li>Stakeholder Engagement</li>
-                <li>Evidence-Based Decision Making</li>
+                <ul class="skills-list">
 
-            </ul>
+                    <li>Data Management</li>
+                    <li>Data Validation</li>
+                    <li>Data Quality Assurance</li>
+                    <li>Database Management</li>
+                    <li>Data Collection</li>
+                    <li>Monitoring & Evaluation</li>
+                    <li>Results Monitoring</li>
+                    <li>Reporting</li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- TOOLS -->
+
+            <div class="skills-category">
+
+                <h3>
+                    Tools & Technologies
+                </h3>
+
+                <ul class="skills-list">
+
+                    <li>Microsoft Excel</li>
+                    <li>Power Query</li>
+                    <li>Power Pivot</li>
+                    <li>DAX</li>
+                    <li>Power BI</li>
+                    <li>Google Sheets</li>
+                    <li>Looker Studio</li>
+                    <li>Microsoft Access</li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- AI -->
+
+            <div class="skills-category learning">
+
+                <h3>
+                    AI & Emerging Skills
+                </h3>
+
+                <div class="learning-label">
+                    Developing Capability
+                </div>
+
+                <ul class="skills-list">
+
+                    <li>AI Fundamentals</li>
+                    <li>Prompt Engineering</li>
+                    <li>AI-Assisted Analysis</li>
+                    <li>Generative AI Tools</li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- PROFESSIONAL -->
+
+            <div class="skills-category">
+
+                <h3>
+                    Professional Skills
+                </h3>
+
+                <ul class="skills-list">
+
+                    <li>Analytical Thinking</li>
+                    <li>Problem Solving</li>
+                    <li>Attention to Detail</li>
+                    <li>Communication</li>
+                    <li>Reporting</li>
+                    <li>Stakeholder Engagement</li>
+                    <li>Evidence-Based Decision Making</li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- CURRENT LEARNING -->
+
+            <div class="skills-category learning">
+
+                <h3>
+                    Currently Developing
+                </h3>
+
+                <div class="learning-label">
+                    Current Learning
+                </div>
+
+                <ul class="skills-list">
+
+                    <li>SQL</li>
+                    <li>Python</li>
+                    <li>Power BI</li>
+                    <li>Advanced Data Visualization</li>
+
+                </ul>
+
+            </div>
 
         </div>
 
     </div>
 
-</div>
+</section>
+
+
+<!-- =========================================================
+     EDUCATION
+========================================================= -->
+
+<section id="education" class="education-section">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Education
+        </h2>
+
+        <p class="section-subtitle">
+            Academic foundation supporting my work across data,
+            technology, analytics, and programme information systems.
+        </p>
+
+
+        <div class="education-card">
+
+            <div>
+
+                <h3 class="education-degree">
+                    Bachelor of Science in Computer Science
+                </h3>
+
+                <p class="education-institution">
+                    DMI St. John the Baptist University
+                </p>
+
+                <p class="education-description">
+                    Undergraduate degree providing a foundation in
+                    computer science, technology, problem-solving,
+                    and analytical thinking.
+                </p>
+
+            </div>
+
+            <span class="education-date">
+                2017 – 2021
+            </span>
+
+        </div>
+
+    </div>
 
 </section>
 
@@ -2114,175 +2111,184 @@ footer {
 
 <section id="certifications" class="certifications-section">
 
-<div class="container">
+    <div class="container">
 
-    <h2 class="section-title">
-        Certifications & Professional Development
-    </h2>
+        <h2 class="section-title">
+            Certifications & Professional Development
+        </h2>
 
-    <p class="certifications-intro">
-        Continuous professional development through structured
-        courses, skill tracks, and practical learning in data
-        analytics, artificial intelligence, and monitoring and
-        evaluation.
-    </p>
+        <p class="certifications-intro">
+            Continuous professional development through structured
+            courses, skill tracks, and practical learning in data
+            analytics, artificial intelligence, and monitoring and
+            evaluation.
+        </p>
 
-    <div class="certifications">
 
-        <div class="certification">
+        <div class="certifications">
 
-            <span class="certification-label">
-                DataCamp
-            </span>
 
-            <h3>
-                Data Analyst in Power BI
-            </h3>
+            <div class="certification">
 
-            <p>
-                DataCamp — 2026
-            </p>
+                <span class="certification-label">
+                    DataCamp
+                </span>
+
+                <h3>
+                    ChatGPT Fundamentals
+                </h3>
+
+                <p>
+                    DataCamp — 2026
+                </p>
+
+            </div>
+
+
+            <div class="certification">
+
+                <span class="certification-label">
+                    DataCamp
+                </span>
+
+                <h3>
+                    Data Literacy Professional
+                </h3>
+
+                <p>
+                    DataCamp — 2026
+                </p>
+
+            </div>
+
+
+            <div class="certification">
+
+                <span class="certification-label">
+                    DataCamp
+                </span>
+
+                <h3>
+                    AI Fundamentals Skill Track
+                </h3>
+
+                <p>
+                    DataCamp — 2026
+                </p>
+
+            </div>
+
+
+            <div class="certification">
+
+                <span class="certification-label">
+                    DataCamp
+                </span>
+
+                <h3>
+                    Excel Fundamentals Skill Track
+                </h3>
+
+                <p>
+                    DataCamp — 2026
+                </p>
+
+            </div>
+
+
+            <div class="certification">
+
+                <span class="certification-label">
+                    DataCamp
+                </span>
+
+                <h3>
+                    Intermediate Power Query in Excel
+                </h3>
+
+                <p>
+                    DataCamp — 2026
+                </p>
+
+            </div>
+
+
+            <div class="certification">
+
+                <span class="certification-label">
+                    Philanthropy University
+                </span>
+
+                <h3>
+                    From Data Collection to Data Use
+                </h3>
+
+                <p>
+                    Philanthropy University — 2025
+                </p>
+
+            </div>
+
+
+            <div class="certification">
+
+                <span class="certification-label">
+                    Philanthropy University
+                </span>
+
+                <h3>
+                    Planning for Monitoring and Evaluation
+                </h3>
+
+                <p>
+                    Philanthropy University — 2024
+                </p>
+
+            </div>
 
         </div>
 
 
-        <div class="certification">
+        <!-- CURRENT LEARNING -->
 
-            <span class="certification-label">
-                DataCamp
-            </span>
+        <div class="learning-status">
 
             <h3>
-                Excel Fundamentals
+                Currently Learning
             </h3>
 
-            <p>
-                DataCamp — 2026
-            </p>
+            <div class="learning-status-box">
 
-        </div>
+                <p>
+                    I am continuing to build my technical capabilities
+                    through structured learning and hands-on projects in:
+                </p>
 
+                <ul>
 
-        <div class="certification">
+                    <li>
+                        SQL for data analysis
+                    </li>
 
-            <span class="certification-label">
-                DataCamp
-            </span>
+                    <li>
+                        Python for data analysis and data science
+                    </li>
 
-            <h3>
-                Intermediate Power Query in Excel
-            </h3>
+                    <li>
+                        Power BI and business intelligence
+                    </li>
 
-            <p>
-                DataCamp — 2026
-            </p>
+                    <li>
+                        Advanced data visualization and analytics
+                    </li>
 
-        </div>
+                </ul>
 
-
-        <div class="certification">
-
-            <span class="certification-label">
-                DataCamp
-            </span>
-
-            <h3>
-                Data Literacy Professional
-            </h3>
-
-            <p>
-                DataCamp — 2026
-            </p>
-
-        </div>
-
-
-        <div class="certification">
-
-            <span class="certification-label">
-                DataCamp
-            </span>
-
-            <h3>
-                AI Fundamentals
-            </h3>
-
-            <p>
-                DataCamp — 2026
-            </p>
-
-        </div>
-
-
-        <div class="certification">
-
-            <span class="certification-label">
-                Philanthropy University / FHI360
-            </span>
-
-            <h3>
-                From Data Collection to Data Use
-            </h3>
-
-            <p>
-                2025
-            </p>
-
-        </div>
-
-
-        <div class="certification">
-
-            <span class="certification-label">
-                Philanthropy University / FHI360
-            </span>
-
-            <h3>
-                Planning for Monitoring & Evaluation
-            </h3>
-
-            <p>
-                2024
-            </p>
+            </div>
 
         </div>
 
     </div>
-
-
-    <div class="learning-status">
-
-        <h3>
-            Currently Learning
-        </h3>
-
-        <div class="learning-status-box">
-
-            <ul>
-
-                <li>
-                    SQL for data analysis
-                </li>
-
-                <li>
-                    Python for data analysis and data science
-                </li>
-
-                <li>
-                    Power BI and business intelligence
-                </li>
-
-                <li>
-                    Advanced data visualization and analytics
-                </li>
-
-            </ul>
-
-        </div>
-
-    </div>
-
-</div>
 
 </section>
 
@@ -2293,42 +2299,42 @@ footer {
 
 <section id="contact" class="contact">
 
-<div class="container">
+    <div class="container">
 
-    <h2 class="section-title">
-        Let's Connect
-    </h2>
+        <h2 class="section-title">
+            Let's Connect
+        </h2>
 
-    <p>
-        I am interested in opportunities in data analytics,
-        data management, monitoring and evaluation, reporting,
-        business intelligence, and related data roles.
-    </p>
+        <p>
+            I am interested in opportunities in data analytics,
+            data management, monitoring and evaluation, reporting,
+            business intelligence, and related data roles.
+        </p>
 
-    <div class="contact-links">
+        <div class="contact-links">
 
-        <a class="contact-link"
-           href="https://www.linkedin.com/in/tionge-hunga"
-           target="_blank"
-           rel="noopener noreferrer">
-            LinkedIn
-        </a>
+            <a class="contact-link"
+               href="https://www.linkedin.com/in/tionge-hunga"
+               target="_blank"
+               rel="noopener noreferrer">
+                LinkedIn
+            </a>
 
-        <a class="contact-link"
-           href="https://github.com/Tionge-Hunga"
-           target="_blank"
-           rel="noopener noreferrer">
-            GitHub
-        </a>
+            <a class="contact-link"
+               href="https://github.com/Tionge-Hunga"
+               target="_blank"
+               rel="noopener noreferrer">
+                GitHub
+            </a>
 
-        <a class="contact-link"
-           href="mailto:tiongehu@gmail.com">
-            Email Me
-        </a>
+            <a class="contact-link"
+               href="mailto:tiongehu@gmail.com">
+                Email Me
+            </a>
+
+        </div>
 
     </div>
-
-</div>
 
 </section>
 
@@ -2339,9 +2345,9 @@ footer {
 
 <footer>
 
-<p>
-    © 2026 Tionge Hunga. Built with HTML and CSS.
-</p>
+    <p>
+        © 2026 Tionge Hunga. Built with HTML and CSS.
+    </p>
 
 </footer>
 
