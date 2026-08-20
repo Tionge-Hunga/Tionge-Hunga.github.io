@@ -13,19 +13,13 @@
     </title>
 
     <meta name="description"
-          content="Portfolio of Tionge Hunga — Data Analyst, Data Management and Monitoring & Evaluation professional with experience in data quality, reporting, dashboards and analytics.">
-
-    <meta name="keywords"
-          content="Tionge Hunga, Data Analyst, Data Management, Monitoring and Evaluation, M&E, Excel, Power Query, Power Pivot, DAX, Power BI, Looker Studio, Data Quality">
-
-    <meta name="author"
-          content="Tionge Hunga">
+          content="Portfolio of Tionge Hunga — Data Analyst, Data Management and Monitoring & Evaluation professional.">
 
     <style>
 
-        /* =========================================================
+        /* =========================
            GLOBAL
-        ========================================================= */
+        ========================= */
 
         * {
             margin: 0;
@@ -56,12 +50,12 @@
         }
 
 
-        /* =========================================================
+        /* =========================
            NAVIGATION
-        ========================================================= */
+        ========================= */
 
         nav {
-            background: rgba(255, 255, 255, 0.97);
+            background: rgba(255, 255, 255, 0.96);
             border-bottom: 1px solid #e5e7eb;
             position: sticky;
             top: 0;
@@ -76,60 +70,56 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 17px 0;
+            padding: 18px 0;
         }
 
         .logo {
-            font-size: 1.25rem;
-            font-weight: 800;
+            font-size: 1.3rem;
+            font-weight: 700;
             color: #111827;
-        }
-
-        .logo span {
-            color: #2563eb;
         }
 
         .nav-links {
             display: flex;
-            gap: 24px;
+            gap: 25px;
             list-style: none;
-            align-items: center;
         }
 
         .nav-links a {
             color: #4b5563;
-            font-size: 0.92rem;
-            font-weight: 600;
+            font-size: 0.95rem;
+            font-weight: 500;
             transition: 0.2s ease;
+            position: relative;
         }
 
         .nav-links a:hover {
             color: #2563eb;
         }
 
-        .nav-cv {
+        .nav-links a.active {
+            color: #2563eb;
+            font-weight: 700;
+        }
+
+        .nav-links a.active::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -7px;
+            height: 2px;
             background: #2563eb;
-            color: white !important;
-            padding: 8px 13px;
-            border-radius: 6px;
-        }
-
-        .nav-cv:hover {
-            background: #1d4ed8;
+            border-radius: 2px;
         }
 
 
-        /* =========================================================
+        /* =========================
            HERO
-        ========================================================= */
+        ========================= */
 
         .hero {
             background:
-                radial-gradient(
-                    circle at top right,
-                    rgba(37, 99, 235, 0.08),
-                    transparent 35%
-                ),
                 linear-gradient(
                     135deg,
                     #eff6ff 0%,
@@ -137,7 +127,7 @@
                     #f8fafc 100%
                 );
 
-            padding: 105px 0 95px;
+            padding: 110px 0 100px;
         }
 
         .hero-content {
@@ -151,10 +141,10 @@
             border: 1px solid #bfdbfe;
             padding: 7px 14px;
             border-radius: 20px;
-            font-size: 0.82rem;
+            font-size: 0.85rem;
             font-weight: 700;
             margin-bottom: 22px;
-            letter-spacing: 0.3px;
+            letter-spacing: 0.2px;
         }
 
         .hero h1 {
@@ -162,7 +152,6 @@
             line-height: 1.15;
             color: #111827;
             margin-bottom: 20px;
-            letter-spacing: -1px;
         }
 
         .hero h1 span {
@@ -170,7 +159,7 @@
         }
 
         .hero h2 {
-            font-size: 1.4rem;
+            font-size: 1.45rem;
             line-height: 1.4;
             font-weight: 600;
             color: #374151;
@@ -179,7 +168,7 @@
         }
 
         .hero p {
-            font-size: 1.06rem;
+            font-size: 1.08rem;
             line-height: 1.8;
             color: #4b5563;
             max-width: 780px;
@@ -199,7 +188,7 @@
             color: #374151;
             padding: 8px 13px;
             border-radius: 6px;
-            font-size: 0.88rem;
+            font-size: 0.9rem;
             font-weight: 600;
             transition: 0.2s ease;
         }
@@ -211,13 +200,13 @@
 
         .buttons {
             display: flex;
-            gap: 12px;
+            gap: 14px;
             flex-wrap: wrap;
         }
 
         .btn {
             display: inline-block;
-            padding: 12px 20px;
+            padding: 13px 22px;
             border-radius: 7px;
             font-weight: 600;
             transition: 0.2s ease;
@@ -246,20 +235,19 @@
         }
 
 
-        /* =========================================================
-           GENERAL SECTIONS
-        ========================================================= */
+        /* =========================
+           SECTIONS
+        ========================= */
 
         section {
             padding: 80px 0;
-            scroll-margin-top: 75px;
+            scroll-margin-top: 80px;
         }
 
         .section-title {
             font-size: 2rem;
             color: #111827;
             margin-bottom: 12px;
-            letter-spacing: -0.3px;
         }
 
         .section-subtitle {
@@ -269,9 +257,27 @@
         }
 
 
-        /* =========================================================
+        /* =========================
+           STEP 13 - FADE ANIMATION
+        ========================= */
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition:
+                opacity 0.8s ease,
+                transform 0.8s ease;
+        }
+
+        .fade-in.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+
+        /* =========================
            ABOUT
-        ========================================================= */
+        ========================= */
 
         .about-section {
             background: #ffffff;
@@ -283,7 +289,7 @@
         }
 
         .about-intro p {
-            font-size: 1.05rem;
+            font-size: 1.08rem;
             line-height: 1.8;
             color: #4b5563;
             margin-bottom: 18px;
@@ -305,12 +311,12 @@
             border: 1px solid #e5e7eb;
             border-radius: 12px;
             padding: 28px;
-            transition: 0.2s ease;
+            transition: 0.25s ease;
         }
 
         .about-focus-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
         }
 
         .about-focus-icon {
@@ -324,7 +330,6 @@
             justify-content: center;
             font-weight: 700;
             margin-bottom: 18px;
-            font-size: 0.82rem;
         }
 
         .about-focus-card h3 {
@@ -360,9 +365,9 @@
         }
 
 
-        /* =========================================================
+        /* =========================
            EXPERIENCE
-        ========================================================= */
+        ========================= */
 
         .experience-section {
             background: #f8fafc;
@@ -375,12 +380,12 @@
             padding: 32px;
             margin-bottom: 24px;
             position: relative;
-            transition: 0.2s ease;
+            transition: 0.25s ease;
         }
 
         .experience-item:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
         }
 
         .experience-header {
@@ -406,7 +411,7 @@
 
         .experience-date {
             color: #6b7280;
-            font-size: 0.88rem;
+            font-size: 0.9rem;
             white-space: nowrap;
             background: #f3f4f6;
             padding: 6px 12px;
@@ -460,9 +465,9 @@
         }
 
 
-        /* =========================================================
+        /* =========================
            PROJECTS
-        ========================================================= */
+        ========================= */
 
         .projects {
             background: #ffffff;
@@ -493,13 +498,18 @@
             border: 1px solid #e5e7eb;
             border-radius: 12px;
             overflow: hidden;
-            transition: 0.2s ease;
+            transition: 0.25s ease;
         }
 
         .project-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.07);
+            transform: translateY(-5px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
         }
+
+
+        /* =========================
+           PROJECT IMAGES
+        ========================= */
 
         .project-image {
             width: 100%;
@@ -516,6 +526,11 @@
             max-width: 100%;
             object-fit: contain;
         }
+
+
+        /* =========================
+           PROJECT CONTENT
+        ========================= */
 
         .project-content {
             padding: 28px;
@@ -567,8 +582,13 @@
 
         .project-link:hover {
             color: #1d4ed8;
-            transform: translateX(2px);
+            transform: translateX(3px);
         }
+
+
+        /* =========================
+           PROJECT TAGS
+        ========================= */
 
         .project-tags {
             display: flex;
@@ -589,8 +609,17 @@
             font-weight: 600;
         }
 
+
+        /* =========================
+           PROFESSIONAL PROJECT
+        ========================= */
+
         .professional-project {
             padding: 28px;
+        }
+
+        .professional-project .project-type {
+            margin-bottom: 12px;
         }
 
         .professional-project h3 {
@@ -606,9 +635,9 @@
         }
 
 
-        /* =========================================================
+        /* =========================
            SKILLS
-        ========================================================= */
+        ========================= */
 
         .skills-section {
             background: #f8fafc;
@@ -632,12 +661,12 @@
             border: 1px solid #e5e7eb;
             border-radius: 12px;
             padding: 28px;
-            transition: 0.2s ease;
+            transition: 0.25s ease;
         }
 
         .skills-category:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
         }
 
         .skills-category h3 {
@@ -668,81 +697,34 @@
             border-top: 3px solid #2563eb;
         }
 
-        .skills-category.learning {
-            border-top: 3px solid #7c3aed;
-        }
 
-        .learning-label {
-            color: #7c3aed;
-            font-size: 0.78rem;
-            font-weight: 700;
-            margin-bottom: 15px;
-            text-transform: uppercase;
-            letter-spacing: 0.4px;
-        }
+        /* =========================
+           LEARNING
+        ========================= */
 
-
-        /* =========================================================
-           EDUCATION
-        ========================================================= */
-
-        .education-section {
-            background: #ffffff;
-        }
-
-        .education-card {
-            background: #f8fafc;
-            border: 1px solid #e5e7eb;
-            border-radius: 12px;
+        .learning-box {
+            background: #eff6ff;
             padding: 30px;
-            max-width: 850px;
-            display: flex;
-            justify-content: space-between;
-            gap: 30px;
-            align-items: flex-start;
-            transition: 0.2s ease;
+            border-radius: 10px;
+            border: 1px solid #dbeafe;
         }
 
-        .education-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        .learning-box ul {
+            padding-left: 20px;
+            color: #374151;
         }
 
-        .education-degree {
-            color: #111827;
-            font-size: 1.25rem;
+        .learning-box li {
             margin-bottom: 8px;
         }
 
-        .education-institution {
-            color: #2563eb;
-            font-weight: 600;
-            margin-bottom: 6px;
-        }
 
-        .education-description {
-            color: #6b7280;
-            line-height: 1.7;
-            max-width: 650px;
-        }
-
-        .education-date {
-            color: #6b7280;
-            font-size: 0.9rem;
-            white-space: nowrap;
-            background: #ffffff;
-            border: 1px solid #e5e7eb;
-            padding: 7px 12px;
-            border-radius: 20px;
-        }
-
-
-        /* =========================================================
+        /* =========================
            CERTIFICATIONS
-        ========================================================= */
+        ========================= */
 
         .certifications-section {
-            background: #f8fafc;
+            background: #ffffff;
         }
 
         .certifications-intro {
@@ -763,12 +745,12 @@
             padding: 24px;
             border: 1px solid #e5e7eb;
             border-radius: 10px;
-            transition: 0.2s ease;
+            transition: 0.25s ease;
         }
 
         .certification:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
         }
 
         .certification-label {
@@ -813,11 +795,6 @@
             padding: 25px;
         }
 
-        .learning-status-box p {
-            color: #4b5563;
-            margin-bottom: 15px;
-        }
-
         .learning-status-box ul {
             padding-left: 20px;
             color: #374151;
@@ -828,9 +805,9 @@
         }
 
 
-        /* =========================================================
+        /* =========================
            CONTACT
-        ========================================================= */
+        ========================= */
 
         .contact {
             background: #111827;
@@ -849,7 +826,7 @@
 
         .contact-links {
             display: flex;
-            gap: 12px;
+            gap: 20px;
             flex-wrap: wrap;
         }
 
@@ -863,15 +840,14 @@
         }
 
         .contact-link:hover {
-            background: #dbeafe;
-            color: #1d4ed8;
             transform: translateY(-2px);
+            background: #eff6ff;
         }
 
 
-        /* =========================================================
+        /* =========================
            FOOTER
-        ========================================================= */
+        ========================= */
 
         footer {
             background: #0f172a;
@@ -882,9 +858,46 @@
         }
 
 
-        /* =========================================================
+        /* =========================
+           BACK TO TOP
+        ========================= */
+
+        .back-to-top {
+            position: fixed;
+            right: 25px;
+            bottom: 25px;
+            width: 50px;
+            height: 50px;
+            background: #2563eb;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.35);
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s ease;
+            z-index: 999;
+        }
+
+        .back-to-top:hover {
+            background: #1d4ed8;
+            transform: translateY(-3px);
+        }
+
+        .back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+
+        /* =========================
            MOBILE
-        ========================================================= */
+        ========================= */
 
         @media (max-width: 768px) {
 
@@ -894,17 +907,13 @@
             }
 
             .nav-links {
-                gap: 10px;
+                gap: 12px;
                 flex-wrap: wrap;
                 justify-content: center;
             }
 
-            .nav-links a {
-                font-size: 0.84rem;
-            }
-
-            .nav-cv {
-                padding: 6px 10px;
+            .nav-links a.active::after {
+                display: none;
             }
 
             .hero {
@@ -916,7 +925,7 @@
             }
 
             .hero h2 {
-                font-size: 1.15rem;
+                font-size: 1.2rem;
             }
 
             .hero p {
@@ -933,23 +942,9 @@
 
             .about-focus-grid,
             .project-grid,
-            .skills-category-grid,
-            .certifications {
+            .certifications,
+            .skills-category-grid {
                 grid-template-columns: 1fr;
-            }
-
-            .education-card {
-                flex-direction: column;
-                gap: 15px;
-            }
-
-            .experience-header {
-                flex-direction: column;
-                gap: 10px;
-            }
-
-            .experience-date {
-                white-space: normal;
             }
 
             .project-image {
@@ -967,7 +962,7 @@
 
             .buttons {
                 flex-direction: column;
-                align-items: stretch;
+                align-items: flex-start;
             }
 
             .btn {
@@ -975,53 +970,38 @@
                 text-align: center;
             }
 
-            .about-focus-card,
-            .skills-category,
-            .certification,
+            .project-content {
+                padding: 22px;
+            }
+
             .professional-project {
                 padding: 22px;
             }
-        }
 
-
-        /* =========================================================
-           SMALL MOBILE
-        ========================================================= */
-
-        @media (max-width: 480px) {
-
-            .container {
-                width: 92%;
+            .skills-category {
+                padding: 22px;
             }
 
-            section {
-                padding: 65px 0;
+            .certification {
+                padding: 22px;
             }
 
-            .hero h1 {
-                font-size: 2.1rem;
+            .experience-header {
+                flex-direction: column;
+                gap: 10px;
             }
 
-            .hero h2 {
-                font-size: 1.05rem;
+            .experience-date {
+                white-space: normal;
+                display: inline-block;
             }
 
-            .section-title {
-                font-size: 1.7rem;
+            .back-to-top {
+                width: 45px;
+                height: 45px;
+                right: 18px;
+                bottom: 18px;
             }
-
-            .project-card h3 {
-                font-size: 1.15rem;
-            }
-
-            .experience-title h3 {
-                font-size: 1.18rem;
-            }
-
-            .logo {
-                font-size: 1.1rem;
-            }
-
         }
 
     </style>
@@ -1032,16 +1012,16 @@
 <body>
 
 
-<!-- =========================================================
+<!-- =========================
      NAVIGATION
-========================================================= -->
+========================= -->
 
 <nav>
 
     <div class="nav-container">
 
         <div class="logo">
-            Tionge <span>Hunga</span>
+            Tionge Hunga
         </div>
 
         <ul class="nav-links">
@@ -1063,23 +1043,11 @@
             </li>
 
             <li>
-                <a href="#education">Education</a>
-            </li>
-
-            <li>
                 <a href="#certifications">Certifications</a>
             </li>
 
             <li>
                 <a href="#contact">Contact</a>
-            </li>
-
-            <li>
-                <a class="nav-cv"
-                   href="Tionge-Hunga-CV.pdf"
-                   target="_blank">
-                    CV
-                </a>
             </li>
 
         </ul>
@@ -1089,9 +1057,9 @@
 </nav>
 
 
-<!-- =========================================================
+<!-- =========================
      HERO
-========================================================= -->
+========================= -->
 
 <header class="hero">
 
@@ -1178,11 +1146,11 @@
 </header>
 
 
-<!-- =========================================================
+<!-- =========================
      ABOUT
-========================================================= -->
+========================= -->
 
-<section id="about" class="about-section">
+<section id="about" class="about-section fade-in">
 
     <div class="container">
 
@@ -1191,11 +1159,9 @@
         </h2>
 
         <p class="section-subtitle">
-            Data professional combining data management,
-            monitoring and evaluation, data quality,
-            and analytics.
+            Data professional combining data management, monitoring and
+            evaluation, data quality, and analytics.
         </p>
-
 
         <div class="about-intro">
 
@@ -1218,8 +1184,8 @@
                 Alongside my professional experience, I am building my
                 technical capabilities in data analytics and business
                 intelligence through hands-on projects using tools such as
-                Microsoft Excel, Power Query, Power Pivot, DAX, Power BI,
-                and Looker Studio.
+                Microsoft Excel, Power Query, Power Pivot, DAX, and
+                Looker Studio.
             </p>
 
         </div>
@@ -1297,11 +1263,10 @@
             <p>
                 I combine my experience in programme data and monitoring
                 and evaluation with growing analytical and technical skills.
-                My goal is to bridge the gap between
-                <strong>data collection, data quality, analysis,
-                and decision-making</strong> — helping organisations
-                transform reliable data into clear information that can
-                support better decisions.
+                My goal is to bridge the gap between <strong>data collection,
+                data quality, analysis, and decision-making</strong> — helping
+                organisations transform reliable data into clear information
+                that can support better decisions.
             </p>
 
         </div>
@@ -1311,11 +1276,11 @@
 </section>
 
 
-<!-- =========================================================
+<!-- =========================
      EXPERIENCE
-========================================================= -->
+========================= -->
 
-<section id="experience" class="experience-section">
+<section id="experience" class="experience-section fade-in">
 
     <div class="container">
 
@@ -1351,11 +1316,13 @@
 
             </div>
 
+
             <p class="experience-summary">
                 Support programme monitoring, data quality assurance,
                 reporting, database management, and analysis to provide
                 reliable evidence for management and donor decision-making.
             </p>
+
 
             <h5>
                 Key Responsibilities & Impact
@@ -1373,28 +1340,31 @@
                 <li>
                     <strong>Data quality assurance:</strong>
                     Maintain and quality-assure a 900+ record court-monitoring
-                    database, reviewing active records across three regions
-                    for accuracy, completeness, and consistency.
+                    database, reviewing 15–20 active records monthly across
+                    three regions for accuracy, completeness, and consistency.
                 </li>
 
                 <li>
                     <strong>Data validation:</strong>
-                    Identify missing, incomplete, or inconsistent information
-                    and coordinate follow-up with Court Monitors to resolve
-                    discrepancies before reporting.
+                    Identify approximately 20% of reviewed records requiring
+                    corrections and 30–40% containing missing information,
+                    coordinating with Court Monitors to resolve discrepancies
+                    before reporting.
                 </li>
 
                 <li>
                     <strong>Database management:</strong>
-                    Maintain departmental databases using Google Sheets,
-                    supporting reliable programme reporting and analysis.
+                    Maintain approximately three departmental Google Sheets
+                    databases, including a 190-record media monitoring
+                    database, a results framework covering three programme
+                    areas, and a 560-record pangolin monitoring database.
                 </li>
 
                 <li>
                     <strong>Monitoring:</strong>
                     Conduct onsite monitoring to collect and analyse
-                    programme data, assessing changes and outcomes to
-                    support evidence of project impact.
+                    programme data, assessing changes and outcomes to support
+                    evidence of project impact.
                 </li>
 
                 <li>
@@ -1405,6 +1375,7 @@
                 </li>
 
             </ul>
+
 
             <div class="experience-tags">
 
@@ -1444,7 +1415,7 @@
                 <div class="experience-title">
 
                     <h3>
-                        Data Entry Clerk / Monitoring & Evaluation Assistant
+                        Data Entry Clerk
                     </h3>
 
                     <h4>
@@ -1459,11 +1430,13 @@
 
             </div>
 
+
             <p class="experience-summary">
                 Supported programme data collection, data entry, data
-                verification, database maintenance, reporting, and
-                monitoring and evaluation activities.
+                verification, database maintenance, and data quality
+                assessments for wildlife justice and monitoring programmes.
             </p>
+
 
             <h5>
                 Key Responsibilities & Impact
@@ -1475,7 +1448,7 @@
                     <strong>Data verification:</strong>
                     Verified data before database entry by checking
                     completeness, consistency, and accuracy and following
-                    up to resolve discrepancies.
+                    up with Court Monitors to resolve discrepancies.
                 </li>
 
                 <li>
@@ -1494,14 +1467,23 @@
 
                 <li>
                     <strong>Database management:</strong>
-                    Entered and maintained programme records in specialised
-                    databases, including Microsoft Access.
+                    Entered and maintained approximately 1,106+ records
+                    in a Microsoft Access database, providing structured
+                    programme data for analysis and donor reporting.
                 </li>
 
                 <li>
                     <strong>Case data management:</strong>
-                    Maintained structured programme records and continuously
-                    updated active cases until conclusion.
+                    Entered and maintained approximately 828 records
+                    using structured data-collection forms, including
+                    continuous updates to active cases until conclusion.
+                </li>
+
+                <li>
+                    <strong>Wildlife justice data:</strong>
+                    Entered and maintained 200+ forms in a specialised
+                    wildlife justice database, updating records as active
+                    cases progressed.
                 </li>
 
                 <li>
@@ -1511,6 +1493,7 @@
                 </li>
 
             </ul>
+
 
             <div class="experience-tags">
 
@@ -1547,11 +1530,11 @@
 </section>
 
 
-<!-- =========================================================
+<!-- =========================
      PROJECTS
-========================================================= -->
+========================= -->
 
-<section id="projects" class="projects">
+<section id="projects" class="projects fade-in">
 
     <div class="container">
 
@@ -1699,6 +1682,7 @@
 
                 </div>
 
+
                 <div class="project-content">
 
                     <span class="project-type">
@@ -1726,45 +1710,27 @@
                         Cleaned and transformed the dataset using Power
                         Query, connected related datasets using Power Pivot,
                         created analytical measures using DAX, and developed
-                        an interactive dashboard.
+                        an interactive dashboard to explore patient and
+                        admission patterns.
                     </p>
 
                     <p>
                         <strong>Key findings:</strong>
                         The analysis covered 101,766 hospital encounters
-                        involving 71,518 unique patients and examined
-                        readmissions and demographic patterns.
+                        involving 71,518 unique patients and identified a
+                        46% readmission rate. Patients aged 70–80 accounted
+                        for the highest number of admissions and readmissions.
                     </p>
 
                     <div class="project-tags">
 
-                        <span class="project-tag">
-                            Excel
-                        </span>
-
-                        <span class="project-tag">
-                            Power Query
-                        </span>
-
-                        <span class="project-tag">
-                            Power Pivot
-                        </span>
-
-                        <span class="project-tag">
-                            DAX
-                        </span>
-
-                        <span class="project-tag">
-                            Data Cleaning
-                        </span>
-
-                        <span class="project-tag">
-                            Data Modelling
-                        </span>
-
-                        <span class="project-tag">
-                            Dashboard Development
-                        </span>
+                        <span class="project-tag">Excel</span>
+                        <span class="project-tag">Power Query</span>
+                        <span class="project-tag">Power Pivot</span>
+                        <span class="project-tag">DAX</span>
+                        <span class="project-tag">Data Cleaning</span>
+                        <span class="project-tag">Data Modelling</span>
+                        <span class="project-tag">Dashboard Development</span>
 
                     </div>
 
@@ -1794,6 +1760,7 @@
                          alt="Superstore Sales Performance Dashboard">
 
                 </div>
+
 
                 <div class="project-content">
 
@@ -1837,29 +1804,12 @@
 
                     <div class="project-tags">
 
-                        <span class="project-tag">
-                            Excel
-                        </span>
-
-                        <span class="project-tag">
-                            Data Analysis
-                        </span>
-
-                        <span class="project-tag">
-                            Dashboard Development
-                        </span>
-
-                        <span class="project-tag">
-                            KPI Analysis
-                        </span>
-
-                        <span class="project-tag">
-                            Data Visualization
-                        </span>
-
-                        <span class="project-tag">
-                            Trend Analysis
-                        </span>
+                        <span class="project-tag">Excel</span>
+                        <span class="project-tag">Data Analysis</span>
+                        <span class="project-tag">Dashboard Development</span>
+                        <span class="project-tag">KPI Analysis</span>
+                        <span class="project-tag">Data Visualization</span>
+                        <span class="project-tag">Trend Analysis</span>
 
                     </div>
 
@@ -1885,11 +1835,11 @@
 </section>
 
 
-<!-- =========================================================
+<!-- =========================
      SKILLS
-========================================================= -->
+========================= -->
 
-<section id="skills" class="skills-section">
+<section id="skills" class="skills-section fade-in">
 
     <div class="container">
 
@@ -1899,15 +1849,13 @@
 
         <p class="skills-intro">
             A combination of practical data management and monitoring
-            experience with developing data analytics, business
-            intelligence, and AI capabilities.
+            experience with developing data analytics and business
+            intelligence capabilities.
         </p>
 
 
         <div class="skills-category-grid">
 
-
-            <!-- ANALYTICS -->
 
             <div class="skills-category primary">
 
@@ -1931,8 +1879,6 @@
             </div>
 
 
-            <!-- DATA MANAGEMENT -->
-
             <div class="skills-category">
 
                 <h3>
@@ -1955,8 +1901,6 @@
             </div>
 
 
-            <!-- TOOLS -->
-
             <div class="skills-category">
 
                 <h3>
@@ -1969,7 +1913,6 @@
                     <li>Power Query</li>
                     <li>Power Pivot</li>
                     <li>DAX</li>
-                    <li>Power BI</li>
                     <li>Google Sheets</li>
                     <li>Looker Studio</li>
                     <li>Microsoft Access</li>
@@ -1978,32 +1921,6 @@
 
             </div>
 
-
-            <!-- AI -->
-
-            <div class="skills-category learning">
-
-                <h3>
-                    AI & Emerging Skills
-                </h3>
-
-                <div class="learning-label">
-                    Developing Capability
-                </div>
-
-                <ul class="skills-list">
-
-                    <li>AI Fundamentals</li>
-                    <li>Prompt Engineering</li>
-                    <li>AI-Assisted Analysis</li>
-                    <li>Generative AI Tools</li>
-
-                </ul>
-
-            </div>
-
-
-            <!-- PROFESSIONAL -->
 
             <div class="skills-category">
 
@@ -2025,30 +1942,6 @@
 
             </div>
 
-
-            <!-- CURRENT LEARNING -->
-
-            <div class="skills-category learning">
-
-                <h3>
-                    Currently Developing
-                </h3>
-
-                <div class="learning-label">
-                    Current Learning
-                </div>
-
-                <ul class="skills-list">
-
-                    <li>SQL</li>
-                    <li>Python</li>
-                    <li>Power BI</li>
-                    <li>Advanced Data Visualization</li>
-
-                </ul>
-
-            </div>
-
         </div>
 
     </div>
@@ -2056,60 +1949,11 @@
 </section>
 
 
-<!-- =========================================================
-     EDUCATION
-========================================================= -->
-
-<section id="education" class="education-section">
-
-    <div class="container">
-
-        <h2 class="section-title">
-            Education
-        </h2>
-
-        <p class="section-subtitle">
-            Academic foundation supporting my work across data,
-            technology, analytics, and programme information systems.
-        </p>
-
-
-        <div class="education-card">
-
-            <div>
-
-                <h3 class="education-degree">
-                    Bachelor of Science in Computer Science
-                </h3>
-
-                <p class="education-institution">
-                    DMI St. John the Baptist University
-                </p>
-
-                <p class="education-description">
-                    Undergraduate degree providing a foundation in
-                    computer science, technology, problem-solving,
-                    and analytical thinking.
-                </p>
-
-            </div>
-
-            <span class="education-date">
-                2017 – 2021
-            </span>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================================================
+<!-- =========================
      CERTIFICATIONS
-========================================================= -->
+========================= -->
 
-<section id="certifications" class="certifications-section">
+<section id="certifications" class="certifications-section fade-in">
 
     <div class="container">
 
@@ -2135,7 +1979,41 @@
                 </span>
 
                 <h3>
-                    ChatGPT Fundamentals
+                    Data Analyst in Power BI
+                </h3>
+
+                <p>
+                    DataCamp — 2026
+                </p>
+
+            </div>
+
+
+            <div class="certification">
+
+                <span class="certification-label">
+                    DataCamp
+                </span>
+
+                <h3>
+                    Excel Fundamentals
+                </h3>
+
+                <p>
+                    DataCamp — 2026
+                </p>
+
+            </div>
+
+
+            <div class="certification">
+
+                <span class="certification-label">
+                    DataCamp
+                </span>
+
+                <h3>
+                    Intermediate Power Query in Excel
                 </h3>
 
                 <p>
@@ -2169,7 +2047,7 @@
                 </span>
 
                 <h3>
-                    AI Fundamentals Skill Track
+                    AI Fundamentals
                 </h3>
 
                 <p>
@@ -2182,41 +2060,7 @@
             <div class="certification">
 
                 <span class="certification-label">
-                    DataCamp
-                </span>
-
-                <h3>
-                    Excel Fundamentals Skill Track
-                </h3>
-
-                <p>
-                    DataCamp — 2026
-                </p>
-
-            </div>
-
-
-            <div class="certification">
-
-                <span class="certification-label">
-                    DataCamp
-                </span>
-
-                <h3>
-                    Intermediate Power Query in Excel
-                </h3>
-
-                <p>
-                    DataCamp — 2026
-                </p>
-
-            </div>
-
-
-            <div class="certification">
-
-                <span class="certification-label">
-                    Philanthropy University
+                    Philanthropy University / FHI360
                 </span>
 
                 <h3>
@@ -2224,7 +2068,7 @@
                 </h3>
 
                 <p>
-                    Philanthropy University — 2025
+                    2025
                 </p>
 
             </div>
@@ -2233,23 +2077,21 @@
             <div class="certification">
 
                 <span class="certification-label">
-                    Philanthropy University
+                    Philanthropy University / FHI360
                 </span>
 
                 <h3>
-                    Planning for Monitoring and Evaluation
+                    Planning for Monitoring & Evaluation
                 </h3>
 
                 <p>
-                    Philanthropy University — 2024
+                    2024
                 </p>
 
             </div>
 
         </div>
 
-
-        <!-- CURRENT LEARNING -->
 
         <div class="learning-status">
 
@@ -2258,11 +2100,6 @@
             </h3>
 
             <div class="learning-status-box">
-
-                <p>
-                    I am continuing to build my technical capabilities
-                    through structured learning and hands-on projects in:
-                </p>
 
                 <ul>
 
@@ -2293,11 +2130,11 @@
 </section>
 
 
-<!-- =========================================================
+<!-- =========================
      CONTACT
-========================================================= -->
+========================= -->
 
-<section id="contact" class="contact">
+<section id="contact" class="contact fade-in">
 
     <div class="container">
 
@@ -2339,9 +2176,9 @@
 </section>
 
 
-<!-- =========================================================
+<!-- =========================
      FOOTER
-========================================================= -->
+========================= -->
 
 <footer>
 
@@ -2352,5 +2189,152 @@
 </footer>
 
 
+<!-- =========================
+     BACK TO TOP
+========================= -->
+
+<a href="#"
+   class="back-to-top"
+   id="backToTop"
+   aria-label="Back to top">
+    ↑
+</a>
+
+
+<!-- =========================
+     STEP 13 JAVASCRIPT
+========================= -->
+
+<script>
+
+    /* =========================
+       FADE-IN ANIMATION
+    ========================= */
+
+    const sections = document.querySelectorAll(".fade-in");
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+
+            entries.forEach((entry) => {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add("show");
+
+                }
+
+            });
+
+        },
+        {
+            threshold: 0.15
+        }
+    );
+
+
+    sections.forEach((section) => {
+
+        observer.observe(section);
+
+    });
+
+
+    /* =========================
+       ACTIVE NAVIGATION
+    ========================= */
+
+    const navLinks =
+        document.querySelectorAll(".nav-links a");
+
+    const navSections =
+        document.querySelectorAll("section");
+
+
+    window.addEventListener("scroll", () => {
+
+        let current = "";
+
+        navSections.forEach((section) => {
+
+            const sectionTop =
+                section.offsetTop - 150;
+
+            const sectionHeight =
+                section.offsetHeight;
+
+            if (
+                window.scrollY >= sectionTop &&
+                window.scrollY < sectionTop + sectionHeight
+            ) {
+
+                current =
+                    section.getAttribute("id");
+
+            }
+
+        });
+
+
+        navLinks.forEach((link) => {
+
+            link.classList.remove("active");
+
+            if (
+                link.getAttribute("href") ===
+                "#" + current
+            ) {
+
+                link.classList.add("active");
+
+            }
+
+        });
+
+    });
+
+
+    /* =========================
+       BACK TO TOP
+    ========================= */
+
+    const topButton =
+        document.getElementById("backToTop");
+
+
+    window.addEventListener("scroll", () => {
+
+        if (window.scrollY > 500) {
+
+            topButton.classList.add("show");
+
+        } else {
+
+            topButton.classList.remove("show");
+
+        }
+
+    });
+
+
+    /* =========================
+       BACK TO TOP CLICK
+    ========================= */
+
+    topButton.addEventListener("click", (event) => {
+
+        event.preventDefault();
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    });
+
+</script>
+
+
 </body>
+
 </html>
