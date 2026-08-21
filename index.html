@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -16,9 +17,9 @@
 
 <style>
 
-/* =========================
+/* =========================================================
    GLOBAL
-========================= */
+========================================================= */
 
 * {
     margin: 0;
@@ -49,9 +50,9 @@ a {
 }
 
 
-/* =========================
+/* =========================================================
    NAVIGATION
-========================= */
+========================================================= */
 
 nav {
     background: #ffffff;
@@ -87,7 +88,7 @@ nav {
     color: #4b5563;
     font-size: 0.95rem;
     font-weight: 500;
-    transition: 0.2s;
+    transition: 0.2s ease;
 }
 
 .nav-links a:hover {
@@ -95,9 +96,9 @@ nav {
 }
 
 
-/* =========================
+/* =========================================================
    HERO
-========================= */
+========================================================= */
 
 .hero {
     background:
@@ -184,7 +185,7 @@ nav {
     padding: 13px 22px;
     border-radius: 7px;
     font-weight: 600;
-    transition: 0.2s;
+    transition: 0.2s ease;
     border: 1px solid transparent;
 }
 
@@ -210,9 +211,9 @@ nav {
 }
 
 
-/* =========================
+/* =========================================================
    SECTIONS
-========================= */
+========================================================= */
 
 section {
     padding: 80px 0;
@@ -231,9 +232,9 @@ section {
 }
 
 
-/* =========================
+/* =========================================================
    ABOUT
-========================= */
+========================================================= */
 
 .about-section {
     background: #ffffff;
@@ -321,9 +322,9 @@ section {
 }
 
 
-/* =========================
+/* =========================================================
    EXPERIENCE
-========================= */
+========================================================= */
 
 .experience-section {
     background: #f8fafc;
@@ -334,7 +335,8 @@ section {
     border: 1px solid #e5e7eb;
     border-radius: 12px;
     padding: 30px;
-    margin-bottom: 22px;
+    margin-bottom: 24px;
+    position: relative;
     transition: 0.2s ease;
 }
 
@@ -348,7 +350,7 @@ section {
     justify-content: space-between;
     align-items: flex-start;
     gap: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
 }
 
 .experience-title h3 {
@@ -375,42 +377,47 @@ section {
 .experience-summary {
     color: #4b5563;
     line-height: 1.7;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     max-width: 850px;
 }
 
-.experience-focus {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 9px;
+.experience-item ul {
+    padding-left: 20px;
+    color: #4b5563;
     margin-bottom: 20px;
 }
 
-.experience-focus span {
+.experience-item li {
+    margin-bottom: 9px;
+    line-height: 1.6;
+}
+
+.experience-item li strong {
+    color: #111827;
+}
+
+.experience-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-top: 16px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.experience-tag {
     background: #eff6ff;
     border: 1px solid #dbeafe;
     color: #1d4ed8;
-    padding: 7px 11px;
+    padding: 6px 11px;
     border-radius: 6px;
-    font-size: 0.84rem;
+    font-size: 0.82rem;
     font-weight: 600;
 }
 
-.experience-tools {
-    padding-top: 18px;
-    border-top: 1px solid #e5e7eb;
-    color: #6b7280;
-    font-size: 0.9rem;
-}
 
-.experience-tools strong {
-    color: #374151;
-}
-
-
-/* =========================
+/* =========================================================
    PROJECTS
-========================= */
+========================================================= */
 
 .projects {
     background: #ffffff;
@@ -419,7 +426,7 @@ section {
 .projects .section-intro {
     color: #6b7280;
     max-width: 800px;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     line-height: 1.7;
 }
 
@@ -449,6 +456,9 @@ section {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
 }
 
+
+/* PROJECT IMAGES */
+
 .project-image {
     width: 100%;
     background: #f3f4f6;
@@ -465,11 +475,14 @@ section {
     object-fit: contain;
 }
 
+
+/* PROJECT CONTENT */
+
 .project-content {
-    padding: 28px;
+    padding: 26px;
 }
 
-.project-card .project-type {
+.project-type {
     display: inline-block;
     color: #2563eb;
     background: #eff6ff;
@@ -485,6 +498,7 @@ section {
 .project-card h3 {
     color: #111827;
     font-size: 1.3rem;
+    line-height: 1.35;
     margin-bottom: 8px;
 }
 
@@ -498,23 +512,42 @@ section {
 .project-card p {
     color: #6b7280;
     line-height: 1.7;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
 }
 
 .project-card p strong {
     color: #111827;
 }
 
-.project-link {
-    display: inline-block;
-    color: #2563eb;
-    font-weight: 700;
-    margin-top: 5px;
+
+/* PROJECT INSIGHTS */
+
+.project-insights {
+    margin: 20px 0;
+    padding: 18px 20px;
+    background: #f8fafc;
+    border-left: 3px solid #2563eb;
+    border-radius: 6px;
 }
 
-.project-link:hover {
-    color: #1d4ed8;
+.project-insights h4 {
+    color: #111827;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
 }
+
+.project-insights ul {
+    padding-left: 18px;
+    color: #4b5563;
+}
+
+.project-insights li {
+    margin-bottom: 7px;
+    line-height: 1.55;
+}
+
+
+/* PROJECT TAGS */
 
 .project-tags {
     display: flex;
@@ -535,26 +568,40 @@ section {
     font-weight: 600;
 }
 
-.professional-project {
-    padding: 28px;
+
+/* PROJECT LINKS */
+
+.project-actions {
+    margin-top: 18px;
 }
 
-.professional-project h3 {
-    margin-bottom: 10px;
+.project-link {
+    display: inline-block;
+    color: #2563eb;
+    font-weight: 700;
+    transition: 0.2s ease;
+}
+
+.project-link:hover {
+    color: #1d4ed8;
+    transform: translateX(2px);
+}
+
+
+/* PROFESSIONAL PROJECT */
+
+.professional-project {
+    padding: 28px;
 }
 
 .professional-project p {
     line-height: 1.7;
 }
 
-.project-actions {
-    margin-top: 20px;
-}
 
-
-/* =========================
+/* =========================================================
    SKILLS
-========================= */
+========================================================= */
 
 .skills-section {
     background: #f8fafc;
@@ -615,9 +662,9 @@ section {
 }
 
 
-/* =========================
+/* =========================================================
    CERTIFICATIONS
-========================= */
+========================================================= */
 
 .certifications-section {
     background: #ffffff;
@@ -701,9 +748,9 @@ section {
 }
 
 
-/* =========================
+/* =========================================================
    CONTACT
-========================= */
+========================================================= */
 
 .contact {
     background: #111827;
@@ -732,16 +779,17 @@ section {
     padding: 11px 18px;
     border-radius: 6px;
     font-weight: 600;
+    transition: 0.2s ease;
 }
 
 .contact-link:hover {
-    background: #e5e7eb;
+    transform: translateY(-2px);
 }
 
 
-/* =========================
+/* =========================================================
    FOOTER
-========================= */
+========================================================= */
 
 footer {
     background: #0f172a;
@@ -752,9 +800,9 @@ footer {
 }
 
 
-/* =========================
+/* =========================================================
    MOBILE
-========================= */
+========================================================= */
 
 @media (max-width: 768px) {
 
@@ -795,8 +843,8 @@ footer {
 
     .about-focus-grid,
     .project-grid,
-    .certifications,
-    .skills-category-grid {
+    .skills-category-grid,
+    .certifications {
         grid-template-columns: 1fr;
     }
 
@@ -813,6 +861,15 @@ footer {
         object-fit: contain;
     }
 
+    .experience-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .experience-date {
+        white-space: normal;
+    }
+
     .buttons {
         flex-direction: column;
         align-items: flex-start;
@@ -823,16 +880,9 @@ footer {
         text-align: center;
     }
 
-    .experience-header {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .experience-date {
-        white-space: normal;
-    }
-
-    .experience-item {
+    .about-focus-card,
+    .skills-category,
+    .certification {
         padding: 22px;
     }
 
@@ -841,25 +891,19 @@ footer {
         padding: 22px;
     }
 
-    .skills-category {
-        padding: 22px;
-    }
-
-    .certification {
-        padding: 22px;
-    }
 }
 
 </style>
 
 </head>
 
+
 <body>
 
 
-<!-- =========================
+<!-- =========================================================
      NAVIGATION
-========================= -->
+========================================================= -->
 
 <nav>
 
@@ -902,9 +946,9 @@ footer {
 </nav>
 
 
-<!-- =========================
+<!-- =========================================================
      HERO
-========================= -->
+========================================================= -->
 
 <header class="hero">
 
@@ -991,9 +1035,9 @@ footer {
 </header>
 
 
-<!-- =========================
+<!-- =========================================================
      ABOUT
-========================= -->
+========================================================= -->
 
 <section id="about" class="about-section">
 
@@ -1121,9 +1165,9 @@ footer {
 </section>
 
 
-<!-- =========================
+<!-- =========================================================
      EXPERIENCE
-========================= -->
+========================================================= -->
 
 <section id="experience" class="experience-section">
 
@@ -1163,44 +1207,57 @@ footer {
 
         </div>
 
-
         <p class="experience-summary">
-            Support programme monitoring, data management, data quality
-            assurance, reporting, and analysis to provide reliable
-            evidence for programme and management decision-making.
+            Support programme monitoring, data quality assurance,
+            reporting, database management, and analysis to provide
+            reliable evidence for management and donor decision-making.
         </p>
 
+        <ul>
 
-        <div class="experience-focus">
+            <li>
+                Analyse programme data and prepare information for
+                internal, external, and donor reporting.
+            </li>
 
-            <span>
-                Data Analysis & Reporting
+            <li>
+                Maintain and quality-assure a 900+ record monitoring
+                database across three regions.
+            </li>
+
+            <li>
+                Review data for completeness, accuracy, and consistency
+                and coordinate corrections with field teams.
+            </li>
+
+            <li>
+                Maintain departmental databases and support monitoring,
+                data collection, and evidence generation.
+            </li>
+
+        </ul>
+
+        <div class="experience-tags">
+
+            <span class="experience-tag">
+                Data Analysis
             </span>
 
-            <span>
-                Data Quality Assurance
+            <span class="experience-tag">
+                Data Quality
             </span>
 
-            <span>
+            <span class="experience-tag">
                 Database Management
             </span>
 
-            <span>
-                Programme Monitoring
+            <span class="experience-tag">
+                Monitoring & Evaluation
             </span>
 
-            <span>
-                Stakeholder Engagement
+            <span class="experience-tag">
+                Reporting
             </span>
-
-        </div>
-
-
-        <div class="experience-tools">
-
-            <strong>Key tools & areas:</strong>
-            Google Sheets | Looker Studio | Data Management |
-            Monitoring & Evaluation | Reporting
 
         </div>
 
@@ -1231,59 +1288,59 @@ footer {
 
         </div>
 
-
         <p class="experience-summary">
             Supported programme data collection, data entry,
             verification, database maintenance, and data quality
-            activities across wildlife justice and monitoring programmes.
+            activities for wildlife justice and monitoring programmes.
         </p>
 
+        <ul>
 
-        <div class="experience-focus">
+            <li>
+                Verified programme data for completeness, consistency,
+                and accuracy before database entry.
+            </li>
 
-            <span>
-                Data Entry & Validation
+            <li>
+                Supported Data Quality Assessments and data verification
+                activities.
+            </li>
+
+            <li>
+                Prepared and organised datasets for reporting and
+                basic analysis.
+            </li>
+
+            <li>
+                Maintained structured programme databases using
+                Microsoft Access and other data systems.
+            </li>
+
+        </ul>
+
+        <div class="experience-tags">
+
+            <span class="experience-tag">
+                Data Entry
             </span>
 
-            <span>
-                Database Management
+            <span class="experience-tag">
+                Data Validation
             </span>
 
-            <span>
+            <span class="experience-tag">
                 Data Quality
             </span>
 
-            <span>
-                Data Collection
+            <span class="experience-tag">
+                Microsoft Access
             </span>
 
-            <span>
-                Reporting Support
+            <span class="experience-tag">
+                Database Management
             </span>
 
         </div>
-
-
-        <div class="experience-tools">
-
-            <strong>Key tools & areas:</strong>
-            Microsoft Access | Data Collection |
-            Data Validation | Database Management
-
-        </div>
-
-    </div>
-
-
-    <div style="text-align: center; margin-top: 30px;">
-
-        <a href="Tionge-Hunga-CV.pdf"
-           target="_blank"
-           class="project-link">
-
-            View detailed experience in my CV →
-
-        </a>
 
     </div>
 
@@ -1292,9 +1349,9 @@ footer {
 </section>
 
 
-<!-- =========================
+<!-- =========================================================
      PROJECTS
-========================= -->
+========================================================= -->
 
 <section id="projects" class="projects">
 
@@ -1305,11 +1362,15 @@ footer {
     </h2>
 
     <p class="section-intro">
-        A selection of professional and personal analytics projects
-        demonstrating my experience in data analysis, data quality,
+        Selected professional and personal projects demonstrating
+        practical experience in data analysis, data quality,
         dashboard development, and data-driven decision-making.
     </p>
 
+
+    <!-- =====================================================
+         PROFESSIONAL PROJECTS
+    ====================================================== -->
 
     <h3 class="project-category">
         Professional Projects
@@ -1336,10 +1397,35 @@ footer {
 
             <p>
                 Developed an interactive dashboard to monitor pangolin
-                weight changes during rehabilitation, enabling the
-                rehabilitation team to track weight progression over
-                time and support monitoring of animal recovery.
+                weight changes during rehabilitation and support
+                tracking of animal recovery over time.
             </p>
+
+            <div class="project-insights">
+
+                <h4>
+                    Business / Programme Value
+                </h4>
+
+                <ul>
+
+                    <li>
+                        Made weight trends easier to monitor over time.
+                    </li>
+
+                    <li>
+                        Supported evidence-based rehabilitation
+                        monitoring.
+                    </li>
+
+                    <li>
+                        Provided a visual tool for programme staff
+                        to track changes.
+                    </li>
+
+                </ul>
+
+            </div>
 
             <div class="project-tags">
 
@@ -1352,11 +1438,11 @@ footer {
                 </span>
 
                 <span class="project-tag">
-                    Wildlife Monitoring
+                    Looker Studio
                 </span>
 
                 <span class="project-tag">
-                    Looker Studio
+                    Wildlife Monitoring
                 </span>
 
             </div>
@@ -1391,10 +1477,35 @@ footer {
 
             <p>
                 Analysed visitor patterns by day, time, and visitor
-                group to identify peak periods and provide evidence
-                to support management decisions around opening hours,
-                staffing allocation, and visitor operations.
+                group to identify peak periods and support operational
+                planning and management decisions.
             </p>
+
+            <div class="project-insights">
+
+                <h4>
+                    Business / Operational Value
+                </h4>
+
+                <ul>
+
+                    <li>
+                        Identified periods of higher visitor activity.
+                    </li>
+
+                    <li>
+                        Supported decisions around staffing and
+                        visitor operations.
+                    </li>
+
+                    <li>
+                        Provided evidence to inform opening-hour
+                        planning.
+                    </li>
+
+                </ul>
+
+            </div>
 
             <div class="project-tags">
 
@@ -1430,6 +1541,10 @@ footer {
     </div>
 
 
+    <!-- =====================================================
+         PERSONAL PROJECTS
+    ====================================================== -->
+
     <h3 class="project-category">
         Personal Analytics Projects
     </h3>
@@ -1437,7 +1552,9 @@ footer {
     <div class="project-grid">
 
 
-        <!-- DIABETES -->
+        <!-- =================================================
+             DIABETES
+        ================================================== -->
 
         <div class="project-card">
 
@@ -1447,6 +1564,7 @@ footer {
                      alt="Diabetes Patient Analytics Dashboard">
 
             </div>
+
 
             <div class="project-content">
 
@@ -1463,41 +1581,84 @@ footer {
                 </p>
 
                 <p>
-                    <strong>Objective:</strong>
-                    Analyse hospital encounter data to understand
+                    Analysed hospital encounter data to understand
                     patterns in patient admissions, readmissions,
-                    medication usage, demographics, admission sources,
+                    demographics, medication usage, admission sources,
                     and discharge outcomes.
                 </p>
 
                 <p>
-                    <strong>What I did:</strong>
-                    Cleaned and transformed the dataset using Power
-                    Query, connected related datasets using Power Pivot,
-                    created analytical measures using DAX, and developed
-                    an interactive dashboard to explore patient and
-                    admission patterns.
+                    Cleaned and transformed the data using Power Query,
+                    connected related datasets using Power Pivot,
+                    created analytical measures using DAX, and built
+                    an interactive dashboard.
                 </p>
 
-                <p>
-                    <strong>Key findings:</strong>
-                    The analysis covered 101,766 hospital encounters
-                    involving 71,518 unique patients and identified a
-                    46% readmission rate. Patients aged 70–80 accounted
-                    for the highest number of admissions and readmissions.
-                </p>
+
+                <div class="project-insights">
+
+                    <h4>
+                        Key Insights
+                    </h4>
+
+                    <ul>
+
+                        <li>
+                            Analysed 101,766 hospital encounters.
+                        </li>
+
+                        <li>
+                            Covered 71,518 unique patients.
+                        </li>
+
+                        <li>
+                            Identified a 46% readmission rate in the
+                            analysed dataset.
+                        </li>
+
+                        <li>
+                            Patients aged 70–80 accounted for the
+                            highest number of admissions and
+                            readmissions.
+                        </li>
+
+                    </ul>
+
+                </div>
+
 
                 <div class="project-tags">
 
-                    <span class="project-tag">Excel</span>
-                    <span class="project-tag">Power Query</span>
-                    <span class="project-tag">Power Pivot</span>
-                    <span class="project-tag">DAX</span>
-                    <span class="project-tag">Data Cleaning</span>
-                    <span class="project-tag">Data Modelling</span>
-                    <span class="project-tag">Dashboard Development</span>
+                    <span class="project-tag">
+                        Excel
+                    </span>
+
+                    <span class="project-tag">
+                        Power Query
+                    </span>
+
+                    <span class="project-tag">
+                        Power Pivot
+                    </span>
+
+                    <span class="project-tag">
+                        DAX
+                    </span>
+
+                    <span class="project-tag">
+                        Data Cleaning
+                    </span>
+
+                    <span class="project-tag">
+                        Data Modelling
+                    </span>
+
+                    <span class="project-tag">
+                        Dashboard Development
+                    </span>
 
                 </div>
+
 
                 <div class="project-actions">
 
@@ -1505,9 +1666,7 @@ footer {
                        target="_blank"
                        rel="noopener noreferrer"
                        class="project-link">
-
                         View GitHub Project →
-
                     </a>
 
                 </div>
@@ -1517,7 +1676,9 @@ footer {
         </div>
 
 
-        <!-- SUPERSTORE -->
+        <!-- =================================================
+             SUPERSTORE
+        ================================================== -->
 
         <div class="project-card">
 
@@ -1527,6 +1688,7 @@ footer {
                      alt="Superstore Sales Performance Dashboard">
 
             </div>
+
 
             <div class="project-content">
 
@@ -1543,41 +1705,79 @@ footer {
                 </p>
 
                 <p>
-                    <strong>Objective:</strong>
-                    Analyse sales performance across customer
-                    segments, product categories, products, cities,
-                    regions, and time to identify business performance
-                    patterns.
+                    Analysed sales performance across customer segments,
+                    product categories, products, cities, regions,
+                    and time to identify business performance patterns.
                 </p>
 
                 <p>
-                    <strong>What I did:</strong>
-                    Cleaned and analysed the sales dataset, created
-                    an interactive Excel dashboard, and developed
-                    visualisations to compare sales performance across
-                    customer segments, categories, products, locations,
-                    and time periods.
+                    Cleaned and analysed the dataset and developed
+                    an interactive Excel dashboard using KPIs,
+                    filters, visualisations, and trend analysis.
                 </p>
 
-                <p>
-                    <strong>Key findings:</strong>
-                    The Consumer segment was the largest contributor
-                    to sales, while Technology was a leading category.
-                    The analysis also highlighted differences in sales
-                    performance across products, cities, regions,
-                    and time.
-                </p>
+
+                <div class="project-insights">
+
+                    <h4>
+                        Key Insights
+                    </h4>
+
+                    <ul>
+
+                        <li>
+                            Consumer was the largest customer segment
+                            by sales.
+                        </li>
+
+                        <li>
+                            Technology was one of the leading
+                            categories.
+                        </li>
+
+                        <li>
+                            Identified differences in sales performance
+                            across products and locations.
+                        </li>
+
+                        <li>
+                            Analysed changes in sales performance
+                            over time.
+                        </li>
+
+                    </ul>
+
+                </div>
+
 
                 <div class="project-tags">
 
-                    <span class="project-tag">Excel</span>
-                    <span class="project-tag">Data Analysis</span>
-                    <span class="project-tag">Dashboard Development</span>
-                    <span class="project-tag">KPI Analysis</span>
-                    <span class="project-tag">Data Visualization</span>
-                    <span class="project-tag">Trend Analysis</span>
+                    <span class="project-tag">
+                        Excel
+                    </span>
+
+                    <span class="project-tag">
+                        Data Analysis
+                    </span>
+
+                    <span class="project-tag">
+                        Dashboard Development
+                    </span>
+
+                    <span class="project-tag">
+                        KPI Analysis
+                    </span>
+
+                    <span class="project-tag">
+                        Data Visualization
+                    </span>
+
+                    <span class="project-tag">
+                        Trend Analysis
+                    </span>
 
                 </div>
+
 
                 <div class="project-actions">
 
@@ -1585,9 +1785,7 @@ footer {
                        target="_blank"
                        rel="noopener noreferrer"
                        class="project-link">
-
                         View GitHub Project →
-
                     </a>
 
                 </div>
@@ -1603,9 +1801,9 @@ footer {
 </section>
 
 
-<!-- =========================
+<!-- =========================================================
      SKILLS
-========================= -->
+========================================================= -->
 
 <section id="skills" class="skills-section">
 
@@ -1717,9 +1915,9 @@ footer {
 </section>
 
 
-<!-- =========================
+<!-- =========================================================
      CERTIFICATIONS
-========================= -->
+========================================================= -->
 
 <section id="certifications" class="certifications-section">
 
@@ -1824,7 +2022,8 @@ footer {
 
         </div>
 
-        <div class="certification">
+
+          <div class="certification">
 
             <span class="certification-label">
                 DataCamp
@@ -1839,8 +2038,8 @@ footer {
             </p>
 
         </div>
-        
 
+          
         <div class="certification">
 
             <span class="certification-label">
@@ -1879,9 +2078,9 @@ footer {
 </section>
 
 
-<!-- =========================
+<!-- =========================================================
      CONTACT
-========================= -->
+========================================================= -->
 
 <section id="contact" class="contact">
 
@@ -1903,25 +2102,19 @@ footer {
            href="https://www.linkedin.com/in/tionge-hunga"
            target="_blank"
            rel="noopener noreferrer">
-
             LinkedIn
-
         </a>
 
         <a class="contact-link"
            href="https://github.com/Tionge-Hunga"
            target="_blank"
            rel="noopener noreferrer">
-
             GitHub
-
         </a>
 
         <a class="contact-link"
            href="mailto:tiongehu@gmail.com">
-
             Email Me
-
         </a>
 
     </div>
@@ -1931,9 +2124,9 @@ footer {
 </section>
 
 
-<!-- =========================
+<!-- =========================================================
      FOOTER
-========================= -->
+========================================================= -->
 
 <footer>
 
@@ -1945,4 +2138,5 @@ footer {
 
 
 </body>
+
 </html>
