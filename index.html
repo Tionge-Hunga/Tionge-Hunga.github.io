@@ -323,99 +323,6 @@ section {
 
 
 /* =========================================================
-   EXPERIENCE
-========================================================= */
-
-.experience-section {
-    background: #f8fafc;
-}
-
-.experience-item {
-    background: #ffffff;
-    border: 1px solid #e5e7eb;
-    border-radius: 12px;
-    padding: 30px;
-    margin-bottom: 24px;
-    position: relative;
-    transition: 0.2s ease;
-}
-
-.experience-item:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.05);
-}
-
-.experience-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
-    margin-bottom: 16px;
-}
-
-.experience-title h3 {
-    color: #111827;
-    font-size: 1.35rem;
-    margin-bottom: 5px;
-}
-
-.experience-title h4 {
-    color: #2563eb;
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-.experience-date {
-    color: #6b7280;
-    font-size: 0.9rem;
-    white-space: nowrap;
-    background: #f3f4f6;
-    padding: 6px 12px;
-    border-radius: 20px;
-}
-
-.experience-summary {
-    color: #4b5563;
-    line-height: 1.7;
-    margin-bottom: 18px;
-    max-width: 850px;
-}
-
-.experience-item ul {
-    padding-left: 20px;
-    color: #4b5563;
-    margin-bottom: 20px;
-}
-
-.experience-item li {
-    margin-bottom: 9px;
-    line-height: 1.6;
-}
-
-.experience-item li strong {
-    color: #111827;
-}
-
-.experience-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    padding-top: 16px;
-    border-top: 1px solid #e5e7eb;
-}
-
-.experience-tag {
-    background: #eff6ff;
-    border: 1px solid #dbeafe;
-    color: #1d4ed8;
-    padding: 6px 11px;
-    border-radius: 6px;
-    font-size: 0.82rem;
-    font-weight: 600;
-}
-
-
-/* =========================================================
    PROJECTS
 ========================================================= */
 
@@ -569,25 +476,6 @@ section {
 }
 
 
-/* PROJECT LINKS */
-
-.project-actions {
-    margin-top: 18px;
-}
-
-.project-link {
-    display: inline-block;
-    color: #2563eb;
-    font-weight: 700;
-    transition: 0.2s ease;
-}
-
-.project-link:hover {
-    color: #1d4ed8;
-    transform: translateX(2px);
-}
-
-
 /* PROFESSIONAL PROJECT */
 
 .professional-project {
@@ -596,6 +484,25 @@ section {
 
 .professional-project p {
     line-height: 1.7;
+}
+
+
+/* PROJECT ACTIONS */
+
+.project-actions {
+    margin-top: 18px;
+    padding-top: 18px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.project-link {
+    color: #2563eb;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.project-link:hover {
+    text-decoration: underline;
 }
 
 
@@ -721,30 +628,190 @@ section {
     margin: 0;
 }
 
-.learning-status {
-    margin-top: 45px;
+
+/* =========================================================
+   VIRTUAL JOB SIMULATIONS
+========================================================= */
+
+.job-simulations-section {
+    background: #f8fafc;
 }
 
-.learning-status h3 {
+.job-simulations-intro {
+    max-width: 800px;
+    color: #6b7280;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+.job-simulations {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+.job-simulation {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 30px;
+    transition: 0.2s ease;
+}
+
+.job-simulation:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.job-simulation-label {
+    display: inline-block;
+    background: #eff6ff;
+    color: #2563eb;
+    border: 1px solid #dbeafe;
+    padding: 5px 9px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.job-simulation h3 {
     color: #111827;
     font-size: 1.35rem;
+    margin-bottom: 5px;
+}
+
+.job-simulation-company {
+    color: #2563eb;
+    font-size: 0.95rem;
+    font-weight: 600;
     margin-bottom: 18px;
 }
 
-.learning-status-box {
-    background: #eff6ff;
-    border: 1px solid #dbeafe;
-    border-radius: 10px;
-    padding: 25px;
+.job-simulation p {
+    color: #6b7280;
+    line-height: 1.7;
+    margin-bottom: 16px;
 }
 
-.learning-status-box ul {
+.job-simulation h4 {
+    color: #111827;
+    font-size: 0.98rem;
+    margin: 22px 0 9px;
+}
+
+.job-simulation ul {
     padding-left: 20px;
+    color: #4b5563;
+}
+
+.job-simulation li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+
+/* SIMULATION FINDING */
+
+.simulation-finding {
+    margin-top: 25px;
+    padding: 20px;
+    background: #eff6ff;
+    border: 1px solid #dbeafe;
+    border-radius: 8px;
+}
+
+.simulation-finding h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.simulation-finding p {
+    margin-bottom: 0;
     color: #374151;
 }
 
-.learning-status-box li {
-    margin-bottom: 9px;
+.simulation-finding strong {
+    color: #111827;
+}
+
+
+/* SIMULATION RECOMMENDATION */
+
+.simulation-recommendation {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f8fafc;
+    border-left: 3px solid #2563eb;
+    border-radius: 6px;
+}
+
+.simulation-recommendation h4 {
+    margin-top: 0;
+}
+
+.simulation-recommendation p {
+    margin-bottom: 0;
+    color: #374151;
+}
+
+
+/* SIMULATION DELIVERABLE */
+
+.simulation-deliverable {
+    margin-top: 28px;
+}
+
+.simulation-deliverable h4 {
+    margin-bottom: 12px;
+}
+
+.simulation-deliverable img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+}
+
+
+/* SIMULATION TAGS */
+
+.simulation-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 22px;
+    padding-top: 18px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.simulation-tag {
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    color: #374151;
+    padding: 5px 9px;
+    border-radius: 5px;
+    font-size: 0.78rem;
+    font-weight: 600;
+}
+
+
+/* SIMULATION LINK */
+
+.simulation-link-wrapper {
+    margin-top: 22px;
+}
+
+.simulation-link {
+    color: #2563eb;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.simulation-link:hover {
+    text-decoration: underline;
 }
 
 
@@ -861,15 +928,6 @@ footer {
         object-fit: contain;
     }
 
-    .experience-header {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .experience-date {
-        white-space: normal;
-    }
-
     .buttons {
         flex-direction: column;
         align-items: flex-start;
@@ -882,7 +940,8 @@ footer {
 
     .about-focus-card,
     .skills-category,
-    .certification {
+    .certification,
+    .job-simulation {
         padding: 22px;
     }
 
@@ -922,12 +981,6 @@ footer {
         </li>
 
         <li>
-            <a href="#experience">
-                Experience
-            </a>
-        </li>
-
-        <li>
             <a href="#projects">
                 Projects
             </a>
@@ -942,6 +995,12 @@ footer {
         <li>
             <a href="#certifications">
                 Certifications
+            </a>
+        </li>
+
+        <li>
+            <a href="#job-simulations">
+                Job Simulations
             </a>
         </li>
 
@@ -1073,20 +1132,17 @@ footer {
         </p>
 
         <p>
-            In my professional experience, I work with programme data
-            to support reporting, data quality, monitoring activities,
-            and evidence-based decision-making. This includes reviewing
-            and validating data, maintaining databases, identifying
-            data gaps, and preparing reliable information for management
-            and donor reporting.
+            My work involves managing and validating programme data,
+            supporting monitoring activities, preparing reports, and
+            helping organisations use reliable information to understand
+            performance and support evidence-based decisions.
         </p>
 
         <p>
-            Alongside my professional experience, I am building my
-            technical capabilities in data analytics and business
-            intelligence through hands-on projects using tools such as
-            Microsoft Excel, Power Query, Power Pivot, DAX, Power BI,
-            and Looker Studio.
+            I am also developing my technical capabilities in data
+            analytics and business intelligence through hands-on projects
+            using Microsoft Excel, Power Query, Power Pivot, DAX,
+            Power BI, and Looker Studio.
         </p>
 
     </div>
@@ -1162,197 +1218,13 @@ footer {
         </h3>
 
         <p>
-            I combine my experience in programme data and monitoring
-            and evaluation with growing analytical and technical skills.
-            My goal is to bridge the gap between <strong>data collection,
-            data quality, analysis, and decision-making</strong> — helping
-            organisations transform reliable data into clear information
-            that can support better decisions.
+            I combine programme data and monitoring and evaluation
+            experience with analytical and technical skills. My goal
+            is to bridge the gap between <strong>data collection,
+            data quality, analysis, and decision-making</strong> —
+            helping organisations transform reliable data into
+            clear information that supports better decisions.
         </p>
-
-    </div>
-
-</div>
-
-</section>
-
-
-<!-- =========================================================
-     EXPERIENCE
-========================================================= -->
-
-<section id="experience" class="experience-section">
-
-<div class="container">
-
-    <h2 class="section-title">
-        Professional Experience
-    </h2>
-
-    <p class="section-subtitle">
-        Experience in monitoring and evaluation, data management,
-        data quality assurance, reporting, and programme data analysis.
-    </p>
-
-
-    <!-- CURRENT ROLE -->
-
-    <div class="experience-item">
-
-        <div class="experience-header">
-
-            <div class="experience-title">
-
-                <h3>
-                    Monitoring & Evaluation Assistant
-                </h3>
-
-                <h4>
-                    Lilongwe Wildlife Trust | Lilongwe, Malawi
-                </h4>
-
-            </div>
-
-            <span class="experience-date">
-                Jan 2025 – Present
-            </span>
-
-        </div>
-
-        <p class="experience-summary">
-            Support programme monitoring, data quality assurance,
-            reporting, database management, and analysis to provide
-            reliable evidence for management and donor decision-making.
-        </p>
-
-        <ul>
-
-            <li>
-                Analyse programme data and prepare information for
-                internal, external, and donor reporting.
-            </li>
-
-            <li>
-                Maintain and quality-assure a 900+ record monitoring
-                database across three regions.
-            </li>
-
-            <li>
-                Review data for completeness, accuracy, and consistency
-                and coordinate corrections with field teams.
-            </li>
-
-            <li>
-                Maintain departmental databases and support monitoring,
-                data collection, and evidence generation.
-            </li>
-
-        </ul>
-
-        <div class="experience-tags">
-
-            <span class="experience-tag">
-                Data Analysis
-            </span>
-
-            <span class="experience-tag">
-                Data Quality
-            </span>
-
-            <span class="experience-tag">
-                Database Management
-            </span>
-
-            <span class="experience-tag">
-                Monitoring & Evaluation
-            </span>
-
-            <span class="experience-tag">
-                Reporting
-            </span>
-
-        </div>
-
-    </div>
-
-
-    <!-- PREVIOUS ROLE -->
-
-    <div class="experience-item">
-
-        <div class="experience-header">
-
-            <div class="experience-title">
-
-                <h3>
-                    Data Entry Clerk
-                </h3>
-
-                <h4>
-                    Lilongwe Wildlife Trust | Lilongwe, Malawi
-                </h4>
-
-            </div>
-
-            <span class="experience-date">
-                Oct 2021 – Dec 2024
-            </span>
-
-        </div>
-
-        <p class="experience-summary">
-            Supported programme data collection, data entry,
-            verification, database maintenance, and data quality
-            activities for wildlife justice and monitoring programmes.
-        </p>
-
-        <ul>
-
-            <li>
-                Verified programme data for completeness, consistency,
-                and accuracy before database entry.
-            </li>
-
-            <li>
-                Supported Data Quality Assessments and data verification
-                activities.
-            </li>
-
-            <li>
-                Prepared and organised datasets for reporting and
-                basic analysis.
-            </li>
-
-            <li>
-                Maintained structured programme databases using
-                Microsoft Access and other data systems.
-            </li>
-
-        </ul>
-
-        <div class="experience-tags">
-
-            <span class="experience-tag">
-                Data Entry
-            </span>
-
-            <span class="experience-tag">
-                Data Validation
-            </span>
-
-            <span class="experience-tag">
-                Data Quality
-            </span>
-
-            <span class="experience-tag">
-                Microsoft Access
-            </span>
-
-            <span class="experience-tag">
-                Database Management
-            </span>
-
-        </div>
 
     </div>
 
@@ -1459,15 +1331,6 @@ footer {
 
             </div>
 
-            <div class="project-actions">
-
-                <a href="#contact"
-                   class="project-link">
-                    Professional Project →
-                </a>
-
-            </div>
-
         </div>
 
 
@@ -1539,15 +1402,6 @@ footer {
 
             </div>
 
-            <div class="project-actions">
-
-                <a href="#contact"
-                   class="project-link">
-                    Professional Project →
-                </a>
-
-            </div>
-
         </div>
 
     </div>
@@ -1564,9 +1418,7 @@ footer {
     <div class="project-grid">
 
 
-        <!-- =================================================
-             HR ATTRITION - POWER BI
-        ================================================== -->
+        <!-- HR ATTRITION -->
 
         <div class="project-card">
 
@@ -1694,9 +1546,7 @@ footer {
         </div>
 
 
-        <!-- =================================================
-             DIABETES
-        ================================================== -->
+        <!-- DIABETES -->
 
         <div class="project-card">
 
@@ -1818,9 +1668,7 @@ footer {
         </div>
 
 
-        <!-- =================================================
-             SUPERSTORE
-        ================================================== -->
+        <!-- SUPERSTORE -->
 
         <div class="project-card">
 
@@ -2069,14 +1917,14 @@ footer {
 <div class="container">
 
     <h2 class="section-title">
-        Certifications & Professional Development
+        Certifications
     </h2>
 
     <p class="certifications-intro">
-        Continuous professional development through structured
-        courses, skill tracks, virtual job simulations, and practical
-        learning in data analytics, artificial intelligence, and
-        monitoring and evaluation.
+        Professional certifications and completed credentials
+        demonstrating continued development in data analytics,
+        business intelligence, data literacy, and monitoring
+        and evaluation.
     </p>
 
 
@@ -2168,25 +2016,6 @@ footer {
         </div>
 
 
-        <!-- BCG FORAGE -->
-
-        <div class="certification">
-
-            <span class="certification-label">
-                Forage
-            </span>
-
-            <h3>
-                BCG – Introduction to Data for Decision Makers
-            </h3>
-
-            <p>
-                Virtual Job Simulation — 2026
-            </p>
-
-        </div>
-
-
         <div class="certification">
 
             <span class="certification-label">
@@ -2217,6 +2046,205 @@ footer {
             <p>
                 2024
             </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     VIRTUAL JOB SIMULATIONS
+========================================================= -->
+
+<section id="job-simulations" class="job-simulations-section">
+
+<div class="container">
+
+    <h2 class="section-title">
+        Virtual Job Simulations
+    </h2>
+
+    <p class="job-simulations-intro">
+        Practical simulations that allowed me to apply data analysis,
+        visualization, problem-solving, and business communication
+        skills to realistic workplace scenarios.
+    </p>
+
+
+    <div class="job-simulations">
+
+
+        <!-- BCG DATA FOR DECISION MAKERS -->
+
+        <div class="job-simulation">
+
+            <span class="job-simulation-label">
+                Forage • Virtual Job Simulation
+            </span>
+
+            <h3>
+                BCG X – Introduction to Data for Decision Makers
+            </h3>
+
+            <p class="job-simulation-company">
+                Boston Consulting Group (BCG) | 2026
+            </p>
+
+            <p>
+                Completed a practical data analytics simulation focused
+                on using campaign performance data to support business
+                decision-making. The task required analysing campaign
+                and channel performance, creating simple visualizations,
+                identifying the strongest-performing combination, and
+                communicating a clear recommendation to the client.
+            </p>
+
+
+            <h4>
+                Business Question
+            </h4>
+
+            <p>
+                Which campaign and channel combination should the client
+                double down on to grow new-customer sales — and why?
+            </p>
+
+
+            <h4>
+                What I Did
+            </h4>
+
+            <ul>
+
+                <li>
+                    Analysed campaign performance across different
+                    marketing channels.
+                </li>
+
+                <li>
+                    Compared total sales generated by Campaign A
+                    and Campaign B across Email, Instagram, and
+                    Web Banner channels.
+                </li>
+
+                <li>
+                    Compared the number of new customers converted
+                    by each campaign and channel combination.
+                </li>
+
+                <li>
+                    Created simple charts to communicate the strongest
+                    performing combinations.
+                </li>
+
+                <li>
+                    Synthesised the analysis into a client-focused
+                    recommendation.
+                </li>
+
+                <li>
+                    Presented the findings through an executive-ready
+                    slide.
+                </li>
+
+            </ul>
+
+
+            <div class="simulation-finding">
+
+                <h4>
+                    Key Finding
+                </h4>
+
+                <p>
+                    <strong>Campaign A + Email</strong> was the strongest
+                    combination in the analysis, generating
+                    <strong>$2,124 in total sales</strong> and
+                    <strong>29 converted customers</strong>.
+                </p>
+
+            </div>
+
+
+            <div class="simulation-recommendation">
+
+                <h4>
+                    Recommendation
+                </h4>
+
+                <p>
+                    Prioritize Campaign A through the Email channel to
+                    grow new-customer sales, as this combination produced
+                    the strongest results across both total sales and
+                    converted customers.
+                </p>
+
+            </div>
+
+
+            <div class="simulation-deliverable">
+
+                <h4>
+                    Client-Ready Deliverable
+                </h4>
+
+                <img src="bcg-data-decision-makers.png"
+                     alt="BCG Data for Decision Makers campaign analysis slide">
+
+            </div>
+
+
+            <div class="simulation-tags">
+
+                <span class="simulation-tag">
+                    Excel
+                </span>
+
+                <span class="simulation-tag">
+                    Data Analysis
+                </span>
+
+                <span class="simulation-tag">
+                    Data Visualization
+                </span>
+
+                <span class="simulation-tag">
+                    Data Interpretation
+                </span>
+
+                <span class="simulation-tag">
+                    Insight Generation
+                </span>
+
+                <span class="simulation-tag">
+                    Business Recommendations
+                </span>
+
+                <span class="simulation-tag">
+                    Data Storytelling
+                </span>
+
+                <span class="simulation-tag">
+                    Presentation
+                </span>
+
+            </div>
+
+
+            <div class="simulation-link-wrapper">
+
+                <a href="https://www.theforage.com/simulations/bcg/data-for-decision-makers-tod0"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="simulation-link">
+                    View BCG Simulation →
+                </a>
+
+            </div>
 
         </div>
 
