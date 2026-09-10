@@ -1,2319 +1,1241 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
 
-<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Tionge Hunga - Data Analyst, Data Management and Monitoring & Evaluation professional. Portfolio of data analytics, business intelligence, dashboards and M&E projects.">
 
-<title>
-    Tionge Hunga | Data Analyst & Data Management Specialist
-</title>
+    <meta name="author" content="Tionge Hunga">
 
-<meta name="description"
-      content="Portfolio of Tionge Hunga — Data Analyst, Data Management and Monitoring & Evaluation professional.">
+    <title>Tionge Hunga | Data Analyst | Data Management | M&E</title>
 
-<style>
-
-/* =========================================================
-   GLOBAL
-========================================================= */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    color: #1f2937;
-    background: #f8fafc;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: auto;
-}
-
-
-/* =========================================================
-   NAVIGATION
-========================================================= */
-
-nav {
-    background: #ffffff;
-    border-bottom: 1px solid #e5e7eb;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.nav-container {
-    max-width: 1100px;
-    width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 18px 0;
-}
-
-.logo {
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: #111827;
-}
-
-.nav-links {
-    display: flex;
-    gap: 25px;
-    list-style: none;
-}
-
-.nav-links a {
-    color: #4b5563;
-    font-size: 0.95rem;
-    font-weight: 500;
-    transition: 0.2s ease;
-}
-
-.nav-links a:hover {
-    color: #2563eb;
-}
-
-
-/* =========================================================
-   HERO
-========================================================= */
-
-.hero {
-    background:
-        linear-gradient(
-            135deg,
-            #eff6ff 0%,
-            #ffffff 55%,
-            #f8fafc 100%
-        );
-
-    padding: 110px 0 100px;
-}
-
-.hero-content {
-    max-width: 900px;
-}
-
-.hero-label {
-    display: inline-block;
-    color: #2563eb;
-    background: #dbeafe;
-    border: 1px solid #bfdbfe;
-    padding: 7px 14px;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    font-weight: 700;
-    margin-bottom: 22px;
-    letter-spacing: 0.2px;
-}
-
-.hero h1 {
-    font-size: 3.5rem;
-    line-height: 1.15;
-    color: #111827;
-    margin-bottom: 20px;
-}
-
-.hero h1 span {
-    color: #2563eb;
-}
-
-.hero h2 {
-    font-size: 1.45rem;
-    line-height: 1.4;
-    font-weight: 600;
-    color: #374151;
-    margin-bottom: 22px;
-    max-width: 800px;
-}
-
-.hero p {
-    font-size: 1.08rem;
-    line-height: 1.8;
-    color: #4b5563;
-    max-width: 780px;
-    margin-bottom: 30px;
-}
-
-.hero-highlights {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 32px;
-}
-
-.hero-highlight {
-    background: #ffffff;
-    border: 1px solid #dbeafe;
-    color: #374151;
-    padding: 8px 13px;
-    border-radius: 6px;
-    font-size: 0.9rem;
-    font-weight: 600;
-}
-
-.buttons {
-    display: flex;
-    gap: 14px;
-    flex-wrap: wrap;
-}
-
-.btn {
-    display: inline-block;
-    padding: 13px 22px;
-    border-radius: 7px;
-    font-weight: 600;
-    transition: 0.2s ease;
-    border: 1px solid transparent;
-}
-
-.btn-primary {
-    background: #2563eb;
-    color: white;
-}
-
-.btn-primary:hover {
-    background: #1d4ed8;
-    transform: translateY(-1px);
-}
-
-.btn-secondary {
-    border: 1px solid #d1d5db;
-    background: white;
-    color: #374151;
-}
-
-.btn-secondary:hover {
-    background: #f3f4f6;
-    transform: translateY(-1px);
-}
-
-
-/* =========================================================
-   SECTIONS
-========================================================= */
-
-section {
-    padding: 80px 0;
-}
-
-.section-title {
-    font-size: 2rem;
-    color: #111827;
-    margin-bottom: 12px;
-}
-
-.section-subtitle {
-    color: #6b7280;
-    margin-bottom: 35px;
-    max-width: 750px;
-}
-
-
-/* =========================================================
-   ABOUT
-========================================================= */
-
-.about-section {
-    background: #ffffff;
-}
-
-.about-intro {
-    max-width: 850px;
-    margin-bottom: 45px;
-}
-
-.about-intro p {
-    font-size: 1.08rem;
-    line-height: 1.8;
-    color: #4b5563;
-    margin-bottom: 18px;
-}
-
-.about-intro strong {
-    color: #111827;
-}
-
-.about-focus-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
-    margin-bottom: 40px;
-}
-
-.about-focus-card {
-    background: #f8fafc;
-    border: 1px solid #e5e7eb;
-    border-radius: 12px;
-    padding: 28px;
-    transition: 0.2s ease;
-}
-
-.about-focus-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-}
-
-.about-focus-icon {
-    width: 42px;
-    height: 42px;
-    background: #eff6ff;
-    color: #2563eb;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    margin-bottom: 18px;
-}
-
-.about-focus-card h3 {
-    color: #111827;
-    font-size: 1.15rem;
-    margin-bottom: 10px;
-}
-
-.about-focus-card p {
-    color: #6b7280;
-    font-size: 0.95rem;
-    line-height: 1.7;
-}
-
-.about-approach {
-    background: #eff6ff;
-    border: 1px solid #dbeafe;
-    border-radius: 12px;
-    padding: 30px;
-    max-width: 100%;
-}
-
-.about-approach h3 {
-    color: #111827;
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-}
-
-.about-approach p {
-    color: #4b5563;
-    line-height: 1.75;
-    max-width: 850px;
-}
-
-
-/* =========================================================
-   PROJECTS
-========================================================= */
-
-.projects {
-    background: #ffffff;
-}
-
-.projects .section-intro {
-    color: #6b7280;
-    max-width: 800px;
-    margin-bottom: 35px;
-    line-height: 1.7;
-}
-
-.project-category {
-    font-size: 1.45rem;
-    color: #111827;
-    margin: 45px 0 20px;
-}
-
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-    margin-bottom: 25px;
-}
-
-.project-card {
-    background: #ffffff;
-    border: 1px solid #e5e7eb;
-    border-radius: 12px;
-    overflow: hidden;
-    transition: 0.2s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
-}
-
-
-/* PROJECT IMAGES */
-
-.project-image {
-    width: 100%;
-    background: #f3f4f6;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-}
-
-.project-image img {
-    display: block;
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    object-fit: contain;
-}
-
-
-/* PROJECT CONTENT */
-
-.project-content {
-    padding: 26px;
-}
-
-.project-type {
-    display: inline-block;
-    color: #2563eb;
-    background: #eff6ff;
-    border: 1px solid #dbeafe;
-    padding: 5px 9px;
-    border-radius: 5px;
-    font-size: 0.75rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 12px;
-}
-
-.project-card h3 {
-    color: #111827;
-    font-size: 1.3rem;
-    line-height: 1.35;
-    margin-bottom: 8px;
-}
-
-.project-tools {
-    font-size: 0.88rem;
-    color: #374151 !important;
-    font-weight: 700;
-    margin-bottom: 18px !important;
-}
-
-.project-card p {
-    color: #6b7280;
-    line-height: 1.7;
-    margin-bottom: 14px;
-}
-
-.project-card p strong {
-    color: #111827;
-}
-
-
-/* PROJECT INSIGHTS */
-
-.project-insights {
-    margin: 20px 0;
-    padding: 18px 20px;
-    background: #f8fafc;
-    border-left: 3px solid #2563eb;
-    border-radius: 6px;
-}
-
-.project-insights h4 {
-    color: #111827;
-    font-size: 0.95rem;
-    margin-bottom: 10px;
-}
-
-.project-insights ul {
-    padding-left: 18px;
-    color: #4b5563;
-}
-
-.project-insights li {
-    margin-bottom: 7px;
-    line-height: 1.55;
-}
-
-
-/* PROJECT TAGS */
-
-.project-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 7px;
-    margin: 20px 0;
-    padding-top: 18px;
-    border-top: 1px solid #e5e7eb;
-}
-
-.project-tag {
-    background: #f8fafc;
-    border: 1px solid #e5e7eb;
-    color: #374151;
-    padding: 5px 9px;
-    border-radius: 5px;
-    font-size: 0.78rem;
-    font-weight: 600;
-}
-
-
-/* PROFESSIONAL PROJECT */
-
-.professional-project {
-    padding: 28px;
-}
-
-.professional-project p {
-    line-height: 1.7;
-}
-
-
-/* PROJECT ACTIONS */
-
-.project-actions {
-    margin-top: 18px;
-    padding-top: 18px;
-    border-top: 1px solid #e5e7eb;
-}
-
-.project-link {
-    color: #2563eb;
-    font-weight: 700;
-    font-size: 0.9rem;
-}
-
-.project-link:hover {
-    text-decoration: underline;
-}
-
-
-/* =========================================================
-   SKILLS
-========================================================= */
-
-.skills-section {
-    background: #f8fafc;
-}
-
-.skills-intro {
-    max-width: 800px;
-    color: #6b7280;
-    line-height: 1.7;
-    margin-bottom: 40px;
-}
-
-.skills-category-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 22px;
-}
-
-.skills-category {
-    background: #ffffff;
-    border: 1px solid #e5e7eb;
-    border-radius: 12px;
-    padding: 28px;
-    transition: 0.2s ease;
-}
-
-.skills-category:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-}
-
-.skills-category h3 {
-    color: #111827;
-    font-size: 1.15rem;
-    margin-bottom: 18px;
-}
-
-.skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 9px;
-    list-style: none;
-    padding: 0;
-}
-
-.skills-list li {
-    background: #f8fafc;
-    border: 1px solid #e5e7eb;
-    color: #374151;
-    padding: 7px 11px;
-    border-radius: 6px;
-    font-size: 0.86rem;
-    font-weight: 600;
-}
-
-.skills-category.primary {
-    border-top: 3px solid #2563eb;
-}
-
-
-/* =========================================================
-   CERTIFICATIONS
-========================================================= */
-
-.certifications-section {
-    background: #ffffff;
-}
-
-.certifications-intro {
-    max-width: 800px;
-    color: #6b7280;
-    line-height: 1.7;
-    margin-bottom: 35px;
-}
-
-.certifications {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
-.certification {
-    background: #ffffff;
-    padding: 24px;
-    border: 1px solid #e5e7eb;
-    border-radius: 10px;
-    transition: 0.2s ease;
-}
-
-.certification:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-}
-
-.certification-label {
-    display: inline-block;
-    background: #eff6ff;
-    color: #2563eb;
-    border: 1px solid #dbeafe;
-    padding: 5px 9px;
-    border-radius: 5px;
-    font-size: 0.75rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 12px;
-}
-
-.certification h3 {
-    color: #111827;
-    font-size: 1.08rem;
-    margin-bottom: 6px;
-}
-
-.certification p {
-    color: #6b7280;
-    font-size: 0.92rem;
-    margin: 0;
-}
-
-
-/* =========================================================
-   VIRTUAL JOB SIMULATIONS
-========================================================= */
-
-.job-simulations-section {
-    background: #f8fafc;
-}
-
-.job-simulations-intro {
-    max-width: 800px;
-    color: #6b7280;
-    line-height: 1.7;
-    margin-bottom: 35px;
-}
-
-.job-simulations {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 25px;
-}
-
-.job-simulation {
-    background: #ffffff;
-    border: 1px solid #e5e7eb;
-    border-radius: 12px;
-    padding: 30px;
-    transition: 0.2s ease;
-}
-
-.job-simulation:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
-}
-
-.job-simulation-label {
-    display: inline-block;
-    background: #eff6ff;
-    color: #2563eb;
-    border: 1px solid #dbeafe;
-    padding: 5px 9px;
-    border-radius: 5px;
-    font-size: 0.75rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 12px;
-}
-
-.job-simulation h3 {
-    color: #111827;
-    font-size: 1.35rem;
-    margin-bottom: 5px;
-}
-
-.job-simulation-company {
-    color: #2563eb;
-    font-size: 0.95rem;
-    font-weight: 600;
-    margin-bottom: 18px;
-}
-
-.job-simulation p {
-    color: #6b7280;
-    line-height: 1.7;
-    margin-bottom: 16px;
-}
-
-.job-simulation h4 {
-    color: #111827;
-    font-size: 0.98rem;
-    margin: 22px 0 9px;
-}
-
-.job-simulation ul {
-    padding-left: 20px;
-    color: #4b5563;
-}
-
-.job-simulation li {
-    margin-bottom: 8px;
-    line-height: 1.6;
-}
-
-
-/* SIMULATION FINDING */
-
-.simulation-finding {
-    margin-top: 25px;
-    padding: 20px;
-    background: #eff6ff;
-    border: 1px solid #dbeafe;
-    border-radius: 8px;
-}
-
-.simulation-finding h4 {
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-.simulation-finding p {
-    margin-bottom: 0;
-    color: #374151;
-}
-
-.simulation-finding strong {
-    color: #111827;
-}
-
-
-/* SIMULATION RECOMMENDATION */
-
-.simulation-recommendation {
-    margin-top: 20px;
-    padding: 20px;
-    background: #f8fafc;
-    border-left: 3px solid #2563eb;
-    border-radius: 6px;
-}
-
-.simulation-recommendation h4 {
-    margin-top: 0;
-}
-
-.simulation-recommendation p {
-    margin-bottom: 0;
-    color: #374151;
-}
-
-
-/* SIMULATION DELIVERABLE */
-
-.simulation-deliverable {
-    margin-top: 28px;
-}
-
-.simulation-deliverable h4 {
-    margin-bottom: 12px;
-}
-
-.simulation-deliverable img {
-    width: 100%;
-    max-width: 100%;
-    display: block;
-    border: 1px solid #e5e7eb;
-    border-radius: 8px;
-}
-
-
-/* SIMULATION TAGS */
-
-.simulation-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 7px;
-    margin-top: 22px;
-    padding-top: 18px;
-    border-top: 1px solid #e5e7eb;
-}
-
-.simulation-tag {
-    background: #f8fafc;
-    border: 1px solid #e5e7eb;
-    color: #374151;
-    padding: 5px 9px;
-    border-radius: 5px;
-    font-size: 0.78rem;
-    font-weight: 600;
-}
-
-
-/* SIMULATION LINK */
-
-.simulation-link-wrapper {
-    margin-top: 22px;
-}
-
-.simulation-link {
-    color: #2563eb;
-    font-weight: 700;
-    font-size: 0.9rem;
-}
-
-.simulation-link:hover {
-    text-decoration: underline;
-}
-
-
-/* =========================================================
-   CONTACT
-========================================================= */
-
-.contact {
-    background: #111827;
-    color: white;
-}
-
-.contact .section-title {
-    color: white;
-}
-
-.contact p {
-    color: #d1d5db;
-    max-width: 700px;
-    margin-bottom: 25px;
-}
-
-.contact-links {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.contact-link {
-    background: white;
-    color: #111827;
-    padding: 11px 18px;
-    border-radius: 6px;
-    font-weight: 600;
-    transition: 0.2s ease;
-}
-
-.contact-link:hover {
-    transform: translateY(-2px);
-}
-
-
-/* =========================================================
-   FOOTER
-========================================================= */
-
-footer {
-    background: #0f172a;
-    color: #9ca3af;
-    text-align: center;
-    padding: 25px;
-    font-size: 0.9rem;
-}
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media (max-width: 768px) {
-
-    .nav-container {
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .nav-links {
-        gap: 12px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .hero {
-        padding: 75px 0 70px;
-    }
-
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero h2 {
-        font-size: 1.2rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
-
-    .hero-highlights {
-        gap: 8px;
-    }
-
-    .hero-highlight {
-        font-size: 0.82rem;
-    }
-
-    .about-focus-grid,
-    .project-grid,
-    .skills-category-grid,
-    .certifications {
-        grid-template-columns: 1fr;
-    }
-
-    .project-image {
-        width: 100%;
-        height: auto;
-        min-height: 0;
-    }
-
-    .project-image img {
-        width: 100%;
-        height: auto;
-        max-width: 100%;
-        object-fit: contain;
-    }
-
-    .buttons {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .btn {
-        width: 100%;
-        text-align: center;
-    }
-
-    .about-focus-card,
-    .skills-category,
-    .certification,
-    .job-simulation {
-        padding: 22px;
-    }
-
-    .project-content,
-    .professional-project {
-        padding: 22px;
-    }
-
-}
-
-</style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
 
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+    <header class="navbar">
+        <div class="nav-container">
 
-<!-- =========================================================
-     NAVIGATION
-========================================================= -->
-
-<nav>
-
-<div class="nav-container">
-
-    <div class="logo">
-        Tionge Hunga
-    </div>
-
-    <ul class="nav-links">
-
-        <li>
-            <a href="#about">
-                About
+            <a href="#home" class="logo">
+                Tionge Hunga
             </a>
-        </li>
 
-        <li>
-            <a href="#projects">
-                Projects
-            </a>
-        </li>
+            <button class="menu-toggle"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false">
+                ☰
+            </button>
 
-        <li>
-            <a href="#skills">
-                Skills
-            </a>
-        </li>
+            <nav class="nav-menu">
 
-        <li>
-            <a href="#certifications">
-                Certifications
-            </a>
-        </li>
+                <a href="#about">About</a>
 
-        <li>
-            <a href="#job-simulations">
-                Job Simulations
-            </a>
-        </li>
+                <a href="#projects">Projects</a>
 
-        <li>
-            <a href="#contact">
-                Contact
-            </a>
-        </li>
+                <a href="#skills">Skills</a>
 
-    </ul>
+                <a href="#certifications">Certifications</a>
 
-</div>
+                <a href="#job-simulations">Job Simulations</a>
 
-</nav>
+                <a href="#contact">Contact</a>
 
-
-<!-- =========================================================
-     HERO
-========================================================= -->
-
-<header class="hero">
-
-<div class="container hero-content">
-
-    <div class="hero-label">
-        DATA ANALYST • DATA MANAGEMENT • M&E
-    </div>
-
-    <h1>
-        Turning data into
-        <span>clear insights</span>
-        for better decisions.
-    </h1>
-
-    <h2>
-        Data Analyst | Data Management | Monitoring & Evaluation
-    </h2>
-
-    <p>
-        I am a data professional with experience in data management,
-        monitoring and evaluation, data quality assurance, reporting,
-        and data analysis. I combine practical programme experience
-        with growing expertise in analytics and business intelligence
-        to turn data into reliable insights that support
-        evidence-based decision-making.
-    </p>
-
-    <div class="hero-highlights">
-
-        <div class="hero-highlight">
-            Data Analysis
-        </div>
-
-        <div class="hero-highlight">
-            Data Quality
-        </div>
-
-        <div class="hero-highlight">
-            Dashboard Development
-        </div>
-
-        <div class="hero-highlight">
-            Monitoring & Evaluation
-        </div>
-
-        <div class="hero-highlight">
-            Business Intelligence
-        </div>
-
-    </div>
-
-    <div class="buttons">
-
-        <a class="btn btn-primary"
-           href="#projects">
-            View My Projects
-        </a>
-
-        <a class="btn btn-secondary"
-           href="Tionge-Hunga-CV.pdf"
-           target="_blank">
-            Download CV
-        </a>
-
-        <a class="btn btn-secondary"
-           href="https://www.linkedin.com/in/tionge-hunga"
-           target="_blank"
-           rel="noopener noreferrer">
-            LinkedIn
-        </a>
-
-        <a class="btn btn-secondary"
-           href="https://github.com/Tionge-Hunga"
-           target="_blank"
-           rel="noopener noreferrer">
-            GitHub
-        </a>
-
-    </div>
-
-</div>
-
-</header>
-
-
-<!-- =========================================================
-     ABOUT
-========================================================= -->
-
-<section id="about" class="about-section">
-
-<div class="container">
-
-    <h2 class="section-title">
-        About Me
-    </h2>
-
-    <p class="section-subtitle">
-        Data professional combining data management, monitoring and
-        evaluation, data quality, and analytics.
-    </p>
-
-    <div class="about-intro">
-
-        <p>
-            I am a <strong>data professional</strong> with experience
-            in data management, monitoring and evaluation, data quality
-            assurance, reporting, and data analysis.
-        </p>
-
-        <p>
-            My work involves managing and validating programme data,
-            supporting monitoring activities, preparing reports, and
-            helping organisations use reliable information to understand
-            performance and support evidence-based decisions.
-        </p>
-
-        <p>
-            I am also developing my technical capabilities in data
-            analytics and business intelligence through hands-on projects
-            using Microsoft Excel, Power Query, Power Pivot, DAX,
-            Power BI, and Looker Studio.
-        </p>
-
-    </div>
-
-
-    <div class="about-focus-grid">
-
-        <div class="about-focus-card">
-
-            <div class="about-focus-icon">
-                DA
-            </div>
-
-            <h3>
-                Data & Analytics
-            </h3>
-
-            <p>
-                Developing practical skills in data analysis,
-                visualization, dashboard development, KPI analysis,
-                and business intelligence to turn datasets into
-                useful insights.
-            </p>
+            </nav>
 
         </div>
+    </header>
 
 
-        <div class="about-focus-card">
+    <main>
 
-            <div class="about-focus-icon">
-                M&E
-            </div>
+        <!-- =========================
+             HERO
+        ========================== -->
+        <section id="home" class="hero">
 
-            <h3>
-                Monitoring & Evaluation
-            </h3>
+            <div class="hero-container">
 
-            <p>
-                Experience supporting programme monitoring, reporting,
-                results measurement, data collection, and the use of
-                evidence to understand programme performance and impact.
-            </p>
+                <div class="hero-content">
 
-        </div>
+                    <p class="hero-label">
+                        DATA ANALYST • DATA MANAGEMENT • M&E
+                    </p>
 
+                    <h1>
+                        Turning data into clear insights for better decisions.
+                    </h1>
 
-        <div class="about-focus-card">
+                    <h2>
+                        Data Analyst | Data Management | Monitoring & Evaluation
+                    </h2>
 
-            <div class="about-focus-icon">
-                DQ
-            </div>
+                    <p class="hero-description">
+                        I work with data to improve data quality, reporting,
+                        monitoring and decision-making. My experience combines
+                        data management and M&E with practical analytics,
+                        dashboard development and business intelligence.
+                    </p>
 
-            <h3>
-                Data Quality & Management
-            </h3>
+                    <div class="hero-highlights">
 
-            <p>
-                Experienced in data validation, database maintenance,
-                data quality assurance, identifying missing or
-                inconsistent information, and preparing reliable data
-                for analysis and reporting.
-            </p>
+                        <span>Data Analysis</span>
 
-        </div>
+                        <span>Data Quality</span>
 
-    </div>
+                        <span>Dashboard Development</span>
 
+                        <span>Monitoring & Evaluation</span>
 
-    <div class="about-approach">
+                        <span>Business Intelligence</span>
 
-        <h3>
-            My Approach
-        </h3>
+                    </div>
 
-        <p>
-            I combine programme data and monitoring and evaluation
-            experience with analytical and technical skills. My goal
-            is to bridge the gap between <strong>data collection,
-            data quality, analysis, and decision-making</strong> —
-            helping organisations transform reliable data into
-            clear information that supports better decisions.
-        </p>
 
-    </div>
+                    <div class="hero-buttons">
 
-</div>
+                        <a href="#projects" class="btn btn-primary">
+                            View My Projects
+                        </a>
 
-</section>
+                        <a href="Tionge-Hunga-CV.pdf"
+                           class="btn btn-secondary"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Download CV
+                        </a>
 
+                        <a href="https://www.linkedin.com/in/tiongehunga"
+                           class="btn btn-secondary"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            LinkedIn
+                        </a>
 
-<!-- =========================================================
-     PROJECTS
-========================================================= -->
+                        <a href="https://github.com/Tionge-Hunga"
+                           class="btn btn-secondary"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            GitHub
+                        </a>
 
-<section id="projects" class="projects">
-
-<div class="container">
-
-    <h2 class="section-title">
-        Projects
-    </h2>
-
-    <p class="section-intro">
-        Selected professional and personal projects demonstrating
-        practical experience in data analysis, data quality,
-        dashboard development, and data-driven decision-making.
-    </p>
-
-
-    <!-- =====================================================
-         PROFESSIONAL PROJECTS
-    ====================================================== -->
-
-    <h3 class="project-category">
-        Professional Projects
-    </h3>
-
-    <div class="project-grid">
-
-
-        <!-- PANGOLIN -->
-
-        <div class="project-card professional-project">
-
-            <span class="project-type">
-                Professional Project
-            </span>
-
-            <h3>
-                Pangolin Monitoring Dashboard
-            </h3>
-
-            <p class="project-tools">
-                Google Data Studio (Looker Studio)
-            </p>
-
-            <p>
-                Developed an interactive dashboard to monitor pangolin
-                weight changes during rehabilitation and support
-                tracking of animal recovery over time.
-            </p>
-
-            <div class="project-insights">
-
-                <h4>
-                    Business / Programme Value
-                </h4>
-
-                <ul>
-
-                    <li>
-                        Made weight trends easier to monitor over time.
-                    </li>
-
-                    <li>
-                        Supported evidence-based rehabilitation
-                        monitoring.
-                    </li>
-
-                    <li>
-                        Provided a visual tool for programme staff
-                        to track changes.
-                    </li>
-
-                </ul>
-
-            </div>
-
-            <div class="project-tags">
-
-                <span class="project-tag">
-                    Data Visualization
-                </span>
-
-                <span class="project-tag">
-                    Dashboard Development
-                </span>
-
-                <span class="project-tag">
-                    Looker Studio
-                </span>
-
-                <span class="project-tag">
-                    Wildlife Monitoring
-                </span>
-
-            </div>
-
-        </div>
-
-
-        <!-- VISITOR ANALYTICS -->
-
-        <div class="project-card professional-project">
-
-            <span class="project-type">
-                Professional Project
-            </span>
-
-            <h3>
-                Lilongwe Wildlife Centre Visitor Analytics
-            </h3>
-
-            <p class="project-tools">
-                Google Data Studio (Looker Studio)
-            </p>
-
-            <p>
-                Analysed visitor patterns by day, time, and visitor
-                group to identify peak periods and support operational
-                planning and management decisions.
-            </p>
-
-            <div class="project-insights">
-
-                <h4>
-                    Business / Operational Value
-                </h4>
-
-                <ul>
-
-                    <li>
-                        Identified periods of higher visitor activity.
-                    </li>
-
-                    <li>
-                        Supported decisions around staffing and
-                        visitor operations.
-                    </li>
-
-                    <li>
-                        Provided evidence to inform opening-hour
-                        planning.
-                    </li>
-
-                </ul>
-
-            </div>
-
-            <div class="project-tags">
-
-                <span class="project-tag">
-                    Data Analysis
-                </span>
-
-                <span class="project-tag">
-                    Data Visualization
-                </span>
-
-                <span class="project-tag">
-                    Visitor Analytics
-                </span>
-
-                <span class="project-tag">
-                    Looker Studio
-                </span>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <!-- =====================================================
-         PERSONAL PROJECTS
-    ====================================================== -->
-
-    <h3 class="project-category">
-        Personal Analytics Projects
-    </h3>
-
-    <div class="project-grid">
-
-
-        <!-- HR ATTRITION -->
-
-        <div class="project-card">
-
-            <div class="project-image">
-
-                <img src="hr-attrition-dashboard.png"
-                     alt="HR Employee Attrition Analysis Dashboard">
-
-            </div>
-
-
-            <div class="project-content">
-
-                <span class="project-type">
-                    Personal Analytics Project
-                </span>
-
-                <h3>
-                    HR Employee Attrition Analysis Dashboard
-                </h3>
-
-                <p class="project-tools">
-                    Microsoft Power BI | Power Query | DAX
-                </p>
-
-                <p>
-                    Analysed employee attrition patterns across
-                    departments, gender, overtime, work-life balance,
-                    job satisfaction, and other workforce characteristics
-                    to identify factors associated with employee turnover.
-                </p>
-
-                <p>
-                    Prepared and transformed the dataset using Power Query,
-                    developed DAX measures for key performance indicators,
-                    and built an interactive Power BI dashboard to support
-                    workforce analysis and decision-making.
-                </p>
-
-
-                <div class="project-insights">
-
-                    <h4>
-                        Key Insights
-                    </h4>
-
-                    <ul>
-
-                        <li>
-                            Analysed 1,470 employee records.
-                        </li>
-
-                        <li>
-                            237 employees left the organisation,
-                            resulting in a 16% attrition rate.
-                        </li>
-
-                        <li>
-                            Employees working overtime had a higher
-                            attrition rate of 31% compared with 10%
-                            among employees who did not work overtime.
-                        </li>
-
-                        <li>
-                            Sales had the highest departmental
-                            attrition rate at 21%.
-                        </li>
-
-                        <li>
-                            Employees with poor work-life balance
-                            had an attrition rate of 31%.
-                        </li>
-
-                    </ul>
-
-                </div>
-
-
-                <div class="project-tags">
-
-                    <span class="project-tag">
-                        Power BI
-                    </span>
-
-                    <span class="project-tag">
-                        Power Query
-                    </span>
-
-                    <span class="project-tag">
-                        DAX
-                    </span>
-
-                    <span class="project-tag">
-                        Data Transformation
-                    </span>
-
-                    <span class="project-tag">
-                        KPI Development
-                    </span>
-
-                    <span class="project-tag">
-                        Data Visualization
-                    </span>
-
-                    <span class="project-tag">
-                        Business Intelligence
-                    </span>
-
-                </div>
-
-
-                <div class="project-actions">
-
-                    <a href="https://github.com/Tionge-Hunga/HR-Employee-Attrition-Dashboard"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="project-link">
-                        View GitHub Project →
-                    </a>
+                    </div>
 
                 </div>
 
             </div>
 
-        </div>
+        </section>
 
 
-        <!-- DIABETES -->
+        <!-- =========================
+             ABOUT
+        ========================== -->
+        <section id="about" class="section">
 
-        <div class="project-card">
+            <div class="container">
 
-            <div class="project-image">
+                <div class="section-heading">
 
-                <img src="diabetes-dashboard.png"
-                     alt="Diabetes Patient Analytics Dashboard">
+                    <p class="section-label">
+                        ABOUT ME
+                    </p>
 
-            </div>
-
-
-            <div class="project-content">
-
-                <span class="project-type">
-                    Personal Analytics Project
-                </span>
-
-                <h3>
-                    Diabetes Patient Analytics Dashboard
-                </h3>
-
-                <p class="project-tools">
-                    Microsoft Excel | Power Query | Power Pivot | DAX
-                </p>
-
-                <p>
-                    Analysed hospital encounter data to understand
-                    patterns in patient admissions, readmissions,
-                    demographics, medication usage, admission sources,
-                    and discharge outcomes.
-                </p>
-
-                <p>
-                    Cleaned and transformed the data using Power Query,
-                    connected related datasets using Power Pivot,
-                    created analytical measures using DAX, and built
-                    an interactive dashboard.
-                </p>
-
-
-                <div class="project-insights">
-
-                    <h4>
-                        Key Insights
-                    </h4>
-
-                    <ul>
-
-                        <li>
-                            Analysed 101,766 hospital encounters.
-                        </li>
-
-                        <li>
-                            Covered 71,518 unique patients.
-                        </li>
-
-                        <li>
-                            Identified a 46% readmission rate in the
-                            analysed dataset.
-                        </li>
-
-                        <li>
-                            Patients aged 70–80 accounted for the
-                            highest number of admissions and
-                            readmissions.
-                        </li>
-
-                    </ul>
+                    <h2>
+                        Data, reporting and evidence for better decisions.
+                    </h2>
 
                 </div>
 
 
-                <div class="project-tags">
+                <div class="about-content">
 
-                    <span class="project-tag">
-                        Excel
-                    </span>
+                    <div class="about-text">
 
-                    <span class="project-tag">
-                        Power Query
-                    </span>
+                        <p>
+                            I am a Data Analyst and Monitoring & Evaluation
+                            professional with experience in data management,
+                            data quality assurance, reporting and analysis.
+                        </p>
 
-                    <span class="project-tag">
-                        Power Pivot
-                    </span>
+                        <p>
+                            My work involves transforming raw and operational
+                            data into accurate, structured and useful
+                            information for reporting, monitoring and
+                            decision-making.
+                        </p>
 
-                    <span class="project-tag">
-                        DAX
-                    </span>
+                        <p>
+                            I have developed dashboards and analytical
+                            projects using tools including Microsoft Excel,
+                            Power Query, Power Pivot, DAX, Power BI,
+                            Looker Studio and Google Sheets.
+                        </p>
 
-                    <span class="project-tag">
-                        Data Cleaning
-                    </span>
+                        <p>
+                            I am particularly interested in using data and
+                            business intelligence to identify trends,
+                            communicate insights and support evidence-based
+                            decisions.
+                        </p>
 
-                    <span class="project-tag">
-                        Data Modelling
-                    </span>
-
-                    <span class="project-tag">
-                        Dashboard Development
-                    </span>
-
-                </div>
+                    </div>
 
 
-                <div class="project-actions">
+                    <div class="about-focus">
 
-                    <a href="https://github.com/Tionge-Hunga/Diabetes-Analytics"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="project-link">
-                        View GitHub Project →
-                    </a>
+                        <div class="focus-card">
+
+                            <h3>
+                                What I Focus On
+                            </h3>
+
+                            <ul>
+
+                                <li>
+                                    Data analysis and interpretation
+                                </li>
+
+                                <li>
+                                    Data cleaning and transformation
+                                </li>
+
+                                <li>
+                                    Data quality assurance
+                                </li>
+
+                                <li>
+                                    Dashboard development
+                                </li>
+
+                                <li>
+                                    KPI and trend analysis
+                                </li>
+
+                                <li>
+                                    Monitoring, evaluation and reporting
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
             </div>
 
-        </div>
+        </section>
 
 
-        <!-- SUPERSTORE -->
+        <!-- =========================
+             PROJECTS
+        ========================== -->
+        <section id="projects" class="section section-alt">
 
-        <div class="project-card">
+            <div class="container">
 
-            <div class="project-image">
+                <div class="section-heading">
 
-                <img src="superstore-dashboard.png"
-                     alt="Superstore Sales Performance Dashboard">
+                    <p class="section-label">
+                        PROJECTS
+                    </p>
 
-            </div>
+                    <h2>
+                        Selected Analytics Projects
+                    </h2>
 
-
-            <div class="project-content">
-
-                <span class="project-type">
-                    Personal Analytics Project
-                </span>
-
-                <h3>
-                    Superstore Sales Performance Dashboard
-                </h3>
-
-                <p class="project-tools">
-                    Microsoft Excel
-                </p>
-
-                <p>
-                    Analysed sales performance across customer segments,
-                    product categories, products, cities, regions,
-                    and time to identify business performance patterns.
-                </p>
-
-                <p>
-                    Cleaned and analysed the dataset and developed
-                    an interactive Excel dashboard using KPIs,
-                    filters, visualisations, and trend analysis.
-                </p>
-
-
-                <div class="project-insights">
-
-                    <h4>
-                        Key Insights
-                    </h4>
-
-                    <ul>
-
-                        <li>
-                            Consumer was the largest customer segment
-                            by sales.
-                        </li>
-
-                        <li>
-                            Technology was one of the leading
-                            categories.
-                        </li>
-
-                        <li>
-                            Identified differences in sales performance
-                            across products and locations.
-                        </li>
-
-                        <li>
-                            Analysed changes in sales performance
-                            over time.
-                        </li>
-
-                    </ul>
+                    <p>
+                        A combination of professional dashboards and
+                        independent analytics projects demonstrating
+                        practical data analysis and business intelligence
+                        skills.
+                    </p>
 
                 </div>
 
 
-                <div class="project-tags">
+                <!-- =========================
+                     PROFESSIONAL PROJECTS
+                ========================== -->
 
-                    <span class="project-tag">
-                        Excel
-                    </span>
+                <div class="project-group">
 
-                    <span class="project-tag">
-                        Data Analysis
-                    </span>
+                    <div class="project-group-heading">
 
-                    <span class="project-tag">
-                        Dashboard Development
-                    </span>
+                        <h3>
+                            Professional Projects
+                        </h3>
 
-                    <span class="project-tag">
-                        KPI Analysis
-                    </span>
+                        <p>
+                            Data and dashboard projects developed to support
+                            monitoring, reporting and operational
+                            decision-making.
+                        </p>
 
-                    <span class="project-tag">
-                        Data Visualization
-                    </span>
+                    </div>
 
-                    <span class="project-tag">
-                        Trend Analysis
-                    </span>
+
+                    <div class="projects-grid">
+
+
+                        <!-- Pangolin Dashboard -->
+                        <article class="project-card">
+
+                            <div class="project-card-content">
+
+                                <p class="project-type">
+                                    PROFESSIONAL PROJECT • LOOKER STUDIO
+                                </p>
+
+                                <h3>
+                                    Pangolin Monitoring Dashboard
+                                </h3>
+
+                                <p>
+                                    A monitoring dashboard developed to track
+                                    pangolin weight changes during
+                                    rehabilitation and support monitoring of
+                                    animal health and rehabilitation progress.
+                                </p>
+
+                                <div class="project-tags">
+
+                                    <span>Looker Studio</span>
+
+                                    <span>Data Visualization</span>
+
+                                    <span>Monitoring</span>
+
+                                    <span>Trend Analysis</span>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- Visitor Analytics -->
+                        <article class="project-card">
+
+                            <div class="project-card-content">
+
+                                <p class="project-type">
+                                    PROFESSIONAL PROJECT • LOOKER STUDIO
+                                </p>
+
+                                <h3>
+                                    Lilongwe Wildlife Centre Visitor Analytics
+                                </h3>
+
+                                <p>
+                                    A dashboard analyzing visitor patterns by
+                                    day, time and visitor group to support
+                                    operational planning, staffing and
+                                    decisions around visitor-centre opening
+                                    hours.
+                                </p>
+
+                                <div class="project-tags">
+
+                                    <span>Looker Studio</span>
+
+                                    <span>Data Analysis</span>
+
+                                    <span>Dashboard Development</span>
+
+                                    <span>Operational Insights</span>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                    </div>
 
                 </div>
 
 
-                <div class="project-actions">
+                <!-- =========================
+                     PERSONAL PROJECTS
+                ========================== -->
 
-                    <a href="https://github.com/Tionge-Hunga/Superstore-Sale-Performance-Dashboard-Microsoft-Excel"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="project-link">
-                        View GitHub Project →
-                    </a>
+                <div class="project-group">
+
+                    <div class="project-group-heading">
+
+                        <h3>
+                            Personal Analytics Projects
+                        </h3>
+
+                        <p>
+                            Independent projects using public datasets to
+                            demonstrate practical data analysis,
+                            visualization and dashboard development.
+                        </p>
+
+                    </div>
+
+
+                    <div class="projects-grid">
+
+
+                        <!-- HR ATTRITION -->
+                        <article class="project-card project-card-image">
+
+                            <div class="project-image">
+
+                                <img src="hr-attrition-dashboard.png"
+                                     alt="HR Employee Attrition Power BI dashboard"
+                                     loading="lazy">
+
+                            </div>
+
+
+                            <div class="project-card-content">
+
+                                <p class="project-type">
+                                    PERSONAL PROJECT • POWER BI
+                                </p>
+
+                                <h3>
+                                    HR Employee Attrition Analysis
+                                </h3>
+
+                                <p>
+                                    An interactive HR dashboard analyzing
+                                    employee attrition, retention and workforce
+                                    patterns using a public HR dataset.
+                                </p>
+
+                                <div class="project-tags">
+
+                                    <span>Power BI</span>
+
+                                    <span>DAX</span>
+
+                                    <span>Data Cleaning</span>
+
+                                    <span>HR Analytics</span>
+
+                                </div>
+
+
+                                <a href="https://github.com/Tionge-Hunga/HR-Employee-Attrition-Dashboard"
+                                   class="project-link"
+                                   target="_blank"
+                                   rel="noopener noreferrer">
+
+                                    View on GitHub →
+
+                                </a>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- DIABETES -->
+                        <article class="project-card project-card-image">
+
+                            <div class="project-image">
+
+                                <img src="diabetes-dashboard.png"
+                                     alt="Diabetes healthcare analytics dashboard"
+                                     loading="lazy">
+
+                            </div>
+
+
+                            <div class="project-card-content">
+
+                                <p class="project-type">
+                                    PERSONAL PROJECT • EXCEL
+                                </p>
+
+                                <h3>
+                                    Diabetes Healthcare Analytics Dashboard
+                                </h3>
+
+                                <p>
+                                    A healthcare analytics dashboard developed
+                                    from a public diabetes dataset, using
+                                    Power Query for data cleaning and Power
+                                    Pivot for data relationships and analysis.
+                                </p>
+
+                                <div class="project-tags">
+
+                                    <span>Excel</span>
+
+                                    <span>Power Query</span>
+
+                                    <span>Power Pivot</span>
+
+                                    <span>DAX</span>
+
+                                </div>
+
+
+                                <a href="https://github.com/Tionge-Hunga/Diabetes-Analytics"
+                                   class="project-link"
+                                   target="_blank"
+                                   rel="noopener noreferrer">
+
+                                    View on GitHub →
+
+                                </a>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- SUPERSTORE -->
+                        <article class="project-card project-card-image">
+
+                            <div class="project-image">
+
+                                <img src="superstore-dashboard.png"
+                                     alt="Superstore sales performance Excel dashboard"
+                                     loading="lazy">
+
+                            </div>
+
+
+                            <div class="project-card-content">
+
+                                <p class="project-type">
+                                    PERSONAL PROJECT • MICROSOFT EXCEL
+                                </p>
+
+                                <h3>
+                                    Superstore Sales Performance Dashboard
+                                </h3>
+
+                                <p>
+                                    An interactive sales dashboard analyzing
+                                    sales performance by time, region,
+                                    segment, category, product and city to
+                                    identify key business trends.
+                                </p>
+
+                                <div class="project-tags">
+
+                                    <span>Excel</span>
+
+                                    <span>PivotTables</span>
+
+                                    <span>PivotCharts</span>
+
+                                    <span>Slicers</span>
+
+                                    <span>Dashboard</span>
+
+                                </div>
+
+
+                                <a href="https://github.com/Tionge-Hunga/Superstore-Sale-Performance-Dashboard-Microsoft-Excel"
+                                   class="project-link"
+                                   target="_blank"
+                                   rel="noopener noreferrer">
+
+                                    View on GitHub →
+
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                    </div>
 
                 </div>
 
             </div>
 
-        </div>
+        </section>
 
-    </div>
 
-</div>
+        <!-- =========================
+             SKILLS
+        ========================== -->
+        <section id="skills" class="section">
 
-</section>
+            <div class="container">
 
+                <div class="section-heading">
 
-<!-- =========================================================
-     SKILLS
-========================================================= -->
+                    <p class="section-label">
+                        SKILLS
+                    </p>
 
-<section id="skills" class="skills-section">
+                    <h2>
+                        Skills & Technologies
+                    </h2>
 
-<div class="container">
+                </div>
 
-    <h2 class="section-title">
-        Skills & Tools
-    </h2>
 
-    <p class="skills-intro">
-        A combination of practical data management and monitoring
-        experience with developing data analytics and business
-        intelligence capabilities.
-    </p>
+                <div class="skills-grid">
 
 
-    <div class="skills-category-grid">
+                    <!-- Data Analytics -->
+                    <div class="skill-card">
 
+                        <h3>
+                            Data Analytics & Business Intelligence
+                        </h3>
 
-        <div class="skills-category primary">
+                        <div class="skill-list">
 
-            <h3>
-                Data Analytics & Business Intelligence
-            </h3>
+                            <span>Data Analysis</span>
 
-            <ul class="skills-list">
+                            <span>Data Cleaning</span>
 
-                <li>Data Analysis</li>
-                <li>Data Cleaning</li>
-                <li>Data Transformation</li>
-                <li>Data Visualization</li>
-                <li>Dashboard Development</li>
-                <li>KPI Analysis</li>
-                <li>KPI Development</li>
-                <li>Trend Analysis</li>
-                <li>Data Interpretation</li>
-                <li>Business Intelligence</li>
+                            <span>Data Transformation</span>
 
-            </ul>
+                            <span>Data Visualization</span>
 
-        </div>
+                            <span>Dashboard Development</span>
 
+                            <span>KPI Analysis</span>
 
-        <div class="skills-category">
+                            <span>KPI Development</span>
 
-            <h3>
-                Data Management & M&E
-            </h3>
+                            <span>Trend Analysis</span>
 
-            <ul class="skills-list">
+                            <span>Data Interpretation</span>
 
-                <li>Data Management</li>
-                <li>Data Validation</li>
-                <li>Data Quality Assurance</li>
-                <li>Database Management</li>
-                <li>Data Collection</li>
-                <li>Monitoring & Evaluation</li>
-                <li>Results Monitoring</li>
-                <li>Reporting</li>
+                            <span>Business Intelligence</span>
 
-            </ul>
+                        </div>
 
-        </div>
+                    </div>
 
 
-        <div class="skills-category">
+                    <!-- Data Management -->
+                    <div class="skill-card">
 
-            <h3>
-                Tools & Technologies
-            </h3>
+                        <h3>
+                            Data Management & M&E
+                        </h3>
 
-            <ul class="skills-list">
+                        <div class="skill-list">
 
-                <li>Microsoft Excel</li>
-                <li>Power Query</li>
-                <li>Power Pivot</li>
-                <li>DAX</li>
-                <li>Microsoft Power BI</li>
-                <li>Google Sheets</li>
-                <li>Looker Studio</li>
-                <li>Microsoft Access</li>
+                            <span>Data Management</span>
 
-            </ul>
+                            <span>Data Validation</span>
 
-        </div>
+                            <span>Data Quality Assurance</span>
 
+                            <span>Database Management</span>
 
-        <div class="skills-category">
+                            <span>Data Collection</span>
 
-            <h3>
-                Professional Skills
-            </h3>
+                            <span>Monitoring & Evaluation</span>
 
-            <ul class="skills-list">
+                            <span>Results Monitoring</span>
 
-                <li>Analytical Thinking</li>
-                <li>Problem Solving</li>
-                <li>Attention to Detail</li>
-                <li>Communication</li>
-                <li>Reporting</li>
-                <li>Stakeholder Engagement</li>
-                <li>Evidence-Based Decision Making</li>
+                            <span>Reporting</span>
 
-            </ul>
+                        </div>
 
-        </div>
+                    </div>
 
-    </div>
 
-</div>
+                    <!-- Tools -->
+                    <div class="skill-card">
 
-</section>
+                        <h3>
+                            Tools & Technologies
+                        </h3>
 
+                        <div class="skill-list">
 
-<!-- =========================================================
-     CERTIFICATIONS
-========================================================= -->
+                            <span>Microsoft Excel</span>
 
-<section id="certifications" class="certifications-section">
+                            <span>Power Query</span>
 
-<div class="container">
+                            <span>Power Pivot</span>
 
-    <h2 class="section-title">
-        Certifications
-    </h2>
+                            <span>DAX</span>
 
-    <p class="certifications-intro">
-        Professional certifications and completed credentials
-        demonstrating continued development in data analytics,
-        business intelligence, data literacy, and monitoring
-        and evaluation.
-    </p>
+                            <span>Microsoft Power BI</span>
 
+                            <span>Google Sheets</span>
 
-    <div class="certifications">
+                            <span>Looker Studio</span>
 
+                            <span>Microsoft Access</span>
 
-        <div class="certification">
+                        </div>
 
-            <span class="certification-label">
-                DataCamp
-            </span>
+                    </div>
 
-            <h3>
-                Data Analyst in Power BI
-            </h3>
 
-            <p>
-                DataCamp — 2026
-            </p>
+                    <!-- Professional Skills -->
+                    <div class="skill-card">
 
-        </div>
+                        <h3>
+                            Professional Skills
+                        </h3>
 
+                        <div class="skill-list">
 
-        <div class="certification">
+                            <span>Analytical Thinking</span>
 
-            <span class="certification-label">
-                DataCamp
-            </span>
+                            <span>Problem Solving</span>
 
-            <h3>
-                Excel Fundamentals
-            </h3>
+                            <span>Attention to Detail</span>
 
-            <p>
-                DataCamp — 2026
-            </p>
+                            <span>Communication</span>
 
-        </div>
+                            <span>Reporting</span>
 
+                            <span>Stakeholder Engagement</span>
 
-        <div class="certification">
+                            <span>Evidence-Based Decision Making</span>
 
-            <span class="certification-label">
-                DataCamp
-            </span>
+                        </div>
 
-            <h3>
-                Data Analysis with Excel Power Tools
-            </h3>
+                    </div>
 
-            <p>
-                DataCamp — 2026
-            </p>
-
-        </div>
-
-
-        <div class="certification">
-
-            <span class="certification-label">
-                DataCamp
-            </span>
-
-            <h3>
-                Data Literacy Professional
-            </h3>
-
-            <p>
-                DataCamp — 2026
-            </p>
-
-        </div>
-
-
-        <div class="certification">
-
-            <span class="certification-label">
-                DataCamp
-            </span>
-
-            <h3>
-                AI Fundamentals
-            </h3>
-
-            <p>
-                DataCamp — 2026
-            </p>
-
-        </div>
-
-
-        <div class="certification">
-
-            <span class="certification-label">
-                Philanthropy University / FHI360
-            </span>
-
-            <h3>
-                From Data Collection to Data Use
-            </h3>
-
-            <p>
-                2025
-            </p>
-
-        </div>
-
-
-        <div class="certification">
-
-            <span class="certification-label">
-                Philanthropy University / FHI360
-            </span>
-
-            <h3>
-                Planning for Monitoring & Evaluation
-            </h3>
-
-            <p>
-                2024
-            </p>
-
-        </div>
-
-    </div>
-
-</div>
-
-</section>
-
-
-<!-- =========================================================
-     VIRTUAL JOB SIMULATIONS
-========================================================= -->
-
-<section id="job-simulations" class="job-simulations-section">
-
-<div class="container">
-
-    <h2 class="section-title">
-        Virtual Job Simulations
-    </h2>
-
-    <p class="job-simulations-intro">
-        Practical simulations that allowed me to apply data analysis,
-        visualization, problem-solving, and business communication
-        skills to realistic workplace scenarios.
-    </p>
-
-
-    <div class="job-simulations">
-
-
-        <!-- BCG DATA FOR DECISION MAKERS -->
-
-        <div class="job-simulation">
-
-            <span class="job-simulation-label">
-                Forage • Virtual Job Simulation
-            </span>
-
-            <h3>
-                BCG X – Introduction to Data for Decision Makers
-            </h3>
-
-            <p class="job-simulation-company">
-                Boston Consulting Group (BCG) | 2026
-            </p>
-
-            <p>
-                Completed a practical data analytics simulation focused
-                on using campaign performance data to support business
-                decision-making. The task required analysing campaign
-                and channel performance, creating simple visualizations,
-                identifying the strongest-performing combination, and
-                communicating a clear recommendation to the client.
-            </p>
-
-
-            <h4>
-                Business Question
-            </h4>
-
-            <p>
-                Which campaign and channel combination should the client
-                double down on to grow new-customer sales — and why?
-            </p>
-
-
-            <h4>
-                What I Did
-            </h4>
-
-            <ul>
-
-                <li>
-                    Analysed campaign performance across different
-                    marketing channels.
-                </li>
-
-                <li>
-                    Compared total sales generated by Campaign A
-                    and Campaign B across Email, Instagram, and
-                    Web Banner channels.
-                </li>
-
-                <li>
-                    Compared the number of new customers converted
-                    by each campaign and channel combination.
-                </li>
-
-                <li>
-                    Created simple charts to communicate the strongest
-                    performing combinations.
-                </li>
-
-                <li>
-                    Synthesised the analysis into a client-focused
-                    recommendation.
-                </li>
-
-                <li>
-                    Presented the findings through an executive-ready
-                    slide.
-                </li>
-
-            </ul>
-
-
-            <div class="simulation-finding">
-
-                <h4>
-                    Key Finding
-                </h4>
-
-                <p>
-                    <strong>Campaign A + Email</strong> was the strongest
-                    combination in the analysis, generating
-                    <strong>$2,124 in total sales</strong> and
-                    <strong>29 converted customers</strong>.
-                </p>
+                </div>
 
             </div>
 
+        </section>
 
-            <div class="simulation-recommendation">
 
-                <h4>
-                    Recommendation
-                </h4>
+        <!-- =========================
+             CERTIFICATIONS
+        ========================== -->
+        <section id="certifications" class="section section-alt">
 
-                <p>
-                    Prioritize Campaign A through the Email channel to
-                    grow new-customer sales, as this combination produced
-                    the strongest results across both total sales and
-                    converted customers.
-                </p>
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        CERTIFICATIONS
+                    </p>
+
+                    <h2>
+                        Certifications & Professional Development
+                    </h2>
+
+                    <p>
+                        Selected certifications and professional development
+                        completed in data analytics, business intelligence,
+                        data literacy, AI and monitoring & evaluation.
+                    </p>
+
+                </div>
+
+
+                <div class="certifications-grid">
+
+
+                    <!-- Power BI -->
+                    <article class="certificate-card">
+
+                        <p class="certificate-provider">
+                            DataCamp
+                        </p>
+
+                        <h3>
+                            Data Analyst in Power BI
+                        </h3>
+
+                        <p class="certificate-year">
+                            2026
+                        </p>
+
+                    </article>
+
+
+                    <!-- Excel -->
+                    <article class="certificate-card">
+
+                        <p class="certificate-provider">
+                            DataCamp
+                        </p>
+
+                        <h3>
+                            Excel Fundamentals
+                        </h3>
+
+                        <p class="certificate-year">
+                            2026
+                        </p>
+
+                    </article>
+
+
+                    <!-- Power Query -->
+                    <article class="certificate-card">
+
+                        <p class="certificate-provider">
+                            DataCamp
+                        </p>
+
+                        <h3>
+                            Data Analysis with Excel Power Tools
+                        </h3>
+
+                        <p class="certificate-year">
+                            2026
+                        </p>
+
+                    </article>
+
+
+                    <!-- Data Literacy -->
+                    <article class="certificate-card">
+
+                        <p class="certificate-provider">
+                            DataCamp
+                        </p>
+
+                        <h3>
+                            Data Literacy Professional
+                        </h3>
+
+                        <p class="certificate-year">
+                            2026
+                        </p>
+
+                    </article>
+
+
+                    <!-- AI -->
+                    <article class="certificate-card">
+
+                        <p class="certificate-provider">
+                            DataCamp
+                        </p>
+
+                        <h3>
+                            AI Fundamentals
+                        </h3>
+
+                        <p class="certificate-year">
+                            2026
+                        </p>
+
+                    </article>
+
+
+                    <!-- Data Collection -->
+                    <article class="certificate-card">
+
+                        <p class="certificate-provider">
+                            Philanthropy University / FHI360
+                        </p>
+
+                        <h3>
+                            From Data Collection to Data Use
+                        </h3>
+
+                        <p class="certificate-year">
+                            2025
+                        </p>
+
+                    </article>
+
+
+                    <!-- M&E -->
+                    <article class="certificate-card">
+
+                        <p class="certificate-provider">
+                            Philanthropy University / FHI360
+                        </p>
+
+                        <h3>
+                            Planning for Monitoring & Evaluation
+                        </h3>
+
+                        <p class="certificate-year">
+                            2024
+                        </p>
+
+                    </article>
+
+                </div>
 
             </div>
 
+        </section>
 
-            <div class="simulation-deliverable">
 
-                <h4>
-                    Client-Ready Deliverable
-                </h4>
+        <!-- =========================
+             JOB SIMULATIONS
+        ========================== -->
+        <section id="job-simulations" class="section">
 
-                <img src="bcg-data-decision-makers.png"
-                     alt="BCG Data for Decision Makers campaign analysis slide">
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        JOB SIMULATIONS
+                    </p>
+
+                    <h2>
+                        Virtual Job Simulations
+                    </h2>
+
+                    <p>
+                        Practical simulations completed to develop
+                        data analysis, visualization, insight generation
+                        and business communication skills.
+                    </p>
+
+                </div>
+
+
+                <div class="simulation-grid">
+
+                    <article class="simulation-card">
+
+                        <div class="simulation-header">
+
+                            <p class="simulation-provider">
+                                Forage • Virtual Job Simulation
+                            </p>
+
+                            <h3>
+                                BCG X – Introduction to Data for Decision Makers
+                            </h3>
+
+                            <p class="simulation-company">
+                                Boston Consulting Group (BCG) • 2026
+                            </p>
+
+                        </div>
+
+
+                        <div class="simulation-content">
+
+                            <p class="simulation-description">
+                                Completed a practical data analytics
+                                simulation focused on campaign performance
+                                data and business decision-making. The
+                                simulation involved analyzing campaign and
+                                channel performance, creating visualizations,
+                                identifying the strongest combination and
+                                communicating a client recommendation.
+                            </p>
+
+
+                            <!-- Business Question -->
+                            <div class="simulation-block">
+
+                                <h4>
+                                    Business Question
+                                </h4>
+
+                                <p>
+                                    Which campaign and channel combination
+                                    should the client double down on to grow
+                                    new-customer sales — and why?
+                                </p>
+
+                            </div>
+
+
+                            <!-- What I Did -->
+                            <div class="simulation-block">
+
+                                <h4>
+                                    What I Did
+                                </h4>
+
+                                <ul>
+
+                                    <li>
+                                        Analyzed campaign performance across
+                                        different channels.
+                                    </li>
+
+                                    <li>
+                                        Compared sales for Campaign A and
+                                        Campaign B across Email, Instagram
+                                        and Web Banner.
+                                    </li>
+
+                                    <li>
+                                        Compared converted customers across
+                                        campaigns and channels.
+                                    </li>
+
+                                    <li>
+                                        Created charts to communicate the
+                                        results clearly.
+                                    </li>
+
+                                    <li>
+                                        Synthesized the findings into a
+                                        business recommendation.
+                                    </li>
+
+                                    <li>
+                                        Presented the recommendation in an
+                                        executive-ready slide.
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+
+                            <!-- Key Finding -->
+                            <div class="simulation-block">
+
+                                <h4>
+                                    Key Finding
+                                </h4>
+
+                                <p>
+                                    Campaign A + Email was the strongest
+                                    combination, generating
+                                    <strong>$2,124</strong> in total sales
+                                    and <strong>29 converted customers</strong>.
+                                </p>
+
+                            </div>
+
+
+                            <!-- Recommendation -->
+                            <div class="simulation-block">
+
+                                <h4>
+                                    Recommendation
+                                </h4>
+
+                                <p>
+                                    Prioritize Campaign A through Email to
+                                    grow new-customer sales because it
+                                    delivered the strongest results in both
+                                    sales and customer conversions.
+                                </p>
+
+                            </div>
+
+
+                            <!-- Deliverable -->
+                            <div class="simulation-deliverable">
+
+                                <h4>
+                                    Deliverable
+                                </h4>
+
+                                <div class="simulation-image">
+
+                                    <img src="bcg-data-decision-makers.png"
+                                         alt="BCG Data for Decision Makers campaign analysis slide"
+                                         loading="lazy">
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Skills -->
+                            <div class="simulation-block">
+
+                                <h4>
+                                    Skills Demonstrated
+                                </h4>
+
+                                <div class="simulation-tags">
+
+                                    <span>Excel</span>
+
+                                    <span>Data Analysis</span>
+
+                                    <span>Data Visualization</span>
+
+                                    <span>Data Interpretation</span>
+
+                                    <span>Insight Generation</span>
+
+                                    <span>Business Recommendations</span>
+
+                                    <span>Data Storytelling</span>
+
+                                    <span>Presentation</span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
 
             </div>
 
+        </section>
 
-            <div class="simulation-tags">
 
-                <span class="simulation-tag">
-                    Excel
-                </span>
+        <!-- =========================
+             CONTACT
+        ========================== -->
+        <section id="contact" class="section section-alt">
 
-                <span class="simulation-tag">
-                    Data Analysis
-                </span>
+            <div class="container">
 
-                <span class="simulation-tag">
-                    Data Visualization
-                </span>
+                <div class="contact-container">
 
-                <span class="simulation-tag">
-                    Data Interpretation
-                </span>
+                    <div class="section-heading">
 
-                <span class="simulation-tag">
-                    Insight Generation
-                </span>
+                        <p class="section-label">
+                            CONTACT
+                        </p>
 
-                <span class="simulation-tag">
-                    Business Recommendations
-                </span>
+                        <h2>
+                            Let's connect.
+                        </h2>
 
-                <span class="simulation-tag">
-                    Data Storytelling
-                </span>
+                        <p>
+                            I am open to opportunities in data analytics,
+                            business intelligence, data management,
+                            reporting and monitoring & evaluation.
+                        </p>
 
-                <span class="simulation-tag">
-                    Presentation
-                </span>
+                    </div>
+
+
+                    <div class="contact-links">
+
+                        <a href="mailto:tiongehu@gmail.com"
+                           class="contact-item">
+
+                            <span class="contact-label">
+                                Email
+                            </span>
+
+                            <span>
+                                tiongehu@gmail.com
+                            </span>
+
+                        </a>
+
+
+                        <a href="https://www.linkedin.com/in/tiongehunga"
+                           class="contact-item"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            <span class="contact-label">
+                                LinkedIn
+                            </span>
+
+                            <span>
+                                linkedin.com/in/tiongehunga
+                            </span>
+
+                        </a>
+
+
+                        <a href="https://github.com/Tionge-Hunga"
+                           class="contact-item"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            <span class="contact-label">
+                                GitHub
+                            </span>
+
+                            <span>
+                                github.com/Tionge-Hunga
+                            </span>
+
+                        </a>
+
+                    </div>
+
+                </div>
 
             </div>
 
+        </section>
 
-            <div class="simulation-link-wrapper">
+    </main>
 
-                <a href="https://www.theforage.com/simulations/bcg/data-for-decision-makers-tod0"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   class="simulation-link">
-                    View BCG Simulation →
-                </a>
 
-            </div>
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>
+                © 2026 Tionge Hunga. All rights reserved.
+            </p>
+
+            <p>
+                Data Analyst • Data Management • Monitoring & Evaluation
+            </p>
 
         </div>
 
-    </div>
-
-</div>
-
-</section>
+    </footer>
 
 
-<!-- =========================================================
-     CONTACT
-========================================================= -->
+    <!-- =========================
+         MOBILE NAVIGATION SCRIPT
+    ========================== -->
+    <script>
 
-<section id="contact" class="contact">
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navMenu = document.querySelector(".nav-menu");
 
-<div class="container">
+        menuToggle.addEventListener("click", function () {
 
-    <h2 class="section-title">
-        Let's Connect
-    </h2>
+            navMenu.classList.toggle("active");
 
-    <p>
-        I am interested in opportunities in data analytics,
-        data management, monitoring and evaluation, reporting,
-        business intelligence, and related data roles.
-    </p>
+            const expanded =
+                menuToggle.getAttribute("aria-expanded") === "true";
 
-    <div class="contact-links">
+            menuToggle.setAttribute(
+                "aria-expanded",
+                String(!expanded)
+            );
 
-        <a class="contact-link"
-           href="https://www.linkedin.com/in/tionge-hunga"
-           target="_blank"
-           rel="noopener noreferrer">
-            LinkedIn
-        </a>
-
-        <a class="contact-link"
-           href="https://github.com/Tionge-Hunga"
-           target="_blank"
-           rel="noopener noreferrer">
-            GitHub
-        </a>
-
-        <a class="contact-link"
-           href="mailto:tiongehu@gmail.com">
-            Email Me
-        </a>
-
-    </div>
-
-</div>
-
-</section>
+        });
 
 
-<!-- =========================================================
-     FOOTER
-========================================================= -->
+        document.querySelectorAll(".nav-menu a").forEach(function (link) {
 
-<footer>
+            link.addEventListener("click", function () {
 
-<p>
-    © 2026 Tionge Hunga. Built with HTML and CSS.
-</p>
+                navMenu.classList.remove("active");
 
-</footer>
+                menuToggle.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
 
+            });
+
+        });
+
+    </script>
 
 </body>
-
 </html>
